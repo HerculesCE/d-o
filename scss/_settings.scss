@@ -33,6 +33,14 @@ $include-html-global-classes: $include-html-classes;
 
 // Input
 
+    .slider {
+        max-height: 200px;
+    }
+
+    .top-bar {
+        margin-top: 50px;
+    }
+
     .loginsection {
         .button {
             font-family: 'Istok-Web', sans-serif;
