@@ -1,0 +1,531 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"handle",
+				"handleTouchObject"
+			],
+			[
+				"new",
+				"newCoordinates"
+			],
+			[
+				"flash",
+				"flashButton"
+			],
+			[
+				"clear",
+				"clearCache"
+			],
+			[
+				"darkBG",
+				"darkBGStyle"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"Start",
+				"StartCoroutine"
+			],
+			[
+				"GameObj",
+				"GameObjectHolder"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"zurb",
+				"Snippet: ZURB Foundation 5 Progress Bar"
+			],
+			[
+				"glue",
+				"View: Toggle Status Bar"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"col",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"power",
+				"PowerCursors: Add cursor"
+			],
+			[
+				"powerc",
+				"PowerCursors: Activate all cursors"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"calcu",
+				"Calculate"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorsublim",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"vintageous",
+				"Vintageous: Exit from command mode"
+			],
+			[
+				"vintage",
+				"Vintageous: Exit from command mode"
+			],
+			[
+				"vintago",
+				"Vintageous: Reset"
+			],
+			[
+				"vintag",
+				"Set Syntax: Vintageous Command Line"
+			],
+			[
+				"css",
+				"Sort Lines (Case Sensitive)"
+			],
+			[
+				"html",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"HTML",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"bookmarks",
+				"Bookmarks: Clear All"
+			],
+			[
+				"book",
+				"Bookmarks: Select Next"
+			],
+			[
+				"ruby",
+				"RubyTest: Verify Syntax"
+			],
+			[
+				"terminal",
+				"Open in terminal"
+			],
+			[
+				"termina",
+				"Open in terminal"
+			],
+			[
+				"termi",
+				"Open in terminal"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 583.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/contact.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/css/style.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/terminal.glue",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/home2.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_playground/spider/index.php",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iomh/db/database import files/gridstack.sql",
+		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/css/twentytwenty.css",
+		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_rynkes-jungle.git/unity/Assets/Scripts/Games/FruitNinja/FruitNinjaGame.cs",
+		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/js/jquery.event.move.js",
+		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/js/jquery.twentytwenty.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/css/jqm.slidemenu.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/css/themes/jqmfb.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/css/themes/jqmfb.min.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/test.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/MobileInput/mobiledemo.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_rynkes-jungle.git/unity/Assets/Plugins/Flurry/FlurryBinding.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_rynkes-jungle.git/unity/Assets/Scripts/Games/Coloring/ColoringGame.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/masterslider/violetcasino/nonmember.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/bpHack/boligalert.php",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/Scripts/SplashAndLoading/LoadingManager.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iomh/wp-config-sample.php",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/assets/css/newsfee.min.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/assets/css/style.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/indexU.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/indexU",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/original/1.0.0/blank.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/htmlSetup/htmlSetup/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/js/application.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/js/newsfeejquery.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/js/newsfeeModernizer.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/css/newsfeeAd.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/css/newsfee.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iamCoffee/Website/landingpage.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/htmlSetup/htmlSetup/Assets/CoherentUI/Samples/Scenes/Sample_MobileSurface/MobileSurface.cs",
+		"/Users/thomasrflyvholm/Desktop/lysmilepæle.html",
+		"/Users/thomasrflyvholm/Desktop/lysmilepæle.txt",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iamCoffee/Website/css/styles.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/js/newsfee.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/css/style.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_interface/Project/androidInterface/Assets/Shaders/wireframe.shader",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/_platform/android/androidRecord/Assets/Scripts/SplashAndLoading/AboutManager.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/iOSFacebook/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_pancake/Projects/Android/Pancake/Assets/Standard Assets/Image Effects (Pro Only)/GlobalFog.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iamCoffee/Landingpage/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/iOS/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/_platform/android/androidRecord/Assets/GUI Transitions/testGUIExtras.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/_platform/android/yscan/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/_platform/android/yscan/Assets/Scripts/CloudRecoScripts/ContentManager.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/iOS/iOS/Assets/Editor/ExportAssetBundles.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/iOS/iOS/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_sam/tpk/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_sam/tpk/css/style.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_sam/tpk/tpk.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/iOS/iOS/Assets/Scripts/SplashAndLoading/AboutManager.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iamCoffee/Website/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/PlayMaker/Actions/Wait.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/iTween/Examples/Images/AnimatingUnityGUI.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Scripts/SplashAndLoading/AboutManager.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/PlayMaker/Actions/YSCAN/yscanFBLogin.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/iTween/iTween.cs",
+		"/Users/thomasrflyvholm/Desktop/testfilm/index.html",
+		"/Users/thomasrflyvholm/Documents/Visuelt/2D/yscanIdentitet/sig.html",
+		"/Users/thomasrflyvholm/Desktop/Email Signature Design Gallery   DigiTechBRANDING.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/EveryplayTest.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Scripts/UIFramework/AboutScreenView.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Examples/Scripts/InteractiveConsole.cs",
+		"/Users/thomasrflyvholm/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/thomasrflyvholm/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/new_issues/app/views/issues/index.html.erb",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/new_issues/app/assets/stylesheets/application.css",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/PlayMaker/Actions/AnimateVariables/customFade.cs",
+		"/Users/thomasrflyvholm/Downloads/Flat-UI-master/package.json",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/kfs/kfs/content.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/kfs/kfs/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/railsTestApp/db/migrate/20140414164333_create_issues.rb",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/railsTestApp/app/views/hello/world.html.erb",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Scripts/SplashAndLoading/recordingHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/railsTestApp/app/controllers/hello_controller.rb",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/railsTestApp/app/controllers/application_controller.rb",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/yscanAdmin/_www/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/workspace/yscanAdmin/_www/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_web/Kunder/kfs/kfs/content.html",
+		"/Users/thomasrflyvholm/Downloads/Gumby-master/bower.json",
+		"/Users/thomasrflyvholm/Downloads/Gumby-master/composer.json",
+		"/Users/thomasrflyvholm/Downloads/Gumby-master/sass/_base.scss",
+		"/Users/thomasrflyvholm/Downloads/Gumby-master/config.rb",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_kfs/kfs/content.html",
+		"/Users/thomasrflyvholm/Desktop/content.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_kfs/kfs/css/style.css",
+		"/Users/thomasrflyvholm/Desktop/interview.m",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Editor/UpdateXcodeEveryplay.pyc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/EveryplayTest.cs",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/Everyplay.cs"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"home2.html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"map",
+			"gif",
+			"navbar",
+			"@media",
+			"navbar-brand",
+			"href",
+			"a",
+			"a href",
+			"single-project.html",
+			"text",
+			"preloader",
+			">\n",
+			"25%",
+			"25",
+			"24.98",
+			"width: 24",
+			"project-post",
+			"portfolio-box",
+			"hover-box",
+			"hover",
+			"hover-box",
+			"@media",
+			"localhost/gridstackdemo",
+			"localhost/gristackdemo",
+			"localhost",
+			"pageX",
+			"Start",
+			"pos",
+			"slider",
+			"pct",
+			"default_offset_pct",
+			"%",
+			"update",
+			"content",
+			"theme",
+			"a",
+			"page",
+			"another",
+			"main",
+			"stop",
+			"quit",
+			"scorePanel",
+			"StartGameCoroutine",
+			"rewardSequence",
+			"quitButton",
+			"WalkTapDirection",
+			"flurryBinding",
+			"//",
+			"flurryBinding",
+			"masterslider/",
+			"BOLIGALERT_PASSWORD",
+			"sidebar-left",
+			"sidebar-menu",
+			"top-navbar-inner",
+			"inner",
+			"wrapper",
+			"sidebar",
+			"nicescroller",
+			"btn-info",
+			"#",
+			"arrow",
+			"container",
+			"sm",
+			"rsaquo",
+			"more elements",
+			"col-xs-4",
+			"fluid",
+			"col-xs-4",
+			"fluid",
+			"col-xs-4",
+			"container-fluid",
+			"fluid",
+			"footer",
+			"page-content",
+			"container",
+			"container-fluid",
+			"btn-info",
+			"btn-blue",
+			"btn-",
+			"fa-long-arrow-right",
+			"arrow",
+			"fa-long-arrow-right",
+			"navbar",
+			"meta",
+			"png",
+			"#e24e4e",
+			"#",
+			".js",
+			"css",
+			"/mediaElement",
+			"url",
+			";",
+			" ",
+			"show feeds",
+			"newCoordina",
+			"fade",
+			"displayGUI",
+			"exit left",
+			"showObject",
+			"augmentat",
+			"overlay",
+			"bundleURL",
+			"template",
+			"gameObjectHolder",
+			"template",
+			"onInitialized",
+			"kidnapper",
+			"drHolder",
+			"js",
+			"../",
+			"\"../\"",
+			"../",
+			"om os",
+			"onUpdate",
+			"lastResponse",
+			"isLoggedIn",
+			"showShutter",
+			"ScreenshotManager",
+			"showcamera",
+			"tex",
+			"shareYes",
+			"camera",
+			"cameraHolder",
+			"drawTe",
+			"arial",
+			"feedProperties",
+			"Feed",
+			"actionLink"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"#",
+			"localhost:8888",
+			"#393939",
+			";\n",
+			"\n",
+			"http://theperfectkilometre.com/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "doeoesite.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
