@@ -1,29 +1,14 @@
-# Foundation libsass template
+# DOE SASS Foundation Site
 
-This is a template to start your own project that uses Grunt and libsass!
+Website for DOEOE //
 
-## Requirements
+## Utilities
 
-You'll need to have the following items installed before continuing.
-
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
-
-## Quickstart
-
-```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
-```
-
-While you're working on your project, run:
-
-`grunt`
-
-And you're set!
+  * [Node.js](http://nodejs.org)
+  * [Grunt](http://gruntjs.com/)
+  * [Bower](http://bower.io)
 
 ## Directory Structure
 
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
+  * `scss/_settings.scss`: SASS-settings goes inhere
+  * `scss/app.scss`: Application styles goes inhere
