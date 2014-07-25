@@ -1,6 +1,10 @@
 # DOE SASS Foundation Site
 
-Website for DOEOE //
+Website for DOEOE
+
+// CONTENT
+
+  * index.html
 
 ## Utilities
 
@@ -10,5 +14,5 @@ Website for DOEOE //
 
 ## Directory Structure
 
-  * `scss/_settings.scss`: SASS-settings goes inhere
-  * `scss/app.scss`: Application styles goes inhere
+  * `scss/_settings.scss`: to-be-compiled SASS styles
+  * `scss/app.scss`: to-be-compiled app styles
