@@ -4,7 +4,11 @@ Website for DOEOE
 
 // CONTENT
 
-  * index.html
+  * `index.html` 				// Main grid and design
+  * `css/app.css` 				// Main stylesheet
+  * `css/font-awesome.min.css` 	// Icon-fonts
+  * `app.js` 					// Main .js-structure
+  * `notifications/`			// Notifications system (in progress)
 
 ## Utilities
 
