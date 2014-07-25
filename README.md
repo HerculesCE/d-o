@@ -1,5 +1,7 @@
 # DOE SASS Foundation Site
 
+This is the responsive frontend design for the DOE website.
+
 ## Content
 
   * `index.html` 				// Main grid and design
