@@ -33,6 +33,29 @@ $include-html-global-classes: $include-html-classes;
 
 // Input
 
+    .imgHide{
+        display:block;
+    }
+
+    .row {
+
+        .columns{
+            margin-top: 20px;
+        }
+
+        p {
+            font-size:0.9em;
+        }
+
+        h3 {
+            font-family: 'Istok-Web', sans-serif;
+            color:#349fd6;
+            text-transform:uppercase;
+            font-size: 1.2em;
+            font-weight:bold;
+        }
+    }
+
     .slider {
         max-height: 200px;
     }
@@ -90,6 +113,14 @@ $include-html-global-classes: $include-html-classes;
     }
 
     @media screen and (max-width: 640px){
+        .small-7 .medium-7 .large-7{
+            min-width:1000px;
+        }
+
+        .imgHide{
+            display:none;
+        }
+
         .logo {
             max-width:240px;
         }
