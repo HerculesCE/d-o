@@ -1,8 +1,6 @@
 # DOE SASS Foundation Site
 
-Website for DOEOE
-
-// CONTENT
+## Content
 
   * `index.html` 				// Main grid and design
   * `css/app.css` 				// Main stylesheet
