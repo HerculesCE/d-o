@@ -1,6 +1,6 @@
-# DOE SASS Foundation Site
+# DOEO SASS Foundation Site
 
-This is the responsive frontend design for the DOE website.
+This is the responsive frontend design for the DOEO website.
 
 ## Content
 
