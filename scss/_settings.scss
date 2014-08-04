@@ -249,6 +249,11 @@ $include-html-global-classes: $include-html-classes;
     }
 
     @media screen and (max-width:960px){
+        footer {
+            .row p{
+                font-size:0.8em;
+            }
+        }
 
         .footer {
             .low{
