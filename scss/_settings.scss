@@ -37,14 +37,15 @@ $include-html-global-classes: $include-html-classes;
         .testiheader {
             height: 66px;
             background-color: #349fd6;
-            h3 {
+            h4 {
             color: #fff;
             font-family: "isotek web", sans-serif;
             font-size: 1em;
             padding-top: 20px;
-            width: 960px;
+            max-width: 960px;
             margin: 0 auto;
             text-transform:uppercase;
+            font-weight: bold;
             }
         }
         .testimonials {
@@ -259,14 +260,14 @@ $include-html-global-classes: $include-html-classes;
             .testiheader {
                 height: 66px;
                 background-color: #349fd6;
-                h3 {
-                color: #fff;
-                font-family: "isotek web", sans-serif;
-                font-size: 1em;
-                padding: 20px 0 0 20px;
-                width: 960px;
-                margin: 0 auto;
-                text-transform:uppercase;
+                h4 {
+                    color: #fff;
+                    font-family: "isotek web", sans-serif;
+                    font-size:1em;
+                    padding: 20px 0 0 20px;
+                    margin: 0 auto;
+                    text-transform:uppercase;
+                    font-weight: bold;
                 }
             }
             .testimonials {
@@ -311,8 +312,11 @@ $include-html-global-classes: $include-html-classes;
     }
 
     @media screen and (max-width: 640px){
-        .small-7 .medium-7 .large-7{
-            min-width:1000px;
+
+        footer {
+            .row p{
+                font-size:0.8em;
+            }
         }
 
         .imgHide{
