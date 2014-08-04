@@ -31,22 +31,104 @@ $include-html-global-classes: $include-html-classes;
 
 //CHRISTIANS CSS:
 
+
 // Input
+    #testimonial{
+        .testiheader {
+            height: 66px;
+            background-color: #349fd6;
+            h3 {
+            color: #fff;
+            font-family: "isotek web", sans-serif;
+            font-size: 1em;
+            padding-top: 20px;
+            width: 960px;
+            margin: 0 auto;
+            text-transform:uppercase;
+            }
+        }
+        .testimonials {
+            height: 409px;
+            background-image: url("http://placehold.it/1000x600");
+            background-size: 1692px, 409px;
+            background-repeat: repeat;
+            background-color: #212221;
+            .quote {
+                font-size:1.3em;
+                color: white;
+                font-family: "isotek web", sans-serif;
+                font-style: italic;
+                width: 650px;
+                margin: 0 auto;
+                padding-top: 140px;
+            }
+            .author {
+                margin: 0 auto;
+                padding-top: 30px;
+                color: #6e7578;
+                font-size: 18px;
+                font-family: "isotek web", sans-serif;
+                padding-left: 500px;
+            }
+        }
+        .testicontent {
+            max-width: 960px;
+            margin:0 auto;
+            padding-left: 48px;
+        }
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #349fd6;
+        }
+    }
+
     .footer {
-      position: relative;
-      width: 100%;
-      min-height:20%;
-      background-color: #393939; 
-      p{
-        color:#e6e6e6;
-      }
-      h4{
-        font-family: 'Istok-Web', sans-serif;
-        color:#e6e6e6;
-        text-transform:uppercase;
-        font-size: 1em;
-        font-weight:bold;
-      }       
+        position: relative;
+        width: 100%;
+        min-height:20%;
+        background-color: #393939;
+        .bordered{
+            border-style: solid;
+            border-color: white;
+            border-width: 0 1px 0 0;
+        }
+        .low{
+            margin-top:34px;
+        }
+        p{
+            color:#e6e6e6;
+        }
+        h4{
+            font-family: 'Istok-Web', sans-serif;
+            color:#e6e6e6;
+            text-transform:uppercase;
+            font-size: 1em;
+            font-weight:bold;
+        }  
+        li{
+            color: white;
+            margin: 0 0 0 -18px;
+            font-size: 0.8em;
+            line-height: 18pt;
+
+            a{
+                color: #6d96ab;
+                text-decoration: none;
+                font-size: 1em;
+                line-height: 18pt;
+                -o-transition:.0.5s;
+                -ms-transition:.0.5s;
+                -moz-transition:0.5s;
+                -webkit-transition:0.5s;
+            }
+            a:hover{
+                color: #6bcdff;
+                text-decoration: none;
+            }
+        }     
     }
 
     footer {
@@ -162,8 +244,69 @@ $include-html-global-classes: $include-html-classes;
     }
 
     @media screen and (max-width:960px){
+
         footer{
             display:none;
+        }
+
+        .footer {
+            .low{
+                margin-top:0;
+            }
+        }
+
+        #testimonial{
+            .testiheader {
+                height: 66px;
+                background-color: #349fd6;
+                h3 {
+                color: #fff;
+                font-family: "isotek web", sans-serif;
+                font-size: 1em;
+                padding: 20px 0 0 20px;
+                width: 960px;
+                margin: 0 auto;
+                text-transform:uppercase;
+                }
+            }
+            .testimonials {
+                height: 409px;
+                background-image: url("http://placehold.it/1000x600");
+                background-size: 1692px, 409px;
+                background-repeat: repeat;
+                background-color: #212221;
+                .quote {
+                    font-size:1em;
+                    color: white;
+                    font-family: "isotek web", sans-serif;
+                    font-style: italic;
+                    width: 320px;
+                    margin: 0 auto;
+                    padding-top: 140px;
+                }
+                .author {
+                    margin: 0 auto;
+                    padding-top: 0.6em;
+                    color: #6e7578;
+                    font-size: 18px;
+                    font-family: "isotek web", sans-serif;
+                    padding: 10% 10% 0 20%;
+                    float:right;
+                }
+            }
+            .testicontent {
+                max-width: 640px;
+                margin:0 auto;
+                padding-left: 0;
+            }
+            .arrow-down {
+                margin: 0 0 0 20px;
+                width: 0; 
+                height: 0; 
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid #349fd6;
+            }
         }
     }
 
