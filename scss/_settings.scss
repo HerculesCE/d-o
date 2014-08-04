@@ -109,7 +109,7 @@ $include-html-global-classes: $include-html-classes;
             font-weight:bold;
         }  
         li{
-            color: white;
+            color: #bcbcbc;
             margin: 0 0 0 -18px;
             font-size: 0.8em;
             line-height: 18pt;
@@ -142,6 +142,10 @@ $include-html-global-classes: $include-html-classes;
       .right{
         float:right;
         padding:0 5px 0 5px;
+        color:#bcbcbc;
+      }
+      .right:hover {
+        color: black;
       }
     }
 
@@ -244,10 +248,6 @@ $include-html-global-classes: $include-html-classes;
     }
 
     @media screen and (max-width:960px){
-
-        footer{
-            display:none;
-        }
 
         .footer {
             .low{
