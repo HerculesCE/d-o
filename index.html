@@ -9,6 +9,23 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
   <body>
+    <!-- MODAL -->
+    <div class="cd-user-modal"> 
+      <div class="cd-user-modal-container">
+        <div id="cd-login">
+          <a href="#0" class="cd-close-form">Luk</a>
+          <div class="loginLogo">
+              <img src="img/logodo.png" />
+          </div>
+          <form>
+            <input class="inputTop" type="text" name="username" placeholder="Brugernavn">
+            <input class="inputBot" type="text" name="password" placeholder="Kodeord">
+            <li class="button">Login</li>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
     <!-- Header -->
     <div class="header">
       <div class="content">
@@ -17,6 +34,9 @@
         </div>
         <div class="loginsection">
               <li class="button"><i class="fa fa-lock" style="padding-right: 5px;"> </i> Login</li>
+              <!-- ModalButton 
+              <li class="loginButton button"><i class="fa fa-lock" style="padding-right: 5px;"> </i> Login</li>
+              -->
               <ul><li><a class="ansog" href="#">Ansøg</a></li></ul>
         </div>
       </div>
@@ -58,6 +78,42 @@
       </li>
     </ul>
     <!-- /OSlider -->
+    <!--
+    <div class="row">
+      <div class="large-12 columns">
+        <table>
+          <thead>
+            <tr>
+              <th><h5>Table Header</h5></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    -->
     <!-- Content -->
     <div class="row">
       <div class="large-7 columns">
@@ -139,13 +195,14 @@
     <footer>
       <div class="row">
         <div class="large-12 columns">
-          <p>Danske Øjenlægers Forening © 2014</p>
+          <p>Danske Øjenlægers Organisation © 2014</p>
           <p class="right">by <b>INTO</b>WEB</p>
         </div>
       </div>
     </footer>
     <!-- /Footer -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>

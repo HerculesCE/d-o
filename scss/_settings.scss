@@ -31,7 +31,151 @@ $include-html-global-classes: $include-html-classes;
 
 //CHRISTIANS CSS:
 
+//linksTables:
+thead{
+    color: #fff;
+    text-transform: uppercase;
+    tr{
+        th{
+            background-color: #349fd6;
+        }
+    }  
+}
 
+
+// LoginModal
+
+.loginLogo {
+    text-align: center;
+    img{
+        max-height: 80px;
+        margin: 50px 0 0 0;
+    }
+}
+.cd-user-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.8);
+  z-index: 3;
+  overflow-y: auto;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0, visibility 0 0.3s;
+  -moz-transition: opacity 0.3s 0, visibility 0 0.3s;
+  transition: opacity 0.3s 0, visibility 0 0.3s;
+  form{
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    .button {
+        background-color: white;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        color: #349fd6;
+        display:inline-block;
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    .inputTop{
+        border-radius: 5px 5px 0 0;
+        box-shadow:none;
+        border:none;
+        margin: 15px 0 -2px 0;
+        width:100%
+    }
+    .inputBot{
+        border-radius: 0 0 5px 5px;
+        box-shadow:none;
+        border:none;
+        margin: -2px 0 -2px 0;
+        width: 100%;
+    }
+  }
+}
+.cd-user-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0, visibility 0 0;
+  -moz-transition: opacity 0.3s 0, visibility 0 0;
+  transition: opacity 0.3s 0, visibility 0 0;
+}
+.cd-user-modal.is-visible .cd-user-modal-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.cd-user-modal-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #349fd6; /* Old browsers */
+    background: -moz-linear-gradient(top, #349fd6 0%, #2e7497 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#349fd6), color-stop(100%,#2e7497)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #349fd6 0%,#2e7497 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #349fd6 0%,#2e7497 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #349fd6 0%,#2e7497 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #349fd6 0%,#2e7497 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#349fd6', endColorstr='#2e7497',GradientType=0 ); /* IE6-9 */
+  margin: 3em auto 4em;
+  cursor: auto;
+  border-radius: 0.25em;
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+  transform: translateY(-30px);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+@media only screen and (min-width: 600px) {
+  .cd-user-modal-container {
+    margin: 4em auto;
+  }
+}
+.cd-close-form {
+  /* form X button on top right */
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: -40px;
+  background: url("../img/cd-icon-close.svg") no-repeat center center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1170px) {
+  .cd-close-form {
+    display: none;
+  }
+}
+
+#cd-login, #cd-signup, #cd-reset-password {
+  display: none;
+}
+
+#cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
+  display: block;
+}
 // Input
     #testimonial{
         .testiheader {
@@ -144,6 +288,10 @@ $include-html-global-classes: $include-html-classes;
         float:right;
         padding:0 5px 0 5px;
         color:#bcbcbc;
+        -o-transition:.0.5s;
+        -ms-transition:.0.5s;
+        -moz-transition:0.5s;
+        -webkit-transition:0.5s;
       }
       .right:hover {
         color: black;
@@ -211,6 +359,8 @@ $include-html-global-classes: $include-html-classes;
             -webkit-appearance:none;
             -webkit-border-radius:5px;
             display:inline-block;
+            border: solid 1px;
+            border-color: #349fd6;
             float:right;
             font-size:1rem;
             background-color:#349fd6;
@@ -225,7 +375,11 @@ $include-html-global-classes: $include-html-classes;
             }
         }  
         .button:hover {
-            background-color:#0ed784;
+            background-color:#393939;
+            border: solid 1px;
+            border-color: #349fd6;
+            background-color: white;
+            color: #393939;
         }
     }
 
@@ -1576,7 +1730,7 @@ $sub-nav-active-cursor: default;
 // These control the table head styles
 // $table-head-bg: #f5f5f5  ;
 // $table-head-font-size: rem-calc(14);
-// $table-head-font-color: #222;
+// $table-head-font-color: #fff;
 // $table-head-font-weight: $font-weight-bold;
 // $table-head-padding: rem-calc(8 10 10);
 
@@ -1788,3 +1942,34 @@ $sub-nav-active-cursor: default;
 // $range-slider-handle-round: $global-rounded;
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
 // $range-slider-handle-cursor: pointer;
+tbody{
+    tr{
+        td{
+        
+        }
+    }
+    tr:hover{
+        background-color: black;
+    }
+}
+thead{
+    color: #fff;
+    tr{
+        color: #fff;
+        th{
+            background-color: #349fd6;
+            color: #fff;
+            h5{
+                color: #fff;
+                min-width:200px;
+                text-transform: none;
+                font-size: 1.2em;
+            }
+            p {
+                color: white;
+                font-weight: bold;
+                font-size: 3px;
+            }
+        }
+    }  
+}
