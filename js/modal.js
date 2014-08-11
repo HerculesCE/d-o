@@ -1,3 +1,6 @@
+// Modal.js
+// Thomas Flyvholm
+
 jQuery(document).ready(function($){
 	var $form_modal = $('.cd-user-modal'),
 		$form_login = $form_modal.find('#cd-login'),
@@ -29,6 +32,8 @@ jQuery(document).ready(function($){
 			$form_modal.removeClass('is-visible');
 		}	
 	});
+
+	// Hide/Show aspects of the loginmodal
 	$( ".a" ).click(function() {
 		$( ".loginform" ).fadeOut( "slow", function() {
 	    	 $(".forgottenform").fadeIn("slow", function(){
@@ -93,6 +98,7 @@ jQuery(document).ready(function($){
 
 });
 
+// Scrolls cursor to end
 jQuery.fn.putCursorAtEnd = function() {
 	return this.each(function() {
     	if (this.setSelectionRange) {
