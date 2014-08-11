@@ -31,6 +31,9 @@ $include-html-global-classes: $include-html-classes;
 
 //CHRISTIANS CSS:
 
+// Intranet
+
+
 //linksTables:
 thead{
     color: #fff;
@@ -67,6 +70,15 @@ thead{
   -webkit-transition: opacity 0.3s 0, visibility 0 0.3s;
   -moz-transition: opacity 0.3s 0, visibility 0 0.3s;
   transition: opacity 0.3s 0, visibility 0 0.3s;
+  .forgottenform{
+    .inputTop{
+        border-radius: 5px;
+        box-shadow:none;
+        border:none;
+        margin: 15px 0 -2px 0;
+        width:100%
+    }
+  }
   form{
     max-width: 250px;
     margin: 0 auto;
@@ -80,6 +92,20 @@ thead{
         display:inline-block;
         width: 40%;
         margin-bottom: 50px;
+        transition:background-color 300ms ease-out;
+    }
+    .b {
+        display:inline-block;
+        padding: 0 0 0 50px;
+        color:white;
+    }
+    .a {
+        display:inline-block;
+        padding: 0 0 0 50px;
+        color:white;
+    }
+    .button:hover {
+        // hvad gør vi her?
     }
     .inputTop{
         border-radius: 5px 5px 0 0;
@@ -114,8 +140,10 @@ thead{
 
 .cd-user-modal-container {
   position: relative;
-  width: 90%;
-  max-width: 600px;
+  height:80%;
+  max-height: 400px;
+  width:80%;
+  max-width: 700px;
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1820,7 +1848,7 @@ $sub-nav-active-cursor: default;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+// $topbar-height: 65px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar

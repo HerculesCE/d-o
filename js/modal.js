@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
 		$back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
 		$main_nav = $('.loginmodal');
 		$modal_activator = $('.loginButton');
+		$(".forgottenform").hide();
 
 	$modal_activator.on('click', function(event){
 
@@ -27,6 +28,17 @@ jQuery(document).ready(function($){
 		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
 			$form_modal.removeClass('is-visible');
 		}	
+	});
+	$( ".a" ).click(function() {
+		$( ".loginform" ).fadeOut( "slow", function() {
+	    	 $(".forgottenform").fadeIn("slow", function(){
+	    	 	$( ".b" ).click(function() {
+	    	 		$(".forgottenform").fadeOut("slow", function(){
+	    	 			$(".loginform").fadeIn("slow");
+	    	 		});
+	    	 	});
+	    	 });
+	  	});
 	});
 	$(document).keyup(function(event){
     	if(event.which=='27'){
@@ -57,7 +69,6 @@ jQuery(document).ready(function($){
 	}
 
 	//IE9 placeholder fallback
-	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
 	if(!Modernizr.input.placeholder){
 		$('[placeholder]').focus(function() {
 			var input = $(this);
@@ -82,19 +93,12 @@ jQuery(document).ready(function($){
 
 });
 
-
-//credits http://css-tricks.com/snippets/jquery/move-cursor-to-end-of-textarea-or-input/
 jQuery.fn.putCursorAtEnd = function() {
 	return this.each(function() {
-    	// If this function exists...
     	if (this.setSelectionRange) {
-      		// ... then use it (Doesn't work in IE)
-      		// Double the length because Opera is inconsistent about whether a carriage return is one character or two. Sigh.
       		var len = $(this).val().length * 2;
       		this.setSelectionRange(len, len);
     	} else {
-    		// ... otherwise replace the contents with itself
-    		// (Doesn't work in Google Chrome)
       		$(this).val($(this).val());
     	}
 	});
