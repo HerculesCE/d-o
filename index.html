@@ -6,7 +6,12 @@
     <title>DØO</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- MANGLER FÆRDIG META DATA -->
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
   <body>
     <!-- MODAL -->
@@ -17,17 +22,17 @@
           <div class="loginLogo">
               <img src="img/logodo.png" />
           </div>
-          <form class="loginform">
+          <div class="form loginform">
             <input class="inputTop" type="text" name="username" placeholder="Brugernavn">
             <input class="inputBot" type="text" name="password" placeholder="Kodeord">
             <a href="intranet.html"><li class="button">Login</li></a>
             <a href="#glemtLogin"><li class="a">Glemt login?</li></a>
-          </form>
-          <form class="forgottenform">
+          </div>
+          <div class="form forgottenform">
             <input class="inputTop" type="text" name="username" placeholder="Indtast venligst din Email">
             <li class="button">Send</li>
             <a href="#"><li class="b">Tilbage</li></a>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -172,9 +177,6 @@
       </div>
     </footer>
     <!-- /Footer -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+
   </body>
 </html>
