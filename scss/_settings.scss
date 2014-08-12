@@ -34,17 +34,45 @@ $include-html-global-classes: $include-html-classes;
 // Intranet
 
 
-//linksTables:
-thead{
-    color: #fff;
-    text-transform: uppercase;
-    tr{
-        th{
-            background-color: #349fd6;
-        }
-    }  
-}
+// Forum
 
+
+    
+
+table {
+    thead {
+        tr {
+            th:nth-child(1){
+                width: 100%;
+                
+            }
+            th:nth-child(2){
+                min-width: 80px;
+            }
+            th:nth-child(3){
+                min-width: 100px;
+                margin-left: -15px;
+            }
+            th {
+                display: inline-block;
+                .underheader {
+                    color: white;
+                    font-size: 1em;
+
+                }
+                height: 60px;
+                background-color: #349fd6;
+                color: white;
+                h4 {
+                    color: white;
+                    line-height: 50px;
+                    font-size: 1.2em;
+                    margin: 0 0 0 15px;
+                }
+            }
+        }
+    }
+}
 
 // LoginModal
 
@@ -566,6 +594,7 @@ thead{
         padding-top: 45px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 50px;
     }
 
     .header ul {
@@ -1971,35 +2000,6 @@ $sub-nav-active-cursor: default;
 // $range-slider-handle-radius: $global-radius;
 // $range-slider-handle-round: $global-rounded;
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
+
 // $range-slider-handle-cursor: pointer;
-tbody{
-    tr{
-        td{
-        
-        }
-    }
-    tr:hover{
-        background-color: black;
-    }
-}
-thead{
-    color: #fff;
-    tr{
-        color: #fff;
-        th{
-            background-color: #349fd6;
-            color: #fff;
-            h5{
-                color: #fff;
-                min-width:200px;
-                text-transform: none;
-                font-size: 1.2em;
-            }
-            p {
-                color: white;
-                font-weight: bold;
-                font-size: 3px;
-            }
-        }
-    }  
-}
+

@@ -24,7 +24,6 @@ jQuery(document).ready(function($){
 			$form_modal.addClass('is-visible');	
 			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
 		}
-
 	});
 
 	$('.cd-user-modal').on('click', function(event){
