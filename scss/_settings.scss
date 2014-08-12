@@ -34,46 +34,6 @@ $include-html-global-classes: $include-html-classes;
 // Intranet
 
 
-// Forum
-
-
-    
-
-table {
-    thead {
-        tr {
-            th:nth-child(1){
-                width: 100%;
-                
-            }
-            th:nth-child(2){
-                min-width: 80px;
-            }
-            th:nth-child(3){
-                min-width: 100px;
-                margin-left: -15px;
-            }
-            th {
-                display: inline-block;
-                .underheader {
-                    color: white;
-                    font-size: 1em;
-
-                }
-                height: 60px;
-                background-color: #349fd6;
-                color: white;
-                h4 {
-                    color: white;
-                    line-height: 50px;
-                    font-size: 1.2em;
-                    margin: 0 0 0 15px;
-                }
-            }
-        }
-    }
-}
-
 // LoginModal
 
 .loginLogo {
@@ -661,6 +621,121 @@ table {
 .menu .li .active {
     color: #393939;
 }
+
+.forumintranet {
+    font-family: "isotek web", sans-serif;
+    margin-top: -20px;
+    .forumintranet-header {
+        background-color: #349fd6;
+        height: 60px;
+        ul {
+            li {
+                color: white;
+                text-transform: none;
+                font-weight: normal;
+                line-height: 60px;
+                display: inline-block;
+                float:right;
+                font-size: 0.9em;
+                margin: 0 15px 0 15px;
+                min-width: 20px;
+                text-align: right;
+            }
+            li:nth-child(1){
+                float:left;
+                margin-left: 5px;
+                font-size: 1em;
+                min-width:60px;
+                font-weight: bold;
+            }
+            li:nth-child(2){
+                margin-right: 20px;
+            }
+            li:nth-child(3){
+                margin-right: 35px;
+            }
+        }
+    }
+    .forumintranet-row {
+        height: 85px;
+        border: solid 1px #ececec;
+        border-bottom: 0;
+        margin:0;
+         -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        i {
+            
+        }
+        .fa {
+            font-size: 2em;
+            color: #393939;
+            margin-top: 26px;
+        }
+        ul {
+            li {
+                color: #393939;
+                text-transform: none;
+                font-weight: normal;
+                line-height: 80px;
+                display: inline-block;
+                float:right;
+                font-size: 0.9em;
+                margin: 0 15px 0 15px;
+                min-width: 20px;
+                .sub-text {
+                    margin-top: -25px;
+                    font-size: 0.8em;
+                    a {
+                        text-decoration: underline;
+                        color: #393939;
+                    }
+                }
+            }
+            li:nth-child(1){
+                float:left;
+                margin-left: 5px;
+            }
+            li:nth-child(2){
+                float:left;
+                line-height: 65px;
+                display:inline-block;
+                font-weight: bold;
+                a {
+                    display:inline-block;
+                    color: #393939;
+                }
+            }
+            li:nth-child(4){
+                margin-right:35px;
+            }
+            li:nth-child(3){
+                margin-right:20px;
+            }
+        }
+    }
+    .forumintranet-row:hover {
+        background-color: #f8f8f8;
+    }
+    .forumintranet-footer {
+        background-color: #ececec;
+        height: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .forumintranet {
+        .forumintranet-row{
+            .fa {
+                display: none;
+            }
+        }
+    }
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
