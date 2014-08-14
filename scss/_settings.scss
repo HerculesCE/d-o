@@ -662,8 +662,8 @@ $include-html-global-classes: $include-html-classes;
                 margin: 0 15px 0 15px;
                 min-width: 20px;
                 .sub-text {
-                    margin-top: -27px;
-                    font-size: 0.8em;
+                    margin-top: -25px;
+                    font-size: 0.7em;
                     a {
                         text-decoration: underline;
                         color: #393939;
@@ -678,17 +678,9 @@ $include-html-global-classes: $include-html-classes;
                 font-size:0.7em;
                 color: #349fd6;
                 float:right;
-                line-height: 85px;
+                line-height: 80px;
                 display:inline-block;
                 font-weight: normal;
-            }
-            li:nth-child(4){
-                margin-right:40px;
-            }
-            li:nth-child(3){
-                margin-right:22px;
-                line-height: 65px;
-                font-size: 0.8em;
             }
             li:last-child{
                 margin-bottom: 5px;
