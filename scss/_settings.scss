@@ -622,6 +622,81 @@ $include-html-global-classes: $include-html-classes;
     color: #393939;
 }
 
+.forumsidebar {
+    font-family: "isotek web", sans-serif;
+    .forumsidebar-header {
+        background-color: #616161;
+        height: 60px;
+        li {
+            color: white;
+            text-transform: none;
+            line-height: 60px;
+            display: inline-block;
+            font-size: 1em;
+            font-weight:bold;
+            min-width: 20px;
+        }
+        li:first-child{
+            margin-left: 25px;
+        }
+    }
+    .forumsidebar-post {
+        height: 85px;
+        border: solid 1px #ececec;
+        border-top: solid 1px white;
+        margin:0;
+         -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        ul {
+            li {
+                color: #393939;
+                text-transform: none;
+                font-weight: normal;
+                line-height: 70px;
+                display: inline-block;
+                float:right;
+                font-size: 0.9em;
+                margin: 0 15px 0 15px;
+                min-width: 20px;
+                .sub-text {
+                    margin-top: -27px;
+                    font-size: 0.8em;
+                    a {
+                        text-decoration: underline;
+                        color: #393939;
+                    }
+                }
+            }
+            li:nth-child(1){
+                float:left;
+                margin-left: 5px;
+            }
+            li:nth-child(2){
+                font-size:0.7em;
+                color: #349fd6;
+                float:right;
+                line-height: 85px;
+                display:inline-block;
+                font-weight: normal;
+            }
+            li:nth-child(4){
+                margin-right:40px;
+            }
+            li:nth-child(3){
+                margin-right:22px;
+                line-height: 65px;
+                font-size: 0.8em;
+            }
+        }
+    }
+    .forumintranet-post:hover {
+        background-color: #f8f8f8;
+    }
+}
+
 .forumintranet {
     font-family: "isotek web", sans-serif;
     margin-top: -20px;
