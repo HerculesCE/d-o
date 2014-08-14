@@ -690,6 +690,9 @@ $include-html-global-classes: $include-html-classes;
                 line-height: 65px;
                 font-size: 0.8em;
             }
+            li:last-child{
+                margin-bottom: 5px;
+            }
         }
     }
     .forumintranet-post:hover {
