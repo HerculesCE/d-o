@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"forumintran",
+				"forumintranet-row"
+			],
+			[
+				"forumintr",
+				"forumintranet-row"
+			],
+			[
+				"intranet",
+				"intranetforum"
+			],
+			[
+				"font-weight",
+				"font-weight-bold"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
 				"handle",
 				"handleTouchObject"
 			],
@@ -39,16 +63,73 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "forum.html",
+			"settings":
+			{
+				"buffer_size": 7538,
+				"line_ending": "Unix",
+				"name": "<!doctype html>"
+			}
+		},
+		{
+			"file": "scss/_settings.scss",
+			"settings":
+			{
+				"buffer_size": 62014,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/modal.js",
+			"settings":
+			{
+				"buffer_size": 3270,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 172.0,
 		"selected_items":
 		[
 			[
+				"topbar",
+				"Snippet: ZURB Foundation 5 Topbar"
+			],
+			[
+				"zurb top",
+				"Snippet: ZURB Foundation 5 Topbar"
+			],
+			[
 				"zurb",
-				"Snippet: ZURB Foundation 5 Progress Bar"
+				"Snippet: ZURB Foundation 5 Topbar"
+			],
+			[
+				"zurb alert",
+				"Snippet: ZURB Foundation 5 Alert"
+			],
+			[
+				"zurb al",
+				"Snippet: ZURB Foundation 5 Alert"
+			],
+			[
+				"zurb button",
+				"Snippet: ZURB Foundation 5 Buttons"
+			],
+			[
+				"zurb clear",
+				"Snippet: ZURB Foundation 5 Clearing"
 			],
 			[
 				"glue",
@@ -155,7 +236,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 583.0
+		"width": 406.0
 	},
 	"console":
 	{
@@ -176,6 +257,23 @@
 	},
 	"file_history":
 	[
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/intranet.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/scss/foundation/components/_top-bar-intra.scss",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/js/foundation.min.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/js/foundation.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/js/foundation/foundation.topbar.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/node_modules/grunt/node_modules/glob/test/zz-cleanup.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/modernizr/feature-detects/url-data-uri.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/modernizr/feature-detects/elem-ruby.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/scss/foundation/components/_top-bar.scss",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/jquery/src/var/toString.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/jquery/src/traversing.js",
+		"/Users/thomasrflyvholm/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/intra.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/jquery/src/ajax/load.js",
+		"/Users/thomasrflyvholm/Downloads/doeo.dk-master/index.html",
+		"/Users/thomasrflyvholm/Desktop/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/index.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/contact.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/index.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/fandangoMusic/site/css/style.css",
@@ -248,7 +346,6 @@
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/EveryplayTest.cs",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Scripts/UIFramework/AboutScreenView.cs",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/androidRecord/Assets/Examples/Scripts/InteractiveConsole.cs",
-		"/Users/thomasrflyvholm/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/thomasrflyvholm/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/new_issues/app/views/issues/index.html.erb",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/rubyTest/new_issues/app/assets/stylesheets/application.css",
@@ -279,7 +376,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -295,134 +392,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"map",
-			"gif",
-			"navbar",
+			"forum",
+			"login",
+			"moz",
+			"forum",
+			"iso",
+			"474747",
+			"foru",
+			"forum",
+			"@",
 			"@media",
-			"navbar-brand",
-			"href",
-			"a",
-			"a href",
-			"single-project.html",
-			"text",
-			"preloader",
-			">\n",
-			"25%",
-			"25",
-			"24.98",
-			"width: 24",
-			"project-post",
-			"portfolio-box",
-			"hover-box",
-			"hover",
-			"hover-box",
+			"forum",
+			"#3",
+			"thead",
+			"tilbage",
 			"@media",
-			"localhost/gridstackdemo",
-			"localhost/gristackdemo",
-			"localhost",
-			"pageX",
-			"Start",
-			"pos",
-			"slider",
-			"pct",
-			"default_offset_pct",
-			"%",
-			"update",
-			"content",
-			"theme",
-			"a",
-			"page",
-			"another",
-			"main",
-			"stop",
-			"quit",
-			"scorePanel",
-			"StartGameCoroutine",
-			"rewardSequence",
-			"quitButton",
-			"WalkTapDirection",
-			"flurryBinding",
-			"//",
-			"flurryBinding",
-			"masterslider/",
-			"BOLIGALERT_PASSWORD",
-			"sidebar-left",
-			"sidebar-menu",
-			"top-navbar-inner",
-			"inner",
-			"wrapper",
-			"sidebar",
-			"nicescroller",
-			"btn-info",
-			"#",
-			"arrow",
-			"container",
-			"sm",
-			"rsaquo",
-			"more elements",
-			"col-xs-4",
-			"fluid",
-			"col-xs-4",
-			"fluid",
-			"col-xs-4",
-			"container-fluid",
-			"fluid",
-			"footer",
-			"page-content",
-			"container",
-			"container-fluid",
-			"btn-info",
-			"btn-blue",
-			"btn-",
-			"fa-long-arrow-right",
-			"arrow",
-			"fa-long-arrow-right",
-			"navbar",
-			"meta",
-			"png",
-			"#e24e4e",
-			"#",
-			".js",
-			"css",
-			"/mediaElement",
-			"url",
-			";",
-			" ",
-			"show feeds",
-			"newCoordina",
-			"fade",
-			"displayGUI",
-			"exit left",
-			"showObject",
-			"augmentat",
-			"overlay",
-			"bundleURL",
-			"template",
-			"gameObjectHolder",
-			"template",
-			"onInitialized",
-			"kidnapper",
-			"drHolder",
+			"media",
+			"@",
+			"back_text",
+			"tilbage",
+			"back_text: 'Back'",
+			"back_text",
+			"back",
+			"dropdown",
+			"back-link",
+			"\"back\"",
+			"'back'",
+			"back",
+			"title",
+			"\"back\"",
+			"back",
+			"js-generated",
 			"js",
-			"../",
-			"\"../\"",
-			"../",
-			"om os",
-			"onUpdate",
-			"lastResponse",
-			"isLoggedIn",
-			"showShutter",
-			"ScreenshotManager",
-			"showcamera",
-			"tex",
-			"shareYes",
-			"camera",
-			"cameraHolder",
-			"drawTe",
-			"arial",
-			"feedProperties",
-			"Feed",
-			"actionLink"
+			"back-link",
+			"back",
+			"link",
+			"back link",
+			"Back",
+			"back",
+			"back-link",
+			"back",
+			"placeho",
+			"left",
+			"top-bar-intra-section",
+			"top-bar-section",
+			"top-bar-intra",
+			"top-bar",
+			"top-bar-intra",
+			"@media",
+			"top-bar",
+			".main",
+			"menu",
+			"toggle-topbar",
+			"@media",
+			".main",
+			"margin-top:",
+			"top-bar-intra",
+			"height",
+			"hide",
+			"login",
+			"header",
+			"top-bar-intra",
+			"img",
+			"greeting",
+			"has-dropdown",
+			"had-dropdown",
+			"a",
+			"has-dropdown",
+			"right",
+			"place",
+			"right",
+			"place",
+			"@media",
+			"//",
+			"// MEDIA",
+			"media ",
+			"menu-icon",
+			"@media",
+			"dropdown",
+			"back",
+			"top-bar-intra-section",
+			"top-bar-section",
+			"right",
+			"font",
+			"height",
+			"top-bar",
+			".top-bar",
+			"top-bar",
+			"\"top-bar\"",
+			"top-bar",
+			"top-bar-section",
+			"top-bar",
+			"cd-close-form",
+			"h1",
+			"logo",
+			"slow",
+			"login",
+			"brugernavn",
+			"top-bar",
+			"child",
+			"tr",
+			"nth",
+			"222",
+			"table thead tr th",
+			"a {",
+			"a{",
+			"a",
+			"cd-login",
+			"form",
+			"loginButton",
+			"a",
+			"svg",
+			"login",
+			"hide",
+			"size",
+			"960px",
+			"1000px",
+			"small-7",
+			"min-width",
+			"min-width: 940",
+			"min-width:940",
+			"min-width:960",
+			"footer",
+			"width",
+			"body",
+			"ansog",
+			"right",
+			"font",
+			"button"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -430,6 +527,13 @@
 		"regex": true,
 		"replace_history":
 		[
+			"393939",
+			"back_text: 'Tilbage'",
+			"top-bar-intra",
+			".top-bar-intra",
+			"top-bar-intra",
+			"top-bar-section-intra",
+			"top-bar-intra",
 			"#",
 			"localhost:8888",
 			"#393939",
@@ -446,8 +550,142 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3037,
+								5530
+							]
+						],
+						"settings":
+						{
+							"hasHeader": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "forum.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4732,
+								4732
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<!doctype html>",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1968.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "scss/_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 62014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17185,
+								17185
+							]
+						],
+						"settings":
+						{
+							"hasHeader": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10904.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "js/modal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2988,
+								2988
+							]
+						],
+						"settings":
+						{
+							"hasHeader": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 926.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -468,11 +706,25 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.440586159032,
+			0.885848105971,
 			1.0
 		],
 		"rows":
@@ -489,7 +741,7 @@
 	"project": "doeoesite.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -523,7 +775,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 217.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

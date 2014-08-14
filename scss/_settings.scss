@@ -647,6 +647,7 @@ $include-html-global-classes: $include-html-classes;
                 font-size: 1em;
                 min-width:60px;
                 font-weight: bold;
+                line-height: 50px;
             }
             li:nth-child(2){
                 margin-right: 20px;
@@ -656,7 +657,7 @@ $include-html-global-classes: $include-html-classes;
             }
         }
     }
-    .forumintranet-row {
+    .forumintranet-post {
         height: 85px;
         border: solid 1px #ececec;
         border-bottom: 0;
@@ -709,32 +710,80 @@ $include-html-global-classes: $include-html-classes;
                 }
             }
             li:nth-child(4){
-                margin-right:35px;
+                margin-right:40px;
             }
             li:nth-child(3){
-                margin-right:20px;
+                margin-right:22px;
+                line-height: 65px;
+                font-size: 0.8em;
             }
         }
     }
-    .forumintranet-row:hover {
+    .forumintranet-post:hover {
         background-color: #f8f8f8;
     }
     .forumintranet-footer {
         background-color: #ececec;
         height: 40px;
         margin-bottom: 50px;
+        width: 100%;
+        line-height: 40px;
+        text-align: center;
+        font-size: 0.9em;
+        .expand {
+            margin-left: -40px;
+            color: #349fd6;
+            line-height: 40px;
+            margin-right: 5px;
+        }
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 740px) {
     .forumintranet {
-        .forumintranet-row{
+        .forumintranet-header {
+            li:nth-child(2){
+                display:none;
+            }
+        }
+        .forumintranet-footer {
+            .expand {
+                margin-left: 0px;
+                color: #349fd6;
+                line-height: 40px;
+                margin-right: 5px;
+            }
+    }
+        .forumintranet-post{
+            a {
+                -o-text-overflow: ellipsis;   /* Opera */
+                text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+                overflow:hidden;              /* don't show excess chars */
+                white-space:nowrap;           /* force single line */
+                width: 230px;  
+            }
+            ul {
+                li {
+                    .sub-text{
+                        margin-top: -52px;
+                    }
+                }
+            }
             .fa {
                 display: none;
+            }
+            li:nth-child(2){
+                margin-left:5px;
+            }
+
+            li:nth-child(3){
+                display:none;
             }
         }
     }
 }
+
+
 
 
 html, body, div, span, applet, object, iframe,
