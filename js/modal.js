@@ -12,10 +12,11 @@ jQuery(document).ready(function($){
 		$forgot_password_link = $form_login.find('.cd-form-bottom-message a'),
 		$back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
 		$main_nav = $('.loginmodal');
-		$modal_activator = $('.loginButton');
+		$login_modal = $('.loginButton');
+		$new_post_modal = $('.newPost');
 		$(".forgottenform").hide();
 
-	$modal_activator.on('click', function(event){
+	$login_modal.on('click', function(event){
 
 		if( $(event.target).is($main_nav) ) {
 			$(this).children('ul').toggleClass('is-visible');

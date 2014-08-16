@@ -31,8 +31,74 @@ $include-html-global-classes: $include-html-classes;
 
 //CHRISTIANS CSS:
 
-// Intranet
+// NewPostModal
 
+.cd-user-modal-container-post {
+  position: relative;
+  height:80%;
+  max-height: 600px;
+  width:80%;
+  max-width: 800px;
+  background-color: white;
+  margin: 3em auto 4em;
+  cursor: auto;
+  border-radius: 0.25em;
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+  transform: translateY(-30px);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-family: "isotek web", sans-serif;
+    h4 {
+      font-family: "isotek web", sans-serif;
+      margin: 10px 0 0 20px;
+      color: #393939;
+      display:inline-block;
+      font-size: 1.8em;
+      }
+      p {
+        display:inline-block;
+        font-size: 0.7em;
+        color: #ccc;
+        font-weight: normal;
+        margin-left: 5px;
+      }
+    }
+   .postForm{
+        .title {
+            border: solid 1px #ccc;
+            border-radius: 5px;
+            margin: 30px 0 0 20px;
+            max-width: 400px;
+            box-shadow: none;
+            min-height: 40px;
+            padding: 15px;
+            display:inline-block;
+        }
+        .kategori {
+            border: solid 1px #ccc;
+            border-radius: 5px;
+            margin: 30px 0 0 20px;
+            max-width: 300px;
+            box-shadow: none;
+            min-height: 40px;
+            background-color: #fff;
+            display:inline-block;
+        }  
+}
+.cd-user-modal.is-visible .cd-user-modal-container-post {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
 
 // LoginModal
 
@@ -185,6 +251,26 @@ $include-html-global-classes: $include-html-classes;
 }
 .cd-close-form:hover {
   background: url("../img/cd-icon-close-hover.svg") no-repeat center center;
+}
+.cd-close-form-post {
+  /* form X button on top right */
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0px;
+  background: url("../img/cd-icon-close-post.svg") no-repeat center center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-transition:.0.5s;
+  -ms-transition:.0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition:0.5s;
+}
+.cd-close-form-post:hover {
+  background: url("../img/cd-icon-close-post-hover.svg") no-repeat center center;
 }
 
 #cd-login, #cd-signup, #cd-reset-password {
@@ -489,7 +575,48 @@ $include-html-global-classes: $include-html-classes;
     }
 
     @media screen and (max-width: 640px){
+      .forumintranet {
+        .forumintranet-header {
+            li:nth-child(2){
+                display:none;
+            }
+        }
+        .forumintranet-footer {
+            .expand {
+                margin-left: 0px;
+                color: #349fd6;
+                line-height: 40px;
+                margin-right: 5px;
+            }
+        }
+        .forumintranet-post{
+            a {
+                -o-text-overflow: ellipsis;   /* Opera */
+                text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+                overflow:hidden;              /* don't show excess chars */
+                white-space:nowrap;           /* force single line */
+                width: 10px;  
+                font-size:0.7em;
+            }
+            ul {
+                li {
+                    .sub-text{
+                        margin-top: -10px;
+                    }
+                }
+            }
+            .fa {
+                display: none;
+            }
+            li:nth-child(2){
+                margin-left:5px;
+            }
 
+            li:nth-child(3){
+                display:none;
+            }
+        }
+    }
         footer {
             .row p{
                 font-size:0.8em;
@@ -514,7 +641,51 @@ $include-html-global-classes: $include-html-classes;
         }
     }
 
-//
+@media screen and (max-width: 440px){
+  .logo {
+    max-width:150px;
+  }
+
+  .forumintranet {
+        .forumintranet-header {
+            li:nth-child(2){
+                display:none;
+            }
+        }
+        .forumintranet-footer {
+            .expand {
+                margin-left: 0px;
+                color: #349fd6;
+                line-height: 40px;
+                margin-right: 5px;
+            }
+        }
+        .forumintranet-post{
+            a {
+                font-size:0.7em;
+            }
+            ul {
+                li {
+                  max-width: 160px;
+                    .sub-text{
+                        margin-top: -10px;
+                    }
+                }
+            }
+            .fa {
+                display: none;
+            }
+            li:nth-child(2){
+                margin-left:5px;
+            }
+
+            li:nth-child(3){
+                display:none;
+            }
+        }
+      }
+
+}
 
     .content{
         width: 100%;
@@ -661,9 +832,21 @@ $include-html-global-classes: $include-html-classes;
                 font-size: 0.9em;
                 margin: 0 15px 0 15px;
                 min-width: 20px;
+                a {
+                  display:block;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  width: 170px;
+                  overflow: hidden;
+                }
                 .sub-text {
                     margin-top: -25px;
                     font-size: 0.7em;
+                    display:block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 150px;
+                    overflow: hidden;
                     a {
                         text-decoration: underline;
                         color: #393939;
@@ -720,7 +903,7 @@ $include-html-global-classes: $include-html-classes;
                 line-height: 60px;
             }
             li:nth-child(2){
-                margin-right: 20px;
+                margin-right: 78px;
             }
             li:nth-child(3){
                 margin-right: 35px;
@@ -728,7 +911,7 @@ $include-html-global-classes: $include-html-classes;
         }
     }
     .forumintranet-post {
-        height: 85px;
+        height: 95px;
         border: solid 1px #ececec;
         border-bottom: 0;
         margin:0;
@@ -741,7 +924,7 @@ $include-html-global-classes: $include-html-classes;
             
         }
         .fa {
-            font-size: 2em;
+            font-size: 1.8em;
             color: #393939;
             margin-top: 26px;
         }
@@ -753,12 +936,17 @@ $include-html-global-classes: $include-html-classes;
                 line-height: 80px;
                 display: inline-block;
                 float:right;
-                font-size: 0.9em;
+                font-size: 0.8em;
                 margin: 0 15px 0 15px;
                 min-width: 20px;
                 .sub-text {
                     margin-top: -25px;
                     font-size: 0.8em;
+                    display:block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 170px;
+                    overflow: hidden;
                     a {
                         text-decoration: underline;
                         color: #393939;
@@ -775,15 +963,23 @@ $include-html-global-classes: $include-html-classes;
                 display:inline-block;
                 font-weight: bold;
                 a {
-                    display:inline-block;
                     color: #393939;
+                    display:block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 250px;
+                    overflow: hidden;
                 }
             }
             li:nth-child(4){
                 margin-right:40px;
             }
             li:nth-child(3){
-                margin-right:22px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 130px;
+                margin-right:30px;
                 line-height: 65px;
                 font-size: 0.8em;
             }
@@ -806,7 +1002,7 @@ $include-html-global-classes: $include-html-classes;
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
         .expand {
-            margin-left: -40px;
+            margin-left: 0;
             color: #349fd6;
             line-height: 40px;
         }
@@ -845,7 +1041,7 @@ $include-html-global-classes: $include-html-classes;
             ul {
                 li {
                     .sub-text{
-                        margin-top: -52px;
+                        margin-top: -10px;
                     }
                 }
             }
@@ -895,8 +1091,6 @@ $include-html-global-classes: $include-html-classes;
 .new-post {
     width:100%;
 }
-
-
 
 
 html, body, div, span, applet, object, iframe,
