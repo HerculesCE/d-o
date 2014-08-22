@@ -823,6 +823,35 @@ footer {
 }
 
 @media screen and (max-width: 440px) {
+  #postBy {
+    float: right;
+    line-height: 60px;
+    font-size:0.6em;
+}
+
+#postBy a {
+    color: #5cbff2;
+}
+  .postSubheader {
+    height: 40px;
+    background-color: #ebebeb;
+    p {
+        line-height: 40px;
+        display: inline-block;
+        font-size: 0.5em;
+    }
+    .iconColor {
+        color: #5cbff2;
+        line-height: 40px;
+        display: inline-block;
+        padding: 0 5px 0 5px;
+        font-size: 0.5em;
+    }
+    .iconColor:nth-child(1) {
+        margin-left: -184px;
+        padding-left: 0;
+    }
+}
     .logo {
         max-width: 150px;
     }
@@ -1109,6 +1138,59 @@ a:link {
     }
 }
 
+.linksSite {
+  .deleteSection {
+    margin: 5px 0 0 0;
+    float:right;
+    padding: 3px 2px 2px 3px;
+    border-radius:40px;
+    color: white;
+    border:1px solid #ce5050;
+    background-color: #ce5050;
+  }
+  .addButton {
+    margin: -10px 0 0 32px;
+    border-radius: 6px;
+  }
+  .linksHeader {
+    font-size: 1.5em;
+    font-weight: bold;
+    float:left;
+  }
+  ul {
+    margin-bottom: 50px;
+      .fa {
+        display: inline-block;
+        color: #349fd6;
+        font-size: 1.4em;
+        margin: 0 10px 0 0;
+      }
+      h3 {
+        display:inline-block;
+        font-size: 1em;
+      }
+    li {
+      margin: 5px 0 0 0;
+      a {
+        color: #393939;
+        margin: 5px 0 0 0px;
+        .deleteSection {
+          color: #ce5050;
+          float: left; 
+          display:inline-block;
+          font-size: 0.8em;
+          margin: 4px 5px 0 0;
+          background-color: white;
+          border: none;
+        }
+        .editSection {
+          color: #742b7d;
+        }
+      }
+    }
+  }
+}
+
 .reply-modal {
   visibility:hidden;
 }
@@ -1126,6 +1208,7 @@ a:link {
     float: left;
     font-weight: bold;
     line-height: 60px;
+    word-wrap: break;
 }
 
 #postBy {
@@ -1300,6 +1383,36 @@ a:link {
 }
 
 @media only screen and (max-width: 740px) {
+
+#postBy {
+    float: right;
+    line-height: 60px;
+    font-size:0.7em;
+}
+
+#postBy a {
+    color: #5cbff2;
+}
+  .postSubheader {
+    height: 40px;
+    background-color: #ebebeb;
+    p {
+        line-height: 40px;
+        display: inline-block;
+        font-size: 0.6em;
+    }
+    .iconColor {
+        color: #5cbff2;
+        line-height: 40px;
+        display: inline-block;
+        padding: 0 5px 0 5px;
+        font-size: 0.5em;
+    }
+    .iconColor:nth-child(1) {
+        margin-left: -184px;
+        padding-left: 0;
+    }
+}
     .forumintranet {
         .forumintranet-header {
             li:nth-child(2) {
