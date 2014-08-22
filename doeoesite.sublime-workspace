@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"p",
+				"p	Tag"
+			],
+			[
 				"forumintran",
 				"forumintranet-row"
 			],
@@ -67,7 +71,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7633,
+				"buffer_size": 7712,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,7 +79,7 @@
 			"file": "forum.html",
 			"settings":
 			{
-				"buffer_size": 7538,
+				"buffer_size": 13043,
 				"line_ending": "Unix",
 				"name": "<!doctype html>"
 			}
@@ -84,7 +88,7 @@
 			"file": "scss/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 62014,
+				"buffer_size": 71393,
 				"line_ending": "Unix"
 			}
 		},
@@ -92,7 +96,7 @@
 			"file": "js/modal.js",
 			"settings":
 			{
-				"buffer_size": 3270,
+				"buffer_size": 3297,
 				"line_ending": "Unix"
 			}
 		}
@@ -100,9 +104,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 172.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
 			[
 				"topbar",
 				"Snippet: ZURB Foundation 5 Topbar"
@@ -150,10 +158,6 @@
 			[
 				"powerc",
 				"PowerCursors: Activate all cursors"
-			],
-			[
-				"color",
-				"Colorsublime: Install Theme"
 			],
 			[
 				"",
@@ -236,7 +240,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 406.0
+		"width": 457.0
 	},
 	"console":
 	{
@@ -257,8 +261,9 @@
 	},
 	"file_history":
 	[
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/intranet.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/scss/foundation/components/_top-bar-intra.scss",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/scss/_settings.scss",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/intranet.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/js/foundation.min.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/js/foundation.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/js/foundation/foundation.topbar.js",
@@ -392,6 +397,73 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ellip",
+			"ellip'",
+			"ellip",
+			"intra",
+			"modal",
+			"640",
+			"logo",
+			"post",
+			"Brugernavn",
+			"sub-text",
+			"footer",
+			"header",
+			"@",
+			"ellip",
+			"@med",
+			"elli",
+			"@",
+			"740",
+			"brugernavn",
+			"post",
+			"intra",
+			"cd-close-form",
+			"inputTop",
+			"font",
+			"container",
+			"container-post",
+			"container",
+			"cd-user-modal",
+			"notifica",
+			"#lol",
+			"sidebar",
+			"last-child",
+			"footer",
+			"forumintra",
+			"3000x3000",
+			"new-post",
+			"header-link",
+			"footer",
+			"@media",
+			"footer",
+			"moz",
+			"li:nth",
+			"notification",
+			"profile-menu",
+			"lock",
+			"name",
+			"right",
+			"main",
+			"right",
+			".fa",
+			"fa {",
+			"fa{",
+			"fa{}",
+			"fa {}",
+			"fa",
+			"hover",
+			"intra",
+			"forum",
+			"@media",
+			"profile",
+			"forum",
+			"img",
+			"profile",
+			"profile-img-small",
+			"profile",
+			"profile-img",
+			"forumintranet-row",
 			"forum",
 			"login",
 			"moz",
@@ -452,74 +524,7 @@
 			"hide",
 			"login",
 			"header",
-			"top-bar-intra",
-			"img",
-			"greeting",
-			"has-dropdown",
-			"had-dropdown",
-			"a",
-			"has-dropdown",
-			"right",
-			"place",
-			"right",
-			"place",
-			"@media",
-			"//",
-			"// MEDIA",
-			"media ",
-			"menu-icon",
-			"@media",
-			"dropdown",
-			"back",
-			"top-bar-intra-section",
-			"top-bar-section",
-			"right",
-			"font",
-			"height",
-			"top-bar",
-			".top-bar",
-			"top-bar",
-			"\"top-bar\"",
-			"top-bar",
-			"top-bar-section",
-			"top-bar",
-			"cd-close-form",
-			"h1",
-			"logo",
-			"slow",
-			"login",
-			"brugernavn",
-			"top-bar",
-			"child",
-			"tr",
-			"nth",
-			"222",
-			"table thead tr th",
-			"a {",
-			"a{",
-			"a",
-			"cd-login",
-			"form",
-			"loginButton",
-			"a",
-			"svg",
-			"login",
-			"hide",
-			"size",
-			"960px",
-			"1000px",
-			"small-7",
-			"min-width",
-			"min-width: 940",
-			"min-width:940",
-			"min-width:960",
-			"footer",
-			"width",
-			"body",
-			"ansog",
-			"right",
-			"font",
-			"button"
+			"top-bar-intra"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -527,6 +532,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"forumintranet-post",
 			"393939",
 			"back_text: 'Tilbage'",
 			"top-bar-intra",
@@ -559,15 +565,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7633,
+						"buffer_size": 7712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3037,
-								5530
+								3694,
+								3694
 							]
 						],
 						"settings":
@@ -578,10 +584,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1239.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -590,27 +596,30 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7538,
+						"buffer_size": 13043,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4732,
-								4732
+								4662,
+								4662
 							]
 						],
 						"settings":
 						{
 							"auto_name": "<!doctype html>",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"hasHeader": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1968.0,
+						"translation.y": 1985.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -625,29 +634,29 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 62014,
+						"buffer_size": 71393,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17185,
-								17185
+								20080,
+								20080
 							]
 						],
 						"settings":
 						{
 							"hasHeader": false,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10904.0,
+						"translation.y": 12833.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -662,15 +671,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3270,
+						"buffer_size": 3297,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2988,
-								2988
+								1137,
+								1137
 							]
 						],
 						"settings":
@@ -680,10 +689,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 926.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -723,8 +732,8 @@
 		"cols":
 		[
 			0.0,
-			0.440586159032,
-			0.885848105971,
+			0.283071346958,
+			0.587573540463,
 			1.0
 		],
 		"rows":
@@ -775,7 +784,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 131.0,
 	"status_bar_visible": false,
 	"template_settings":
 	{

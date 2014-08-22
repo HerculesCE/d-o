@@ -54,18 +54,20 @@
           <div class="main">
             <ul class="right">
               <div class="profile-menu">
+              <ul>
                 <li class="notification">
                   <i class="fa fa-envelope"></i>
                   <i class="count">2</i>
                 </li>
                 <li class="has-dropdown">
-                  <a href="#"><i>Velkommen, </i>Navn</a>
+                  <a href="#">Velkommen, <b>Navn</b></a>
                   <ul class="dropdown">
                     <li><a href="#">Profil</a></li>
                     <li><a href="#">Log ud</a></li>
                   </ul>
                 </li>
                 <li><img class="profile-img" src="http://placehold.it/3000x3000" /></li>
+              </ul>
               </div>
             </ul>
             <ul class="left">
@@ -106,7 +108,14 @@
        </div>
       </div>
       <div class="large-4 columns">
-         <button class="loginButton new-post"><i class="fa fa-pencil"></i> Nyt Indlæg</button>
+         <!-- 
+
+        NYT POST MODAL
+
+         <button class="loginButton"><i class="fa fa-pencil"></i> Nyt Indlæg</button>
+
+         -->
+         <button class="new-post"><i class="fa fa-pencil"></i> Nyt Indlæg</button>
       </div>
     </div>
     <div class="row">
@@ -241,7 +250,9 @@
       <div class="large-4 columns">
         <div class="forumsidebar senest-svar">
           <div class="forumsidebar-header">
+          <ul>
             <li>Seneste Indlæg</li>
+            </ul>
           </div>
            <div class="forumsidebar-post">
             <ul>
@@ -281,7 +292,9 @@
       <div class="large-4 columns">
         <div class="forumsidebar seneste-svar">
           <div class="forumsidebar-header">
+          <ul>
             <li>Seneste Svar</li>
+            </ul>
           </div>
           <div class="forumsidebar-post">
             <ul>
@@ -321,7 +334,9 @@
       <div class="large-4 columns">
         <div class="forumsidebar flest-svar">
           <div class="forumsidebar-header">
+          <ul>
             <li>Flest Svar</li>
+          </ul>
           </div>
           <div class="forumsidebar-post">
             <ul>
@@ -358,9 +373,8 @@
           </div>
         </div>
       </div>
-      <hr>
     </div><!-- /Content -->
-    <div class="footer"><!-- Footer -->
+    <div class="footer nonFront"><!-- Footer -->
       <div class="row">
         <div class="large-4 columns">
           <h4>Kontakt information</h4>

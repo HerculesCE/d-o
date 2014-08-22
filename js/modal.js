@@ -3,6 +3,7 @@
 
 jQuery(document).ready(function($){
 	var $form_modal = $('.cd-user-modal'),
+		$reply_modal = $('.cd-reply-modal'),
 		$form_login = $form_modal.find('#cd-login'),
 		$form_signup = $form_modal.find('#cd-signup'),
 		$form_forgot_password = $form_modal.find('#cd-reset-password'),
@@ -13,6 +14,7 @@ jQuery(document).ready(function($){
 		$back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),
 		$main_nav = $('.loginmodal');
 		$login_modal = $('.loginButton');
+		$reply_modal_button = $('.replyComment');
 		$new_post_modal = $('.newPost');
 		$(".forgottenform").hide();
 
@@ -25,6 +27,16 @@ jQuery(document).ready(function($){
 			$form_modal.addClass('is-visible');	
 			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
 		}
+	});
+
+	$reply_modal_button.on('click', function(event){
+			$reply_modal.addClass('is-visible');	
+	});
+
+	$('.cd-reply-modal').on('click', function(event){
+		if( $(event.target).is($reply_modal) || $(event.target).is('.cd-close-form') ) {
+			$reply_modal.removeClass('is-visible');
+		}	
 	});
 
 	$('.cd-user-modal').on('click', function(event){
