@@ -37,11 +37,6 @@ jQuery(document).ready(function($){
 		}
 	});
 
-	$file_link_button.on('click', function(event){
-		$file_link_modal.addClass('is-visible');
-		event.preventDefault();
-	});
-
 	$('.cd-file-link-modal').on('click', function(event){
 		if( $(event.target).is($file_link_modal) || $(event.target).is('.cd-close-form') ) {
 			$file_link_modal.removeClass('is-visible');
