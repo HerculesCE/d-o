@@ -4,6 +4,7 @@
 // HELPS STYLING THE CUSTOM UPLOAD BUTTON
 jQuery(document).ready(function($){
 	$('#file-url').bind("click" , function () {
+		console.log("upload file clicked");
         $('#file-picker').click();
     });
 // ASSIGN PICKER-VALUE TO PLACEHOLDER-ATTRIBUTE IN URL
