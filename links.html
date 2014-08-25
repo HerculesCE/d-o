@@ -10,20 +10,56 @@
   </head>
   <body>
 <!-- MODAL -->
-    <div class="cd-reply-modal"> 
-      <div class="cd-reply-modal-container-post">
+    <div class="cd-file-link-modal"> 
+      <div class="cd-file-link-modal-container-post">
       <a href="" class="cd-close-form-post">Luk</a>
         <div class="row">
           <div class="large-12 columns">
-            <h4>Skriv svar</h4>
-            <p>til DYNAMISK TEXT</p>
-            <div class="commentForm">
-<!--  PLACEHOLDER TEXT EDITOR -->
-              <img src="img/plchldr/textEdit.png" style="width:350px; margin: 10px 0 10px 20px" />
-<!--  /PLACEHOLDER TEXT EDITOR -->              
-              <textarea class="comment" placeholder="Skriv dit svar"></textarea>
-              <button class="replySend button">Send</button>
-            </div>
+          	<ul class="tabs" data-tab role="tablist">
+			  <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1"><h3>Tilføj Link</h3></a></li>
+			  <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2"><h3>Upload Fil</h3></a></li>
+			</ul>
+			<div class="tabs-content">
+				<section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+					<div class="row collapse">
+						<div class="small-3 large-2 columns">
+				      		<span class="prefix">Titel</span>
+				    	</div>
+				    	<div class="small-9 large-10 columns">
+				      		<input id="links-title" type="text" placeholder="Indtast titel på link">
+				    	</div>
+				  	</div>
+					<div class="row collapse">
+						<div class="small-3 large-2 columns">
+				      		<span class="prefix">http://</span>
+				    	</div>
+				    	<div class="small-9 large-10 columns">
+				      		<input id="links-url" type="text" placeholder="Indtast URL">
+				    	</div>
+				  	</div>
+				  	<button class="button medium">Tilføj link</button>
+				</section>
+				<section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+			    	<div class="row collapse">
+						<div class="small-3 large-2 columns">
+				      		<span class="prefix">Titel</span>
+				    	</div>
+				    	<div class="small-9 large-10 columns">
+				      		<input id="file-title" type="text" placeholder="Indtast titel på fil">
+				    	</div>
+				  	</div>
+					<div class="row collapse">
+						<div class="small-3 large-2 columns">
+				      		<span class="prefix">Fil</span>
+				    	</div>
+				    	<div class="small-9 large-10 columns">
+				      		<input id="file-picker" type="file">
+				      		<input id="file-url" type="text" placeholder="Tryk her for at vælge din fil" readonly="readonly">
+				    	</div>
+				  	</div>
+				  	<button class="button medium">Tilføj fil</button>
+			  	</section>
+			</div>
           </div>
         </div>
       </div>
@@ -107,27 +143,27 @@
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    		</ul>
 	    	</div>
@@ -138,31 +174,31 @@
 					<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    			<li>
 		    			<a><i class="deleteSection fa fa-times"></i></a>
 		    			<a><i class="deleteSection fa fa-pencil editSection"></i></a>
-		    			<a href="#">FAPS Database Link</a>
+		    			<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
 	    			</li>
 	    		</ul>
 	    	</div>
-	    	<button class="addButton button">Tilføj fil/link</button>
+	    	<button class="fileLink button">Tilføj fil/link</button>
 	    	<hr>
 	    	<div class="large-12 columns">
 	    		<p class="linksHeader">Diabasens oversigt</p>
@@ -171,22 +207,42 @@
 	    		<ul>
 	    			<i class="fa fa-sign-out"></i>
 	    			<h3>Links</h3>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
 	    		</ul>
 	    	</div>
 	    	<div class="large-6 columns">
 	    		<ul>
 	    			<i class="fa fa-download"></i>
 	    			<h3>Filer</h3>
-	    			<li><a href="#">FAPS Database sdkflskdmflksLink</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
-	    			<li><a href="#">FAPS Database Link</a></li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
+	    			<li>
+	    				<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Her fremvises URL'en til det givne link"><a href="#">FAPS Database Link</a></span>
+	    			</li>
 	    		</ul>
 	    	</div>
 	    </div>
@@ -239,5 +295,6 @@
     <script src="js/modal.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/upload.js"></script>
   </body>
 </html>

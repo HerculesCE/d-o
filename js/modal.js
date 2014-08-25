@@ -1,4 +1,4 @@
-// Modal.js for DØOsite
+// Modal.js for DOE Site
 // Thomas Flyvholm, 2014
 
 jQuery(document).ready(function($){
@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
 	var $form_modal = $('.cd-user-modal'),
 		$reply_modal = $('.cd-reply-modal'),
 		$new_post_modal = $('.cd-new-post-modal'),
+		$file_link_modal = $('.cd-file-link-modal');
 		$form_login = $form_modal.find('#cd-login'),
 		$form_signup = $form_modal.find('#cd-signup'),
 		$form_forgot_password = $form_modal.find('#cd-reset-password'),
@@ -17,10 +18,13 @@ jQuery(document).ready(function($){
 		$main_nav = $('.loginmodal');
 		$login_modal = $('.loginButton');
 		$reply_modal_button = $('.replyComment');
+		$file_link_button = $('.fileLink');
 		$new_post_button = $('.new-post');
 		$(".forgottenform").hide();
 // ENABLED ONCLICK FUNCTIONS
-// TODO: @optimization: Fix a better cancellation of windows
+// TODO: 	@optimization: Fix a better cancellation of windows
+// TODO: 	@addition: Complete remaining modals (css/js/html)
+// TODO: 	@optimization: Fix a better shift between modal-pages			
 	$login_modal.on('click', function(event){
 		if( $(event.target).is($main_nav) ) {
 			$(this).children('ul').toggleClass('is-visible');
@@ -30,6 +34,18 @@ jQuery(document).ready(function($){
 			$form_modal.addClass('is-visible');	
 			event.preventDefault();
 			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
+		}
+	});
+
+	$file_link_button.on('click', function(event){
+		$file_link_modal.addClass('is-visible');
+		event.preventDefault();
+	});
+
+	$('.cd-file-link-modal').on('click', function(event){
+		if( $(event.target).is($file_link_modal) || $(event.target).is('.cd-close-form') ) {
+			$file_link_modal.removeClass('is-visible');
+			event.preventDefault();
 		}
 	});
 
