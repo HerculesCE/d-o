@@ -1,48 +1,77 @@
-// Foundation by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
-
-//
-// FOUNDATION SETTINGS
-//
-
+// DOE SASS by Thomas Flyvholm
+// intoweb.dk
+// DOE SETTINGS
 // This is the default html and body font-size for the base rem value.
 // $rem-base: 16px;
-
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
-
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
-
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
 // $base-font-size: 100%;
-
 // The $base-font-size is 100% while $base-line-height is 150%
 // $base-line-height: 150%;
-
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
-
 // $include-print-styles: true;
 $include-html-global-classes: $include-html-classes;
 
-//GLOBAL:
+//GLOBAL Selectors:
+.forceWidth {
+    min-width: 100%;
+}
+.cd-close-form {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0px;
+    background: url("../img/cd-icon-close.svg") no-repeat center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-transition: 0 0.5s;
+    -ms-transition: 0 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.cd-close-form:hover {
+    background: url("../img/cd-icon-close-hover.svg") no-repeat center center;
+}
+.cd-close-form-post {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0px;
+    background: url("../img/cd-icon-close-post.svg") no-repeat center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-transition: 0 0.5s;
+    -ms-transition: 0 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.cd-close-form-post:hover {
+    background: url("../img/cd-icon-close-post-hover.svg") no-repeat center center;
+}
 .nonFront {
     margin-top: 50px;
 }
-
-//
-
-//LOGIN MODAL:
-.cd-user-modal-container-post {
+// MODALS (new-post, reply-to-post, login):
+// TODO: @CRUCIAL: Add links-modals, ansøg-modals
+    // new-post modal
+.cd-new-post-modal-container-post {
     position: relative;
     height: 80%;
-    max-height: 600px;
+    max-height: 530px;
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
     background-color: white;
     margin: 3em auto 4em;
     cursor: auto;
@@ -74,6 +103,121 @@ $include-html-global-classes: $include-html-classes;
         margin-left: 5px;
     }
 }
+.cd-new-post-modal.is-visible .cd-new-post-modal-container-post {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.cd-new-post-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.8);
+    z-index: 3;
+    overflow-y: auto;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0, visibility 0 0.3s;
+    -moz-transition: opacity 0.3s 0, visibility 0 0.3s;
+    transition: opacity 0.3s 0, visibility 0 0.3s;
+    .forgottenform {
+        .inputTop {
+            border-radius: 5px;
+            box-shadow: none;
+            border: none;
+            margin: 15px 0 -2px 0;
+            width: 100%;
+        }
+    }
+    .postForm {
+      max-width: 600px;
+      margin-left: 20px;
+      margin-top: 15px;
+      button {
+        margin: 15px 0 0 0;
+      }
+      input {
+        margin-top: 10px;
+        max-width: 350px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 0 15px 0 0;
+      }
+      textarea {
+        border-radius: 5px;
+        margin: 15px 0 0 0;
+        min-height: 200px;
+      }
+      select {
+        margin-top: 10px;
+        border-radius: 5px;
+        max-width: 230px; 
+        display: inline-block;
+      }
+    }
+}
+.cd-new-post-modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0, visibility 0 0;
+    -moz-transition: opacity 0.3s 0, visibility 0 0;
+    transition: opacity 0.3s 0, visibility 0 0;
+}
+.cd-new-post-modal.is-visible .cd-new-post-modal-container {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.cd-new-post-modal-container {
+    position: relative;
+    height: 80%;
+    max-height: 400px;
+    width: 80%;
+    max-width: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #349fd6;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #349fd6 0%, #2e7497 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #349fd6), color-stop(100%, #2e7497));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #349fd6 0%, #2e7497 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #349fd6 0%, #2e7497 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #349fd6 0%, #2e7497 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #349fd6 0%, #2e7497 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#349fd6', endColorstr='#2e7497',GradientType=0 );
+    /* IE6-9 */
+    margin: 3em auto 4em;
+    cursor: auto;
+    border-radius: 0.25em;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+    // reply-modal
 .cd-reply-modal-container-post {
     position: relative;
     height: 80%;
@@ -111,41 +255,6 @@ $include-html-global-classes: $include-html-classes;
         margin-left: 5px;
     }
 }
-
-.commentForm {
-    .comment {
-        border: solid 1px #ccc;
-        border-radius: 5px;
-        margin: 5px 0 0 20px;
-        max-width: 92%;
-        box-shadow: none;
-        min-height: 120px;
-        
-        display: inline-block;
-    }
-    .kategori {
-        border: solid 1px #ccc;
-        border-radius: 5px;
-        margin: 30px 0 0 20px;
-        max-width: 300px;
-        box-shadow: none;
-        min-height: 40px;
-        background-color: #fff;
-        display: inline-block;
-    }
-    .replySend {
-      margin: 10px 0 0 20px;
-    }
-}
-
-.cd-user-modal.is-visible .cd-user-modal-container-post {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-}
-
 .cd-reply-modal.is-visible .cd-user-modal-container-post {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -153,7 +262,6 @@ $include-html-global-classes: $include-html-classes;
     -o-transform: translateY(0);
     transform: translateY(0);
 }
-
 .cd-reply-modal {
     position: fixed;
     top: 0;
@@ -220,7 +328,6 @@ $include-html-global-classes: $include-html-classes;
         }
     }
 }
-
 .cd-reply-modal.is-visible {
     visibility: visible;
     opacity: 1;
@@ -228,7 +335,6 @@ $include-html-global-classes: $include-html-classes;
     -moz-transition: opacity 0.3s 0, visibility 0 0;
     transition: opacity 0.3s 0, visibility 0 0;
 }
-
 .cd-reply-modal.is-visible .cd-user-modal-container {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -236,7 +342,6 @@ $include-html-global-classes: $include-html-classes;
     -o-transform: translateY(0);
     transform: translateY(0);
 }
-
 .cd-reply-modal-container {
     position: relative;
     height: 80%;
@@ -279,7 +384,76 @@ $include-html-global-classes: $include-html-classes;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-
+.commentForm {
+    .comment {
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        margin: 5px 0 0 20px;
+        max-width: 92%;
+        box-shadow: none;
+        min-height: 120px;
+        
+        display: inline-block;
+    }
+    .kategori {
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        margin: 30px 0 0 20px;
+        max-width: 300px;
+        box-shadow: none;
+        min-height: 40px;
+        background-color: #fff;
+        display: inline-block;
+    }
+    .replySend {
+      margin: 10px 0 0 20px;
+    }
+}
+    // login-modal
+.cd-user-modal-container-post {
+    position: relative;
+    height: 80%;
+    max-height: 600px;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    margin: 3em auto 4em;
+    cursor: auto;
+    border-radius: 0.25em;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    font-family: "isotek web", sans-serif;
+    h4 {
+        font-family: "isotek web", sans-serif;
+        margin: 10px 0 0 20px;
+        color: #393939;
+        display: inline-block;
+        font-size: 1.8em;
+    }
+    p {
+        display: inline-block;
+        font-size: 0.7em;
+        color: #ccc;
+        font-weight: normal;
+        margin-left: 5px;
+    }
+}
+.cd-user-modal.is-visible .cd-user-modal-container-post {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
 .loginLogo {
     text-align: center;
     img {
@@ -287,7 +461,6 @@ $include-html-global-classes: $include-html-classes;
         margin: 50px 0 0 0;
     }
 }
-
 .cd-user-modal {
     position: fixed;
     top: 0;
@@ -354,7 +527,6 @@ $include-html-global-classes: $include-html-classes;
         }
     }
 }
-
 .cd-user-modal.is-visible {
     visibility: visible;
     opacity: 1;
@@ -362,7 +534,6 @@ $include-html-global-classes: $include-html-classes;
     -moz-transition: opacity 0.3s 0, visibility 0 0;
     transition: opacity 0.3s 0, visibility 0 0;
 }
-
 .cd-user-modal.is-visible .cd-user-modal-container {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -370,7 +541,6 @@ $include-html-global-classes: $include-html-classes;
     -o-transform: translateY(0);
     transform: translateY(0);
 }
-
 .cd-user-modal-container {
     position: relative;
     height: 80%;
@@ -413,67 +583,20 @@ $include-html-global-classes: $include-html-classes;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-
-.cd-close-form {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0;
-    top: 0px;
-    background: url("../img/cd-icon-close.svg") no-repeat center center;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-transition: 0 0.5s;
-    -ms-transition: 0 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-}
-
-.cd-close-form:hover {
-    background: url("../img/cd-icon-close-hover.svg") no-repeat center center;
-}
-
-.cd-close-form-post {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0;
-    top: 0px;
-    background: url("../img/cd-icon-close-post.svg") no-repeat center center;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-transition: 0 0.5s;
-    -ms-transition: 0 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-}
-
-.cd-close-form-post:hover {
-    background: url("../img/cd-icon-close-post-hover.svg") no-repeat center center;
-}
-
 #cd-login, #cd-signup, #cd-reset-password {
     display: none;
 }
-
 #cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
     display: block;
 }
-
-//
-
-//MEDIA
+    // media queries for modals
 @media only screen and (min-width: 600px) {
     .cd-user-modal-container {
         margin: 4em auto;
     }
 }
 
-//TESTIMONIALS:
+// TESTIMONIALS
 #testimonial {
     .testiheader {
         height: 66px;
@@ -527,6 +650,7 @@ $include-html-global-classes: $include-html-classes;
     }
 }
 
+// FOOTERS
 .footer {
     position: relative;
     width: 100%;
@@ -571,7 +695,6 @@ $include-html-global-classes: $include-html-classes;
         }
     }
 }
-
 footer {
     position: relative;
     width: 100%;
@@ -594,11 +717,9 @@ footer {
     }
 }
 
-.forceWidth {
-    min-width: 100%;
-}
-
+// GENERAL
 .top-bar {
+    margin-top: 50px;
     .container {
         max-width: 960px;
         margin: 0 auto;
@@ -611,11 +732,9 @@ footer {
         font-weight: bold;
     }
 }
-
 .imgHide {
     display: block;
 }
-
 .row {
     .columns {
         margin-top: 20px;
@@ -631,15 +750,9 @@ footer {
         font-weight: bold;
     }
 }
-
 .slider {
     max-height: 200px;
 }
-
-.top-bar {
-    margin-top: 50px;
-}
-
 .loginsection {
     .button {
         font-family: 'Istok-Web', sans-serif;
@@ -672,24 +785,22 @@ footer {
         color: #393939;
     }
 }
-
 .top-bar-section {
     margin: 0 auto;
     max-width: 960px;
     .right {}
 }
-
 .logo {
     float: left;
     max-width: 293px;
 }
 
+// MEDIA QUERIES GENERAL
 @media screen and (max-width: 2641px) {
     .ansogMenu {
         display: none;
     }
 }
-
 @media screen and (max-width: 960px) {
     footer {
         .row p {
@@ -755,7 +866,6 @@ footer {
         }
     }
 }
-
 @media screen and (max-width: 640px) {
     .forumintranet {
         .forumintranet-header {
@@ -821,7 +931,6 @@ footer {
         width: 100%;
     }
 }
-
 @media screen and (max-width: 440px) {
   #postBy {
     float: right;

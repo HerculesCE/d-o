@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
-</head>
-  <body><!-- MODAL -->
-    <div class="cd-user-modal"> 
-      <div class="cd-user-modal-container-post">
+  </head>
+  <body>
+<!-- MODAL -->
+    <div class="cd-new-post-modal"> 
+      <div class="cd-new-post-modal-container-post">
       <a href="" class="cd-close-form-post">Luk</a>
         <div class="row">
           <div class="large-12 columns">
@@ -25,25 +26,31 @@
                 <option>Nummer to</option>
                 <option>Osv.</option>
               </select>
+<!-- PLACEHOLDER TEXT EDITOR -->
+              <img src="img/plchldr/textEdit.png" style="width:350px;"/>
+<!-- /PLACEHOLDER TEXT EDITOR -->
+              <textarea placeholder="Skriv dit indlæg"></textarea>
+              <button class="postSend button">Send</button>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- /MODAL -->
-    <div class="header"><!-- Header -->
+    </div>
+<!-- /MODAL -->
+    <div class="header">
+<!-- Header -->
       <div class="content">
         <div class="logo">
           <img src="img/logo.png" alt="Danske Øjenlægers Organisation"/>
         </div>
         <div class="loginsection">
-              <!-- LOGIN BUTTON UDEN MODAL
-              <li class="button"><i class="fa fa-lock" style="padding-right: 5px;"> </i> Login</li>
-              -->
               <li class="button"><i class="fa fa-long-arrow-left" style="padding-right: 5px;"> </i> Log ud</li>
         </div>
       </div>
-    </div><!-- /Header -->
-      <nav class="top-bar-intra" data-topbar style="margin-top: 50px"><!-- TopNav -->
+    </div>
+<!-- /HEADER -->
+      <nav class="top-bar-intra" data-topbar style="margin-top: 50px">
+<!-- TOPNAV -->
         <ul class="title-area">
           <li class="name">
             <a href=""></a>
@@ -89,8 +96,10 @@
             </ul>
           </div>
         </section>
-      </nav><!-- /TopNav -->
-    <div class="row"><!-- Content -->
+      </nav>
+<!-- /TOPNAV -->
+    <div class="row">
+<!-- CONTENT -->
       <div class="large-8 columns">
        <div class="header-links">
        
@@ -108,13 +117,6 @@
        </div>
       </div>
       <div class="large-4 columns">
-         <!-- 
-
-        NYT POST MODAL
-
-         <button class="loginButton"><i class="fa fa-pencil"></i> Nyt Indlæg</button>
-
-         -->
          <button class="new-post"><i class="fa fa-pencil"></i> Nyt Indlæg</button>
       </div>
     </div>
@@ -373,8 +375,10 @@
           </div>
         </div>
       </div>
-    </div><!-- /Content -->
-    <div class="footer nonFront"><!-- Footer -->
+    </div>
+<!-- /CONTENT -->
+    <div class="footer nonFront">
+<!-- FOOTER -->
       <div class="row">
         <div class="large-4 columns">
           <h4>Kontakt information</h4>
@@ -414,7 +418,8 @@
           <p class="right">by <b>INTO</b>WEB</p>
         </div>
       </div>
-    </footer><!-- /Footer -->
+    </footer>
+<!-- /FOOTER -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/modal.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
