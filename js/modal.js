@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
 	var $form_modal = $('.cd-user-modal'),
 		$reply_modal = $('.cd-reply-modal'),
 		$new_post_modal = $('.cd-new-post-modal'),
+		$new_news_modal = $('.cd-news-modal'),
 		$file_link_modal = $('.cd-file-link-modal');
 		$new_fucking_modal = $('.cd-category-modal');
 		$form_login = $form_modal.find('#cd-login'),
@@ -21,6 +22,7 @@ jQuery(document).ready(function($){
 		$reply_modal_button = $('.replyComment');
 		$file_link_button = $('.fileLink');
 		$new_post_button = $('.new-post');
+		$new_news_button = $('.new-post-news');
 		$new_fucking_button = $('.catAdd');
 		$(".forgottenform").hide();
 // ENABLED ONCLICK FUNCTIONS
@@ -58,6 +60,18 @@ jQuery(document).ready(function($){
 			$reply_modal.removeClass('is-visible');
 			event.preventDefault();
 		}	
+	});
+
+	$new_news_button.on('click', function(event){
+		$new_news_modal.addClass('is-visible');
+		event.preventDefault();
+	});
+
+	$('.cd-news-modal').on('click', function(event){
+		if( $(event.target).is($new_news_modal) || $(event.target).is('.cd-close-form') ) {
+			$new_news_modal.removeClass('is-visible');
+			event.preventDefault();
+		}
 	});
 
 	$new_fucking_button.on('click', function(event){
