@@ -7,6 +7,7 @@ jQuery(document).ready(function($){
 		$reply_modal = $('.cd-reply-modal'),
 		$new_post_modal = $('.cd-new-post-modal'),
 		$file_link_modal = $('.cd-file-link-modal');
+		$new_fucking_modal = $('.cd-category-modal');
 		$form_login = $form_modal.find('#cd-login'),
 		$form_signup = $form_modal.find('#cd-signup'),
 		$form_forgot_password = $form_modal.find('#cd-reset-password'),
@@ -20,6 +21,7 @@ jQuery(document).ready(function($){
 		$reply_modal_button = $('.replyComment');
 		$file_link_button = $('.fileLink');
 		$new_post_button = $('.new-post');
+		$new_fucking_button = $('.catAdd');
 		$(".forgottenform").hide();
 // ENABLED ONCLICK FUNCTIONS
 // TODO: 	@optimization: Fix a better cancellation of windows
@@ -36,6 +38,8 @@ jQuery(document).ready(function($){
 			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
 		}
 	});
+
+	
 
 	$('.cd-file-link-modal').on('click', function(event){
 		if( $(event.target).is($file_link_modal) || $(event.target).is('.cd-close-form') ) {
@@ -54,6 +58,18 @@ jQuery(document).ready(function($){
 			$reply_modal.removeClass('is-visible');
 			event.preventDefault();
 		}	
+	});
+
+	$new_fucking_button.on('click', function(event){
+		$new_fucking_modal.addClass('is-visible');
+		event.preventDefault();
+	});
+
+	$('.cd-category-modal').on('click', function(event){
+		if( $(event.target).is($new_fucking_modal) || $(event.target).is('.cd-close-form') ) {
+			$new_fucking_modal.removeClass('is-visible');
+			event.preventDefault();
+		}
 	});
 
 	$new_post_button.on('click', function(event){

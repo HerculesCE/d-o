@@ -6,6 +6,7 @@
     <title>DØO</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -31,6 +32,25 @@
 <!-- /PLACEHOLDER TEXT EDITOR -->
               <textarea placeholder="Skriv dit indlæg"></textarea>
               <button class="postSend button">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cd-category-modal"> 
+      <div class="cd-category-modal-container-post">
+      <a href="" class="cd-close-form-post">Luk</a>
+        <div class="row">
+          <div class="large-12 columns spacings">
+              <div class="row collapse">
+                  <div class="small-3 large-2 columns">
+                    <span class="prefix">Titel</span>
+                  </div>
+                  <div class="small-9 large-10 columns">
+                      <input id="kategori-title" type="text" placeholder="Indtast titel på kategori">
+                </div>
+                <button class="button small">Tilføj kategori</button>
+              </div>
             </div>
           </div>
         </div>
@@ -102,10 +122,6 @@
 <!-- CONTENT -->
       <div class="large-8 columns">
        <div class="header-links">
-       
-        <a href="#">Se ulæste indlæg</a>
-        <a href="#">Se aktive emner</a>
-        
        </div>
        <div class="breadcrumb">
         <i class="fa fa-home"></i>
@@ -243,10 +259,15 @@
             </ul>
           </div>
           <div class="forumintranet-footer">
-          <a href="">
-            <p><span class="expand">Vis alle</span> <span class="counter">(337 indlæg)</span></p>
+            <a href="">
+              <p><span class="expand">Vis alle</span> <span class="counter">(337 indlæg)</span></p>
             </a>
           </div>
+          <button class="catAdd">
+            <!-- <li class="fa fa-plus-circle"></li>-->
+            <img src="img/plusIcon.png" />
+            Tilføj ny kategori
+          </button>
         </div>
       </div>
       <div class="large-4 columns">
