@@ -65,12 +65,21 @@ $glowing-effect-color: #349fd6;
             color: white;
             font-size: 1em;
             font-weight: bold;
+            -o-transition: 0 0.5s;
+            -ms-transition: 0 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+        }
+        a:hover {
+            .fa {
+                color: #349fd6;
+            }
         }
         a {
             padding-left: 10px;
         }
         a:nth-child(6){
-            padding-left: 50px;
+            margin-left: 50px;
         }
         .activeA {
             color: #349fd6;
