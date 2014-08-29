@@ -11,32 +11,54 @@
   </head>
   <body>
 <!-- MODAL -->
-    <div class="cd-new-post-modal"> 
+<!-- NEW POST -->
+    <div class="cd-new-post-modal">
       <div class="cd-new-post-modal-container-post">
-      <a href="" class="cd-close-form-post">Luk</a>
+        <a href="" class="cd-close-form-post">Luk</a>
         <div class="row">
           <div class="large-12 columns">
-            <h4>
-              Opret indlæg
+            <h4>Opret indlæg
             </h4>
             <div class="postForm">
-              <input class="title" type="text" name="postTitle" placeholder="Overskrift">
-              <select class="kategori medium">
-                <option>Vælg en kategori</option>
-                <option>Nummer et</option>
-                <option>Nummer to</option>
-                <option>Osv.</option>
+              <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
+              <select id="forumCategory" class="kategori medium"> 
+                <option value="0" >Vælg en kategori</option>
+                <option value="2">Bestyrelse</option>
+                <option value="1">Arkiv</option>
               </select>
-<!-- PLACEHOLDER TEXT EDITOR -->
-              <img src="img/plchldr/textEdit.png" style="width:350px;"/>
-<!-- /PLACEHOLDER TEXT EDITOR -->
-              <textarea placeholder="Skriv dit indlæg"></textarea>
+              <div id="wysihtml5-toolbar" style="display: none;">
+                <div class="a-data-holder">
+                  <a data-wysihtml5-command="bold"><i class="fa fa-bold"></i></a>
+                  <a data-wysihtml5-command="italic"><i class="fa fa-italic"></i></a>
+                  <a data-wysihtml5-command="underline"><i class="fa fa-underline"></i></a>
+                  <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1"><l class="fa fa-header">1</i></a>
+                  <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2"><l class="fa fa-header">2</i></a>
+                  <a data-wysihtml5-command="insertImage"><i class="fa fa-image"></i></a>
+                  <a data-wysihtml5-command="insertVideo"><i class="fa fa-youtube-play"></i></a>
+                  <a data-wysihtml5-command="createLink"><i class="fa fa-link"></i></a>
+                </div>
+                <div data-wysihtml5-dialog="insertImage" style="display: none;">
+                  <label>
+                    <input class="image-upload" data-wysihtml5-dialog-field="src" placeholder="Indtast billede-URL">
+                  </label>
+                  <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a>&nbsp;<a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button></a>
+                </div>
+                <div data-wysihtml5-dialog="createLink" style="display: none;">
+                  <label>
+                    <input class="link-add" data-wysihtml5-dialog-field="href" value="" placeholder="Indtast URL" class="text">
+                  </label>
+                  <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a> <a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button</a>
+                </div>
+              </div>
+              <textarea id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
               <button class="postSend button">Send</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+<!-- /NEW POST -->
+<!-- NEW CATEGORY -->
     <div class="cd-category-modal"> 
       <div class="cd-category-modal-container-post">
       <a href="" class="cd-close-form-post">Luk</a>
@@ -48,7 +70,7 @@
                   </div>
                   <div class="small-9 large-10 columns">
                       <input id="kategori-title" type="text" placeholder="Indtast titel på kategori">
-                </div>
+                  </div>
                 <button class="button small">Tilføj kategori</button>
               </div>
             </div>
@@ -56,6 +78,7 @@
         </div>
       </div>
     </div>
+<!-- /NEW CATEGORY -->
 <!-- /MODAL -->
     <div class="header">
 <!-- Header -->
@@ -441,9 +464,17 @@
       </div>
     </footer>
 <!-- /FOOTER -->
+    <script src="js/wysihtml5/parser_rules/advanced.js"></script>
+    <script src="js/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/modal.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      var editor = new wysihtml5.Editor("wysihtml5-textarea", {
+        toolbar:      "wysihtml5-toolbar",
+        parserRules:  wysihtml5ParserRules
+      });
+    </script>
   </body>
 </html>

@@ -47,6 +47,50 @@ $input-prefix-font-color: #ebebeb;
 $input-prefix-font-color-alt: #ebebeb;
 $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
+
+// TEXT EDITO
+#wysihtml5-toolbar {
+    background-color: #393939;
+    min-height: 40px;
+    border-radius: 5px;
+    .button {
+        margin: 10px 0 10px 10px;
+    }
+    .closer {
+        margin-left: 5px;
+    }
+    .a-data-holder {
+        padding-top: 12px;
+        .fa {
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        a {
+            padding-left: 10px;
+        }
+        a:nth-child(6){
+            padding-left: 50px;
+        }
+        .activeA {
+            color: #349fd6;
+        }
+    }
+    .image-upload {
+        margin: 10px 10px 0 10px;
+        border: none;
+        height: 35px;
+        padding: 10px;
+        min-width: 210px;
+    }
+    .link-add {
+        margin: 10px 10px 0 10px;
+        border: none;
+        height: 35px;
+        padding: 10px;
+        min-width: 210px;
+    }
+}
 // FORM LINK
 #links-title {
   margin-top: -25px;
@@ -797,6 +841,16 @@ $glowing-effect-color: #349fd6;
         border-radius: 5px;
         display: inline-block;
         margin: 0 15px 0 0;
+      }
+      #toolbar {
+        background-color: #ebebeb;
+        a {
+            .bold {
+                width: 10px;
+                height: 10px;
+                background: url("../img/iconClose-hover.png") no-repeat center center;
+            } 
+        }
       }
       textarea {
         border-radius: 5px;
