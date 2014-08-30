@@ -49,6 +49,7 @@ $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
 
 // TEXT EDITO
+
 #wysihtml5-toolbar {
     background-color: #393939;
     min-height: 40px;
@@ -61,6 +62,24 @@ $glowing-effect-color: #349fd6;
     }
     .a-data-holder {
         padding-top: 12px;
+        .wysihtml5-command-active {
+            color: #349fd6;
+            i {
+                color: #349fd6;
+            }
+            .fa {
+                color: #349fd6;
+            }
+        }
+        .wysihtml5-command-dialog-opened {
+            color: #349fd6;
+            i {
+                color: #349fd6;
+            }
+            .fa {
+                color: #349fd6;
+            }
+        }
         .fa {
             color: white;
             font-size: 1em;
