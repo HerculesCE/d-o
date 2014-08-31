@@ -21,7 +21,7 @@
             </h4>
             <div class="postForm">
               <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
-              <select id="forumCategory" class="kategori medium"> 
+              <select id="forumCategory" class="kategori"> 
                 <option value="0" >Vælg en kategori</option>
                 <option value="2">Bestyrelse</option>
                 <option value="1">Arkiv</option>
@@ -473,6 +473,17 @@
       var editor = new wysihtml5.Editor("wysihtml5-textarea", {
         toolbar:      "wysihtml5-toolbar",
         parserRules:  wysihtml5ParserRules
+      });
+    </script>
+    <script>
+      $( ".fa-image" ).on( "click", function() {
+        var modal_height = $(".cd-new-post-modal-container-post").height();
+        console.log(modal_height);
+        if (modal_height < 600 ) {
+          $( ".cd-new-post-modal-container-post" ).css( "height", "+=100" );
+        } else {
+          $( ".cd-new-post-modal-container-post" ).css( "height", "530" );
+        }
       });
     </script>
   </body>

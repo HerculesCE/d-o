@@ -446,7 +446,7 @@ $glowing-effect-color: #349fd6;
         select {
             margin-top: 10px;
             border-radius: 5px;
-            max-width: 230px;
+            max-width: 200px;
             display: inline-block;
         }
     }
@@ -677,10 +677,8 @@ $glowing-effect-color: #349fd6;
 // new-news modal
 .cd-news-modal-container-post {
     position: relative;
-    height: 80%;
-    max-height: 530px;
-    width: 80%;
-    max-width: 700px;
+    min-height: 530px;
+    width: 700px;
     background-color: white;
     margin: 3em auto 4em;
     cursor: auto;
@@ -835,10 +833,8 @@ $glowing-effect-color: #349fd6;
 // new-post modal
 .cd-new-post-modal-container-post {
     position: relative;
-    height: 80%;
-    max-height: 530px;
-    width: 80%;
-    max-width: 700px;
+    min-height: 530px;
+    width: 670px;
     background-color: white;
     margin: 3em auto 4em;
     cursor: auto;
@@ -1003,10 +999,8 @@ $glowing-effect-color: #349fd6;
 // reply-modal
 .cd-reply-modal-container-post {
     position: relative;
-    height: 80%;
-    max-height: 450px;
-    width: 80%;
-    max-width: 700px;
+    min-height: 450px;
+    width: 700px;
     background-color: white;
     margin: 3em auto 4em;
     cursor: auto;
