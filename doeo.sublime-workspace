@@ -80,29 +80,42 @@
 			}
 		},
 		{
+			"file": "forumPost.html",
+			"settings":
+			{
+				"buffer_size": 11168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nyheder.html",
+			"settings":
+			{
+				"buffer_size": 11841,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "scss/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 104838,
+				"buffer_size": 106356,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/mayflower/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 261,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "// Modal.js for DOE Site\n// Thomas Flyvholm, 2014\n\njQuery(document).ready(function($) {\n    // USABLE VARIABLES\n    var $form_modal = $('.cd-user-modal'),\n        $reply_modal = $('.cd-reply-modal'),\n        $new_post_modal = $('.cd-new-post-modal'),\n        $new_news_modal = $('.cd-news-modal'),\n        $file_link_modal = $('.cd-file-link-modal');\n    $new_fucking_modal = $('.cd-category-modal');\n    $form_login = $form_modal.find('#cd-login'),\n    $form_signup = $form_modal.find('#cd-signup'),\n    $form_forgot_password = $form_modal.find('#cd-reset-password'),\n    $form_modal_tab = $('.cd-switcher'),\n    $tab_login = $form_modal_tab.children('li').eq(0).children('a'),\n    $tab_signup = $form_modal_tab.children('li').eq(1).children('a'),\n    $forgot_password_link = $form_login.find('.cd-form-bottom-message a'),\n    $back_to_login_link = $form_forgot_password.find('.cd-form-bottom-message a'),\n    $main_nav = $('.loginmodal');\n    $login_modal = $('.loginButton');\n    $reply_modal_button = $('.replyComment');\n    $file_link_button = $('.fileLink');\n    $new_post_button = $('.new-post');\n    $new_news_button = $('.new-post-news');\n    $new_fucking_button = $('.catAdd');\n    $(\".forgottenform\").hide();\n    // ENABLED ONCLICK FUNCTIONS\n    // TODO: 	@optimization: Fix a better cancellation of windows\n    // TODO: 	@addition: Complete remaining modals (css/js/html)\n    // TODO: 	@optimization: Fix a better shift between modal-pages			\n    $login_modal.on('click', function(event) {\n        if ($(event.target).is($main_nav)) {\n            $(this).children('ul').toggleClass('is-visible');\n            event.preventDefault();\n        } else {\n            $main_nav.children('ul').removeClass('is-visible');\n            $form_modal.addClass('is-visible');\n            event.preventDefault();\n            ($(event.target).is('.cd-signup')) ? signup_selected() : login_selected();\n        }\n    });\n\n\n\n    $('.cd-file-link-modal').on('click', function(event) {\n        if ($(event.target).is($file_link_modal) || $(event.target).is('.cd-close-form')) {\n            $file_link_modal.removeClass('is-visible');\n            event.preventDefault();\n        }\n    });\n\n    $reply_modal_button.on('click', function(event) {\n        $reply_modal.addClass('is-visible');\n        event.preventDefault();\n    });\n\n    $('.cd-reply-modal').on('click', function(event) {\n        if ($(event.target).is($reply_modal) || $(event.target).is('.cd-close-form')) {\n            $reply_modal.removeClass('is-visible');\n            event.preventDefault();\n        }\n    });\n\n    $new_news_button.on('click', function(event) {\n        $new_news_modal.addClass('is-visible');\n        event.preventDefault();\n    });\n\n    $('.cd-news-modal').on('click', function(event) {\n        if ($(event.target).is($new_news_modal) || $(event.target).is('.cd-close-form')) {\n            $new_news_modal.removeClass('is-visible');\n            event.preventDefault();\n        }\n    });\n\n    $new_fucking_button.on('click', function(event) {\n        $new_fucking_modal.addClass('is-visible');\n        event.preventDefault();\n    });\n\n    $('.cd-category-modal').on('click', function(event) {\n        if ($(event.target).is($new_fucking_modal) || $(event.target).is('.cd-close-form')) {\n            $new_fucking_modal.removeClass('is-visible');\n            event.preventDefault();\n        }\n    });\n\n    $new_post_button.on('click', function(event) {\n        $new_post_modal.addClass('is-visible');\n        event.preventDefault();\n    });\n\n    $('.cd-new-post-modal').on('click', function(event) {\n        if ($(event.target).is($new_post_modal) || $(event.target).is('.cd-close-form')) {\n            $new_post_modal.removeClass('is-visible');\n            event.preventDefault();\n        }\n    });\n\n    $('.cd-user-modal').on('click', function(event) {\n        if ($(event.target).is($form_modal) || $(event.target).is('.cd-close-form')) {\n            $form_modal.removeClass('is-visible');\n            event.preventDefault();\n        }\n    });\n    // HIDE/SHOW SECTIONS (TEMPORARILY DEPRECATED)\n    $(\".a\").click(function() {\n        $(\".loginform\").fadeOut(\"slow\", function() {\n            $(\".forgottenform\").fadeIn(\"slow\", function() {\n                $(\".b\").click(function() {\n                    $(\".forgottenform\").fadeOut(\"slow\", function() {\n                        $(\".loginform\").fadeIn(\"slow\");\n                    });\n                });\n            });\n        });\n    });\n    $(document).keyup(function(event) {\n        if (event.which == '27') {\n            $form_modal.removeClass('is-visible');\n        }\n    });\n\n    function login_selected() {\n        $form_login.addClass('is-selected');\n        $form_signup.removeClass('is-selected');\n        $form_forgot_password.removeClass('is-selected');\n        $tab_login.addClass('selected');\n        $tab_signup.removeClass('selected');\n    }\n\n    function signup_selected() {\n        $form_login.removeClass('is-selected');\n        $form_signup.addClass('is-selected');\n        $form_forgot_password.removeClass('is-selected');\n        $tab_login.removeClass('selected');\n        $tab_signup.addClass('selected');\n    }\n\n    function forgot_password_selected() {\n        $form_login.removeClass('is-selected');\n        $form_signup.removeClass('is-selected');\n        $form_forgot_password.addClass('is-selected');\n    }\n    //IE9 PLACEHOLDER FALLBACK\n    if (!Modernizr.input.placeholder) {\n        $('[placeholder]').focus(function() {\n            var input = $(this);\n            if (input.val() == input.attr('placeholder')) {\n                input.val('');\n            }\n        }).blur(function() {\n            var input = $(this);\n            if (input.val() == '' || input.val() == input.attr('placeholder')) {\n                input.val(input.attr('placeholder'));\n            }\n        }).blur();\n        $('[placeholder]').parents('form').submit(function() {\n            $(this).find('[placeholder]').each(function() {\n                var input = $(this);\n                if (input.val() == input.attr('placeholder')) {\n                    input.val('');\n                }\n            })\n        });\n    }\n});\n// SCROLL CURSOR TO END OF LINE\njQuery.fn.putCursorAtEnd = function() {\n    return this.each(function() {\n        if (this.setSelectionRange) {\n            var len = $(this).val().length * 2;\n            this.setSelectionRange(len, len);\n        } else {\n            $(this).val($(this).val());\n        }\n    });\n};",
 			"file": "js/modal.js",
-			"file_size": 5631,
-			"file_write_time": 130538877595439614,
 			"settings":
 			{
 				"buffer_size": 6478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/jquery/src/ajax/jsonp.js",
+			"settings":
+			{
+				"buffer_size": 2524,
 				"line_ending": "Unix"
 			}
 		}
@@ -110,12 +123,20 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 65.0,
 		"selected_items":
 		[
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"beaty",
+				"SassBeautify"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
 			],
 			[
 				"beautify",
@@ -124,10 +145,6 @@
 			[
 				"sass",
 				"Set Syntax: Sass"
-			],
-			[
-				"color",
-				"Colorsublime: Install Theme"
 			],
 			[
 				"colors",
@@ -258,7 +275,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 242.0
+		"width": 254.0
 	},
 	"console":
 	{
@@ -278,8 +295,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/mayflower/Documents/Udvikling/d-o"
+	],
 	"file_history":
 	[
+		"/home/mayflower/Documents/Udvikling/d-o/scss/_settings.scss",
+		"/home/mayflower/Documents/Udvikling/d-o/node_modules/grunt/node_modules/.bin/js-yaml",
+		"/home/mayflower/Documents/Udvikling/d-o/bower_components/modernizr/feature-detects/json.js",
+		"/home/mayflower/Documents/Udvikling/d-o/node_modules/grunt-sass/node_modules/node-sass/node_modules/mocha/lib/reporters/json-stream.js",
+		"/home/mayflower/Documents/Udvikling/d-o/bower_components/jquery/dist/jquery.js",
+		"/home/mayflower/Documents/Udvikling/d-o/js/modal.js",
 		"/home/mayflower/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/intranet.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/forumPost.html",
@@ -401,12 +428,11 @@
 		"/Users/thomasrflyvholm/Desktop/interview.m",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Editor/UpdateXcodeEveryplay.pyc",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/EveryplayTest.cs",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/Everyplay.cs"
+		"/Users/thomasrflyvholm/Documents/Udvikling/_yscan_app/_projects/androidRecord/Assets/Plugins/Everyplay/Scripts/EveryplayTest.cs"
 	],
 	"find":
 	{
-		"height": 21.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -422,6 +448,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"postContent",
+			"postFOrm",
+			"postForm",
+			"postSubheader",
+			"postSubheade",
+			"cd",
+			"postForm",
+			"width",
+			"postTitle",
+			"elli",
+			"postSubHeader",
+			"postHeader",
+			"her er tit",
+			"header-links",
 			"kategoriAdd",
 			"moz",
 			"vis alle",
@@ -535,21 +575,7 @@
 			"back",
 			"dropdown",
 			"back-link",
-			"\"back\"",
-			"'back'",
-			"back",
-			"title",
-			"\"back\"",
-			"back",
-			"js-generated",
-			"js",
-			"back-link",
-			"back",
-			"link",
-			"back link",
-			"Back",
-			"back",
-			"back-link"
+			"\"back\""
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -585,7 +611,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -601,8 +627,8 @@
 						"selection":
 						[
 							[
-								6260,
-								6260
+								4561,
+								4561
 							]
 						],
 						"settings":
@@ -610,6 +636,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -620,31 +666,16 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -655,16 +686,11 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
 							"hasHeader": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
@@ -672,33 +698,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2119.0,
+						"translation.y": 1443.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "scss/_settings.scss",
+					"file": "forumPost.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 104838,
+						"buffer_size": 11168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								939,
-								939
+								5865,
+								5865
 							]
 						],
 						"settings":
@@ -706,6 +726,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -716,11 +741,11 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -731,16 +756,105 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "nyheder.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2936,
+								2936
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -751,55 +865,21 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
-							"hasHeader": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 254.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/mayflower/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								183,
-								183
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -810,6 +890,101 @@
 			[
 				{
 					"buffer": 3,
+					"file": "scss/_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54308,
+								54308
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 27871.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
 					"file": "js/modal.js",
 					"semi_transient": false,
 					"settings":
@@ -821,12 +996,166 @@
 						"selection":
 						[
 							[
-								1389,
-								1389
+								500,
+								500
 							]
 						],
 						"settings":
 						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "bower_components/jquery/src/ajax/jsonp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -834,7 +1163,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -865,22 +1194,28 @@
 				1
 			],
 			[
-				2,
 				0,
-				3,
-				1
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.317842078908,
-			0.699267013623,
+			0.515631268814,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.592453760744,
 			1.0
 		]
 	},
@@ -901,16 +1236,24 @@
 		"selected_items":
 		[
 			[
+				"js",
+				"bower_components/jquery/src/ajax/jsonp.js"
+			],
+			[
 				"modal",
 				"js/modal.js"
 			],
 			[
-				"intra",
-				"intranet.html"
+				"nyheder",
+				"nyheder.html"
 			],
 			[
 				"forumpost",
 				"forumPost.html"
+			],
+			[
+				"intra",
+				"intranet.html"
 			],
 			[
 				"links",
@@ -935,6 +1278,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},

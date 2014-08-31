@@ -440,6 +440,9 @@ $glowing-effect-color: #349fd6;
             margin: 15px 0 0 0;
             min-height: 200px;
         }
+        h4 {
+            margin-left: -30px;
+        }
         select {
             margin-top: 10px;
             border-radius: 5px;
@@ -1952,6 +1955,12 @@ a:link {
                 border: 1px solid #ebebeb;
                 border-bottom: 4px solid #349fd6;
                 padding: 25px;
+                width: 100%;
+                a {
+                    max-width: 200px;
+                    word-wrap: break-word;
+                }
+                word-wrap: break-word;
                 -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
                 -ms-transition: all 0.5s ease;
@@ -2164,6 +2173,8 @@ a:link {
 .postContent {
     border: 1px solid #ebebeb;
     padding: 25px 50px 10px 50px;
+    width: 100%;
+    word-wrap: break-word; 
 }
 
 .forumintranet {
