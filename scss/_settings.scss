@@ -30,11 +30,11 @@ $has-tip-font-weight: normal;
 // TABS (add-link, upload-file)
 $tabs-navigation-padding: rem-calc(8);
 $tabs-navigation-bg-color: white;
-$tabs-navigation-active-bg-color: #f9f9f9;
-$tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
-$tabs-navigation-font-color: #349fd6;
-$tabs-navigation-active-font-color: $tabs-navigation-font-color;
-$tabs-navigation-font-size: 0.8em;
+$tabs-navigation-active-bg-color: white;
+$tabs-navigation-hover-bg-color: white;
+$tabs-navigation-font-color: #393939;
+$tabs-navigation-active-font-color: #393939;
+$tabs-navigation-font-size: 1.1em;
 $tabs-navigation-font-family: "Istok Web", sans-serif;
 $tabs-content-margin-bottom: rem-calc(24);
 $tabs-content-padding: 0px;
@@ -51,6 +51,73 @@ $input-prefix-font-color: #ebebeb;
 $input-prefix-font-color-alt: #ebebeb;
 $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
+$switch-height-lrg: 2.3rem;
+
+// Links MODAL
+#linksFileUpload {
+    margin-bottom: -20px;
+}
+.links-file-upload {
+    margin-top: -25px;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Vælg fil';
+  line-height: 25px;
+  display:inline-block;
+  color: white;
+  font-size:1.2em;
+  width:100%;
+  display: inline-block;
+  background-color: #349fd6;
+  text-align: center;
+  line-height: 37px;
+  height: 37px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  -o-transition: 0 0.5s;
+  -ms-transition: 0 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.custom-file-input:hover::before {
+    background-color: #007295;
+
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.checkboxHolder {
+    margin-top: -25px;
+}
+.moveUp {
+    margin-top: 500px;
+}
+.fileUploadHolder {
+    margin-top: -25px;
+}
+input[type=checkbox] {
+    margin: 50px;
+    -webkit-appearance:button;
+    border: 5px solid #393939;
+    background-color:white;
+    color:#393939;
+    width:37px;
+    height:37px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-color: #65d57f;
+    border: 5px solid #393939;
+}
+
+input[type=checkbox]:hover {
+    //
+}
 
 // TEXT EDIT
 
@@ -352,10 +419,8 @@ $glowing-effect-color: #349fd6;
 // file-link modal
 .cd-file-link-modal-container-post {
     position: relative;
-    height: 80%;
-    max-height: 250px;
-    width: 80%;
-    max-width: 500px;
+    min-height: 150px;
+    width: 500px;
     background-color: white;
     margin: 3em auto 4em;
     cursor: auto;

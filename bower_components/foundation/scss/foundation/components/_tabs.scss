@@ -37,6 +37,10 @@ $tabs-vertical-navigation-margin-bottom: 1.25rem !default;
         margin-bottom: 0 !important;
         list-style: none;
         float: $default-float;
+         -o-transition: 0 0.5s;
+  -ms-transition: 0 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
         > a {
           display: block;
           background: $tabs-navigation-bg-color;
@@ -44,9 +48,9 @@ $tabs-vertical-navigation-margin-bottom: 1.25rem !default;
           padding: $tabs-navigation-padding $tabs-navigation-padding * 2;
           font-family: $tabs-navigation-font-family;
           font-size: $tabs-navigation-font-size;
-          &:hover { background: $tabs-navigation-hover-bg-color; }
+          &:hover {color: #349fd6;background: $tabs-navigation-hover-bg-color; }
         }
-        &.active a { background: $tabs-navigation-active-bg-color; color:$tabs-navigation-active-font-color; }
+        &.active a { border-bottom:2px solid #349fd6; background: $tabs-navigation-active-bg-color; color:$tabs-navigation-active-font-color; }
       }
       &.radius {
         dd:first-child, .tab:first-child {

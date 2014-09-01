@@ -44,10 +44,10 @@ jQuery(document).ready(function($) {
     // MIDLERTIDIG MODAL FOR FILER
 
 
-
-
-    // MIDLERTIDIG DONE
-
+    $file_link_button.on('click', function(event) {
+        $file_link_modal.addClass('is-visible');
+        event.preventDefault();
+    });
 
     $('.cd-file-link-modal').on('click', function(event) {
         if ($(event.target).is($file_link_modal) || $(event.target).is('.cd-close-form')) {
@@ -55,6 +55,8 @@ jQuery(document).ready(function($) {
             event.preventDefault();
         }
     });
+
+    // MIDLERTIDIG DONE
 
     $reply_modal_button.on('click', function(event) {
         $reply_modal.addClass('is-visible');
