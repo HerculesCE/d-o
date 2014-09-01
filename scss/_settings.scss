@@ -243,6 +243,7 @@ $glowing-effect-color: #349fd6;
 
 .nyhedsFoto {
     max-width: 540px;
+    margin-bottom: 15px;
 }
 
 .nyhedsTitel {
@@ -276,6 +277,10 @@ $glowing-effect-color: #349fd6;
     margin-left: 80px;
     float: left;
     font-size: 14px;
+    width: 100%;
+    p {
+        max-width: 540px;
+    }
 }
 
 .lineSpacer {

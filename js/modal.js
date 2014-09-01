@@ -41,6 +41,12 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // MIDLERTIDIG MODAL FOR FILER
+
+
+
+
+    // MIDLERTIDIG DONE
 
 
     $('.cd-file-link-modal').on('click', function(event) {
