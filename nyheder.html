@@ -121,7 +121,9 @@
     <!-- CONTENT -->
     <div class="row">
       <div class="large-8 columns">
-        <img src="http://placehold.it/950x90&text=[Tre knapper med en class=active på den valgte]">
+        <a href="#" class="new-post-3 Alle npActive">Alle</a>
+        <a href="#" class="new-post-3 DOE">DØO</a>
+        <a href="#" class="new-post-3 FAPS">FAPS</a>
       </div>
       <div class="large-4 columns">
         <button class="new-post-news"><i class="fa fa-pencil"></i>Tilføj nyhed</button>
@@ -254,6 +256,23 @@
     $( ".cd-news-modal-container-post" ).css( "height", "530" );
     }
     });
+    </script>
+    <script>
+      $('.Alle').click(function(){
+          $(".Alle").addClass('npActive');
+          $(".DOE").removeClass('npActive');
+          $(".FAPS").removeClass('npActive');
+      });
+      $('.DOE').click(function(){
+          $(".DOE").addClass('npActive');
+          $(".Alle").removeClass('npActive');
+          $(".FAPS").removeClass('npActive');
+      });
+      $('.FAPS').click(function(){
+          $(".FAPS").addClass('npActive');
+          $(".DOE").removeClass('npActive');
+          $(".Alle").removeClass('npActive');
+      });
     </script>
   </body>
 </html>
