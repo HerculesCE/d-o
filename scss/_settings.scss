@@ -53,6 +53,100 @@ $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
 $switch-height-lrg: 2.3rem;
 
+img.grayscale { filter: grayscale(gray); }
+//Intra FORSIDE
+.bestyrelse-header {
+    .p-header {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+.bestyrelse {
+    .p-header {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    text-align: center;
+    .fa {
+        font-size: 6em;
+        color: #4b8eb4;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        background-color: #76b6d9;
+        border-radius: 300px;
+    }
+    .titel {
+        margin-top: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .navn {
+        font-weight: normal;
+        margin-bottom: 0px;
+    }
+    .stilling {
+        color: #349fd6;
+        font-style: italic;
+        margin-bottom: 0px;
+    }
+    .info-tekst {
+        ul {
+            margin-top: 10px;
+            li {
+                
+                font-size: 0.7em;
+            }
+        }
+    }
+}
+.bestyrelse:nth-child(1){
+    .fa {
+        //float: right;
+    }
+}
+.bestyrelse:last-child {
+    margin-bottom: 300px;
+}
+.quicklinks {
+    text-align: center;
+    ul {
+        margin-top: 40px;
+        li {
+            img {
+                width: 175px;
+                margin-left: 20px;
+                margin-right: 20px;
+                -o-transition: 0 0.5s;
+                -ms-transition: 0 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+            }
+            img:nth-child(2){
+                margin:0;
+            }
+            img:hover {
+                opacity:0.5;
+            }
+            display: inline-block;
+        }
+        li(1) {
+            float: right;
+        }
+        li(2) {
+        }
+        li(3) {
+            float: left;
+        }
+    }
+}
+
 // Links MODAL
 #linksFileUpload {
     margin-bottom: -20px;
@@ -2385,6 +2479,89 @@ a:link {
     }
     .forumintranet-footer:hover {
         background-color: #d7d7d7;
+    }
+}
+
+.forumNyheder {
+    font-family: "Istok Web", sans-serif;
+    margin-top: -20px;
+    .forumNyheder-header {
+        background-color: #349fd6;
+        height: 60px;
+        margin-bottom: 25px;
+        ul {
+            li {
+                color: white;
+                text-transform: none;
+                font-weight: normal;
+                line-height: 60px;
+                display: inline-block;
+                float: right;
+                font-size: 0.9em;
+                margin: 0 15px 0 15px;
+                min-width: 20px;
+                text-align: right;
+            }
+            li:nth-child(1) {
+                float: left;
+                margin-left: 5px;
+                font-size: 1em;
+                min-width: 60px;
+                font-weight: bold;
+                line-height: 60px;
+            }
+            li:nth-child(2) {
+                margin-right: 78px;
+            }
+            li:nth-child(3) {
+                margin-right: 35px;
+            }
+        }
+    }
+    .forumNyheder-post {
+        min-height: 88.5px;
+        border: solid 1px #ececec;
+        border-bottom: 0;
+        margin-top: -25px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        ul {
+            li {
+                color: #393939;
+                text-transform: none;
+                display: inline-block;
+                float: right;
+                font-size: 1em;
+                min-width: 20px;
+                max-width: 480px;
+            }
+            li:nth-child(1) {
+                margin-top: 28px;
+                float: left;
+                margin-left: 5px;
+                a {
+                    color: #393939;
+                    font-weight: bold;
+                }
+            }
+            li:nth-child(2) {
+                float: right;
+                line-height: 80px;
+                display: inline-block;
+                color: #349fd6;
+                font-size: 0.7em;
+                margin-right: 20px;
+            }
+        }
+    }
+    .forumNyheder-post:last-child {
+        border-bottom: solid 1px #ebebeb;
+    }
+    .forumNyheder-post:hover {
+        background-color: #f8f8f8;
     }
 }
 
