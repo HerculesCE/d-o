@@ -2,6 +2,10 @@
 // Thomas Flyvholm, 2014
 
 jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
     // USABLE VARIABLES
     var $form_modal = $('.cd-user-modal'),
         $reply_modal = $('.cd-reply-modal'),
