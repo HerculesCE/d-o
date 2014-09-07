@@ -53,7 +53,44 @@ $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
 $switch-height-lrg: 2.3rem;
 
-img.grayscale { filter: grayscale(gray); }
+// GLOBAL MODALS
+$reveal-overlay-bg: rgba(black, .65);
+$reveal-overlay-bg-old: black;
+.modal {
+    h2 {
+        margin-bottom: 30px;
+    }
+    .button {
+        margin-right: 15px;
+        background-color: #65d57f;
+        height: 38px;
+        line-height: 5px;
+        -o-transition: 0 0.5s;
+        -ms-transition: 0 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        a {
+            color: white;
+            font-weight: normal;
+            font-size: 0.9em;
+        }
+    }
+    .button:hover {
+        background-color:#43bb68;
+    }
+    .cancel {
+        background-color:#dd4545;
+    }
+    .cancel:hover {
+        background-color:#b03737;
+    }
+    #prefix-form {
+        margin-top: -25px;
+    }
+    #prefix-form-equal {
+        margin-top: -25px;
+    }
+}
 //Intra FORSIDE
 .bestyrelse-header {
     .p-header {
@@ -112,7 +149,7 @@ img.grayscale { filter: grayscale(gray); }
     }
 }
 .bestyrelse:last-child {
-    margin-bottom: 300px;
+    margin-bottom: -20px;
 }
 
 .quicklinks ul li:nth-child(1){
@@ -148,6 +185,10 @@ img.grayscale { filter: grayscale(gray); }
     }
 }
 
+// GLOBAL 
+.messageInput {
+    min-height: 150px;
+}
 // Links MODAL
 #linksFileUpload {
     margin-bottom: -20px;
@@ -263,8 +304,8 @@ input[type=checkbox]:hover {
         a {
             padding-left: 10px;
         }
-        a:nth-child(6) {
-            margin-left: 50px;
+        a:nth-child(4) {
+            margin-left: 30px;
         }
         .activeA {
             color: #349fd6;
@@ -2340,7 +2381,7 @@ a:link {
 
 .postContent {
     border: 1px solid #ebebeb;
-    padding: 25px 50px 10px 50px;
+    padding: 25px 25px 10px 25px;
     width: 100%;
     word-wrap: break-word; 
 }

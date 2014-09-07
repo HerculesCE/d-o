@@ -11,69 +11,6 @@
   </head>
   <body>
     <!-- MODAL -->
-    <div class="cd-new-post-modal">
-      <div class="cd-new-post-modal-container-post">
-        <a href="" class="cd-close-form-post">Luk</a>
-        <div class="row">
-          <div class="large-12 columns">
-            <h4>
-            Opret indlæg
-            </h4>
-            <div class="postForm">
-              <input class="title" type="text" name="postTitle" placeholder="Overskrift">
-              <select class="kategori medium">
-                <option>Vælg en kategori</option>
-                <option>Nummer et</option>
-                <option>Nummer to</option>
-                <option>Osv.</option>
-              </select>
-              <!-- PLACEHOLDER TEXT EDITOR -->
-              <img src="img/plchldr/textEdit.png" style="width:350px;"/>
-              <!-- /PLACEHOLDER TEXT EDITOR -->
-              <textarea placeholder="Skriv dit indlæg"></textarea>
-              <button class="postSend button">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="skiftEmailModal" class="modal reveal-modal tiny" data-reveal>
-      <h2>Skift Email</h2>
-      <div class="row collapse">
-        <div class="small-3 large-2 columns">
-          <span class="prefix">Email</span>
-        </div>
-        <div class="small-9 large-10 columns">
-          <input id="links-title" type="text" placeholder="Indtast din nye Email">
-        </div>
-      </div>
-      <div class="button"><a href="">Godkend</a></div><div class="button cancel"><a href="">Annuller</a></div>
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
-
-    <div id="skiftPassModal" class="modal reveal-modal tiny" data-reveal data-abide>
-      <h2>Skift kodeord</h2>
-      <div class="row collapse">
-        <div class="small-3 large-2 columns">
-          <span class="prefix">Kode</span>
-        </div>
-        <div class="small-9 large-10 columns">
-          <input id="prefix-form-equal" required pattern="[a-zA-Z]+" type="password" placeholder="Indtast din ønskede kode">
-          <small class="error">Din kode skal indeholde minimum x tegn og y tal.</small>
-        </div>
-        <div class="small-3 large-2 columns">
-          <span class="prefix">Gentag</span>
-        </div>
-        <div class="small-9 large-10 columns">
-          <input id="prefix-form" type="password" required pattern="[a-zA-Z]+" data-equalto="prefix-form-equal"placeholder="Gentag din ønskede kode">
-          <small class="error">Dine indtastninger matcher ikke.</small>
-        </div>
-      </div>
-      <div class="button"><a href="">Godkend</a></div><div class="button cancel"><a href="">Annuller</a></div>
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
-
     <!-- /MODAL -->
     <div class="header">
       <!-- Header -->
@@ -136,31 +73,23 @@
     <!-- /TOPNAV -->
     <!-- CONTENT -->
     <div class="row">
+      <div class="large-12 columns">
+        <h3>Kontakt Danske Øjenlægers Organisation</h3>
+      </div>
+    </div>
+    <div class="row">
       <div class="large-8 columns">
-        <div class="user-profile">
-          <img class="profilePic" src="http://placehold.it/300x300" />
-          <p class="profileName">Jack Nicholson</p>
-          <ul>
-            <li>
-              <p class="name">E-mail</p>
-              <p class="attribute">old.jack@hollywood.nice</p>
-              <a href="#" data-reveal-id="skiftEmailModal" class="activator">Skift</a>
-            </li>
-            <li>
-              <p class="name">Password</p>
-              <p class="attribute">************</p>
-              <a href="#" data-reveal-id="skiftPassModal" class="activator">Skift</a>
-            </li>
-            <li>
-              <p class="name">Notifikationer</p>
-              <p class="description">Tillad notifikationer via e-mail</p>
-              <div class="notificationSwitch activator switch small">
-                <input id="notificationSwitcher" type="checkbox">
-                <label for="notificationSwitcher"></label>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <input type="text" placeholder="Indtast dit navn">
+        <input type="text" placeholder="Indtast din Email">
+        <textarea class="messageInput" placeholder="Indtast din besked"></textarea>
+        <button class="button medium">Send</button>
+      </div>
+      <div class="large-4 columns">
+        <ul>
+          <li>Danske Øjenlægers Organisation</li>
+          <li>Esplanaden 8C, 3. sal.</li>
+          <li>1263 København K</li>
+        </ul>
       </div>
     </div>
     <!-- /CONTENT -->
