@@ -1,0 +1,218 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+@import "global";
+
+//
+// @name _reveal-login.scss
+// @dependencies _global.scss
+//
+
+$include-html-reveal-login-classes: $include-html-classes !default;
+
+// We use these to control the style of the reveal-login overlay.
+$reveal-login-overlay-bg: rgba(#000, .45) !default;
+$reveal-login-overlay-bg-old: #000 !default;
+
+// We use these to control the style of the modal itself.
+$reveal-login-modal-bg: #349fd6 !default;
+$reveal-login-position-top: rem-calc(100) !default;
+$reveal-login-default-width: 80% !default;
+$reveal-login-modal-padding: rem-calc(20) !default;
+$reveal-login-box-shadow: 0 0 10px rgba(#000,.4) !default;
+
+// We use these to style the reveal-login close button
+$reveal-login-close-font-size: rem-calc(40) !default;
+$reveal-login-close-top: rem-calc(8) !default;
+$reveal-login-close-side: rem-calc(11) !default;
+$reveal-login-close-color: #fff !default;
+$reveal-login-close-weight: $font-weight-bold !default;
+
+// We use this to set the default radius used throughout the core.
+$reveal-login-radius: $global-radius !default;
+$reveal-login-round: $global-rounded !default;
+
+// We use these to control the modal border
+$reveal-login-border-style: solid !default;
+$reveal-login-border-width: 0px !default;
+$reveal-login-border-color: #666 !default;
+
+$reveal-login-modal-class: "reveal-login-modal" !default;
+$close-reveal-login-modal-class: "close-reveal-login-modal" !default;
+
+//
+// @mixins
+//
+
+// We use this to create the reveal-login background overlay styles
+@mixin reveal-login-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: $reveal-login-overlay-bg-old;
+  background: $reveal-login-overlay-bg;
+  z-index: 99;
+  display: none;
+  top: 0;
+  #{$default-float}: 0;
+}
+
+// We use this mixin to create the structure of a reveal-login modal
+//
+// $base-style - Provides reveal-login base styles, can be set to false to override. Default: true, Options: false
+// $width - Sets reveal-login width Default: $reveal-login-default-width || 80%
+//
+@mixin reveal-login-modal-base(
+  $base-style:true,
+  $width:$reveal-login-default-width) {
+  @if $base-style {
+    border-radius: 5px;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    min-height: 450px;
+    top:0;
+    #{$default-float}: 0;
+    @media #{$small-only} {
+      min-height:100vh;
+    }
+    @media #{$medium-up} {
+      #{$default-float}: 50%;
+    }
+
+    // Make sure rows don't have a min-width on them
+    .column,
+    .columns { min-width: 0; }
+
+    // Get rid of margin from first and last element inside modal
+    & > :first-child { margin-top: 0; }
+    & > :last-child { margin-bottom: 0; }
+  }
+
+  @if $width {
+    @media #{$medium-up} {
+      margin-#{$default-float}: -($width / 2);
+      width: $width;
+    }
+  }
+}
+
+// We use this to style the reveal-login modal defaults
+//
+// $bg - Sets background color of reveal-login modal. Default: $reveal-login-modal-bg || #fff
+// $padding - Padding to apply to reveal-login modal. Default: $reveal-login-modal-padding.
+// $border - Choose whether reveal-login uses a border. Default: true, Options: false
+// $border-style - Set reveal-login border style. Default: $reveal-login-border-style || solid
+// $border-width - Width of border (i.e. 1px). Default: $reveal-login-border-width.
+// $border-color - Color of border. Default: $reveal-login-border-color.
+// $box-shadow - Choose whether or not to include the default box-shadow. Default: true, Options: false
+// $radius - If true, set to modal radius which is $global-radius || explicitly set radius amount in px (ex. $radius:10px). Default: false
+// $top-offset - Default: $reveal-login-position-top || 50px
+@mixin reveal-login-modal-style(
+  $bg:false,
+  $padding:false,
+  $border:false,
+  $border-style:$reveal-login-border-style,
+  $border-width:$reveal-login-border-width,
+  $border-color:$reveal-login-border-color,
+  $box-shadow:false,
+  $radius:false,
+  $top-offset:false) {
+
+  @if $bg { background-color: $bg; }
+  @if $padding != false { padding: $padding; }
+
+  @if $border { border: $border-style $border-width $border-color; }
+
+  // We can choose whether or not to include the default box-shadow.
+  @if $box-shadow {
+    box-shadow: $reveal-login-box-shadow;
+  }
+
+  // We can control how much radius is used on the modal
+  @if $radius == true { @include radius($reveal-login-radius); }
+  @else if $radius { @include radius($radius); }
+
+  @if $top-offset {
+    @media #{$medium-up} {
+      top: $top-offset;
+    }
+  }
+}
+
+// We use this to create a close button for the reveal-login modal
+//
+// $color - Default: $reveal-login-close-color || #aaa
+@mixin reveal-login-close($color:$reveal-login-close-color) {
+  font-size: $reveal-login-close-font-size;
+  line-height: 1;
+  position: absolute;
+  top: $reveal-login-close-top;
+  #{$opposite-direction}: $reveal-login-close-side;
+  color: $color;
+  font-weight: $reveal-login-close-weight;
+  cursor: $cursor-pointer-value;
+}
+
+@include exports("reveal-login") {
+  @if $include-html-reveal-login-classes {
+
+    // reveal-login Modals
+    .reveal-login-modal-bg { @include reveal-login-bg; }
+
+    dialog, .#{$reveal-login-modal-class} {
+      @include reveal-login-modal-base;
+      @include reveal-login-modal-style(
+        $bg:$reveal-login-modal-bg,
+        $padding:$reveal-login-modal-padding,
+        $border:true,
+        $box-shadow:true,
+        $radius:false,
+        $top-offset:$reveal-login-position-top);
+
+      .#{$close-reveal-login-modal-class} { @include reveal-login-close; }
+    }
+
+    dialog[open] {
+      display:block;
+      visibility: visible;
+    }
+
+    @media #{$medium-up} {
+
+      dialog, .#{$reveal-login-modal-class} {
+        @include reveal-login-modal-style($padding:$reveal-login-modal-padding * 1.5);
+
+        &.radius { @include reveal-login-modal-style($radius:true); }
+        &.round  { @include reveal-login-modal-style($radius:$reveal-login-round); }
+        
+        &.collapse { @include reveal-login-modal-style($padding:0); }
+
+        &.tiny  { @include reveal-login-modal-base(false, 30%); }
+        &.small { @include reveal-login-modal-base(false, 40%); }
+        &.medium  { @include reveal-login-modal-base(false, 60%); }
+        &.large { @include reveal-login-modal-base(false, 70%); }
+        &.xlarge { @include reveal-login-modal-base(false, 95%); }
+      }
+
+      dialog, .#{$reveal-login-modal-class} {
+        &.full {
+          @include reveal-login-modal-base(false, 100vw);
+          top:0;
+          left:0;
+          height: 100vh;
+          min-height:100vh;
+          margin-left: 0 !important;
+        }
+      }
+    }
+
+    // reveal-login Print Styles
+    @media print {
+      dialog, .#{$reveal-login-modal-class} {background: #fff !important;}
+    }
+  }
+}

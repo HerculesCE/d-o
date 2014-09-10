@@ -13,28 +13,23 @@
   </head>
   <body>
     <!-- MODAL -->
-    <div class="cd-user-modal">
-      <div class="cd-user-modal-container">
-        <div id="cd-login">
-          <a href="" class="cd-close-form">Luk</a>
-          <div class="loginLogo">
-            <img src="img/logodo.png" />
-          </div>
-          <div class="form loginform">
-            <input autofocus class="inputTop" type="text" name="username" placeholder="Brugernavn">
-            <input class="inputBot" type="password" name="password" placeholder="Kodeord">
-            <a href="intranet.html"><li class="button">Login</li></a>
-            <a href="#glemtLogin"><li class="a">Glemt login?</li></a>
-          </div>
-          <div class="form forgottenform">
-            <input class="inputTop" type="text" name="username" placeholder="Indtast venligst din Email">
-            <li class="button">Send</li>
-            <a href="#"><li class="b">Tilbage</li></a>
-          </div>
+    <div id="loginModal" class="modal reveal-login-modal small" data-reveal data-abide>
+      <div class="row">
+        <div class="loginLogo">
+          <img src="img/logodo.png" />
+        </div>
+        <div id="login" class="large-12 columns">
+          <input autofocus class="loginInput" type="text" name="username" placeholder="Brugernavn">
+          <input class="loginInput lowerInput" type="password" name="password" placeholder="Kodeord">
+          <a><li class="button loginButton">Login</li></a><a id="forgotPass">Glemt kode?</a>
+        </div>
+        <div id="forgot" class="large-12 columns">
+          <input autofocus class="loginInput forgotInput" type="text" name="username" placeholder="Indtast din Email">
+          <a><li class="button loginButton">Send</li></a><a id="backToLogin"><i class="fa fa-arrow-left"></i> Tilbage</a>
         </div>
       </div>
+      <a class="close-reveal-login-modal">&#215;</a>
     </div>
-
     <div id="ansogModal" class="modal reveal-modal small" data-reveal data-abide>
       <h2>Ansøg om medlemsskab</h2>
       <div class="row collapse">
@@ -82,7 +77,7 @@
           <img src="img/logo.png" alt="Danske Øjenlægers Organisation"/>
         </div>
         <div class="loginsection">
-          <li class="loginButton button"><i class="fa fa-lock" style="padding-right: 5px;"> </i> Login</li>
+          <li class="loginButton button" data-reveal-id="loginModal"><i class="fa fa-lock" style="padding-right: 5px;"> </i> Login</li>
           <ul><li><a class="ansog" href="#">Ansøg</a></li></ul>
         </div>
       </div>
@@ -108,22 +103,22 @@
       </section>
     </nav>
     <!-- /TOPNAV -->
-     <!-- OSlider -->
-    <ul class="slider" data-options=" 
-                              timer_speed:50000;
-                              animation:slide;
-                              pause_on_hover:false;
-                              animation_speed:1;
-                              navigation_arrows:false;
-                              bullets:false;
-                              slide_number:false;
-                              timer:false" 
-                              data-orbit>
+    <!-- OSlider -->
+    <ul class="slider" data-options="
+      timer_speed:50000;
+      animation:slide;
+      pause_on_hover:false;
+      animation_speed:1;
+      navigation_arrows:false;
+      bullets:false;
+      slide_number:false;
+      timer:false"
+      data-orbit>
       <li>
         <img src="http://i.imgur.com/Z4j5vME.jpg" style="width: 100%" alt="slide 1" />
       </li>
     </ul>
-  <!-- /OSlider -->
+    <!-- /OSlider -->
     <!-- CONTENT -->
     <div class="row">
       <div class="large-7 columns">
@@ -215,5 +210,18 @@
     <script src="js/modal.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+      $("#forgot").toggle();
+      $("#forgotPass").click(function() {
+        $("#login").slideUp('slide' );
+        $("#forgot").slideDown('slide' );
+      });
+      $("#backToLogin").click(function() {
+        $("#login").slideDown('slide' );
+        $("#forgot").slideUp('slide' );
+      });
+    });
+    </script>
   </body>
 </html>

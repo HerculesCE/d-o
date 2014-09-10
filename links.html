@@ -11,136 +11,124 @@
 	</head>
 	<body>
 		<!-- MODAL -->
-		<div id="linksModal" class="cd-file-link-modal">
-			<div class="cd-file-link-modal-container-post">
-				<a href="" class="cd-close-form-post">Luk</a>
-				<div class="row">
-					<div class="large-12 columns">
-						<ul class="tabs linksSectionSwitcher1" data-tab role="tablist">
-							<li id="panel1-1" class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">
-								Tilføj Link
-							</a></li>
-							<li id="panel1-2" class="tab-title" role="presentational"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" controls="panel2-2">
-								Upload Fil
-							</a></li>
-						</ul>
-						<div class="tabs-content linksSectionSwitcher2">
-							<section role="tabpanel" aria-hidden="false" class="panelSwitch content active" id="panel2-1">
-								<div class="row collapse">
-									<div class="small-3 large-2 columns">
-										<span class="prefix">Titel</span>
-									</div>
-									<div class="small-9 large-10 columns">
-										<input id="links-title" type="text" placeholder="Indtast titel på link">
-									</div>
+		<!-- ADD MODAL -->
+		<div id="addModal" class="modal reveal-modal small" data-reveal>
+			<a class="close-reveal-modal">&#215;</a>
+			<div class="row">
+				<div class="large-12 columns">
+					<ul class="tabs linksSectionSwitcher1" data-tab role="tablist">
+						<li id="panel1-1" class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1"><span id="linkSwitch" class="addTabs activeTab">Tilføj Link</span>
+						</a></li>
+						<li id="panel1-2" class="tab-title" role="presentational"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" controls="panel2-2"><span id="fileSwitch" class="addTabs">Upload Fil</span>
+						</a></li>
+					</ul>
+					<div class="tabs-content linksSectionSwitcher2">
+						<section role="tabpanel" aria-hidden="false" class="panelSwitch content active" id="panel2-1">
+							<div class="row collapse">
+								<div class="small-3 large-2 columns">
+									<span class="prefix">Titel</span>
 								</div>
-								<div class="row collapse">
-									<div class="small-3 large-2 columns">
-										<span class="prefix">http://</span>
-									</div>
-									<div class="small-9 large-10 columns">
-										<input id="links-url" type="text" placeholder="Indtast URL">
-									</div>
+								<div class="small-9 large-10 columns">
+									<input id="links-title" type="text" placeholder="Indtast titel på link">
 								</div>
-								<div class="row collapse">
-									<div class="small-3 large-2 columns">
-										<span class="prefix">Offentlig</span>
-									</div>
-									<div class="small-9 large-10 columns">
-										<div class="checkboxHolder">
-											<div class="linkSwitch activator switch large">
-												<input id="linkSwitch" type="checkbox">
-												<label for="linkSwitch"></label>
-											</div>
-										</div>
-									</div>
+							</div>
+							<div class="row collapse">
+								<div class="small-3 large-2 columns">
+									<span class="prefix">http://</span>
 								</div>
-								<div class="row">
-									<div class="large-5 columns">
-										<div class="checkboxHolder">
-											<button id="linksAddLink" class="button medium">Tilføj link</button>
-										</div>
-									</div>
+								<div class="small-9 large-10 columns">
+									<input id="links-url" type="text" placeholder="Indtast URL">
 								</div>
-							</section>
-							<section role="tabpanel" aria-hidden="true" class="panelSwitch content" id="panel2-2">
-								<div class="row collapse">
-									<div class="small-3 large-2 columns">
-										<span class="prefix">Titel</span>
-									</div>
-									<div class="small-9 large-10 columns">
-										<input id="links-title" type="text" placeholder="Indtast titel på fil">
-									</div>
+							</div>
+							<div class="row collapse">
+								<div class="small-3 large-2 columns">
+									<span class="prefix">Offentlig</span>
 								</div>
-								<div class="row collapse">
-									<div class="small-3 large-2 columns">
-										<input id="file-picker" type="file">
-										<div id="linksFileUpload">
-											<div class="links-file-upload">
-												<input class="custom-file-input" type="file">
-											</div>
-											<!-- MIC SKAL DU BRUGE fileProgess??
-											<div class="fileProgress">
-											</div>
-											-->
-										</div>
-									</div>
-									<div class="small-9 large-10 columns">
-										<div class="fileUploadHolder">
-											<input id="linksFileName" class="fileName" type="text" />
-											<input id="linksFileRealNameHidden" class="fileRealNameHidden" type="hidden" />
-										</div>
-									</div>
-								</div>
-								<div class="row collapse">
-									<div class="small-3 large-2 columns">
-										<span class="prefix">Offentlig</span>
-									</div>
-									<div class="small-9 large-10 columns">
-										<div class="checkboxHolder">
-											<div class="fileSwitch activator switch large">
-												<input id="fileSwitch" type="checkbox">
-												<label for="fileSwitch"></label>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
+								<div class="small-9 large-10 columns">
 									<div class="checkboxHolder">
-										<div class="large-4 columns">
-											<button id="linksAddLink" class="button medium">Tilføj fil</button>
-										</div>
-										<div class="large-8 columns">
-											<div class="progress large">
-												<span class="meter" style="width: 50%"></span>
-											</div>
+										<div class="linkSwitch activator switch large">
+											<input id="linkSwitch" type="checkbox">
+											<label for="linkSwitch"></label>
 										</div>
 									</div>
 								</div>
-							</section>
-						</div>
+							</div>
+							<div class="row">
+								<div class="large-5 columns">
+									<div class="checkboxHolder">
+										<button id="linksAddLink" class="button medium">Tilføj link</button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section role="tabpanel" aria-hidden="true" class="panelSwitch content" id="panel2-2">
+							<div class="row collapse">
+								<div class="small-3 large-2 columns">
+									<span class="prefix">Titel</span>
+								</div>
+								<div class="small-9 large-10 columns">
+									<input id="links-title" type="text" placeholder="Indtast titel på fil">
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="small-3 large-2 columns">
+									<input id="file-picker" type="file">
+									<div id="linksFileUpload">
+										<div class="links-file-upload">
+											<input class="custom-file-input" type="file">
+										</div>
+									</div>
+								</div>
+								<div class="small-9 large-10 columns">
+									<div class="fileUploadHolder">
+										<input id="linksFileName" class="fileName" type="text" />
+										<input id="linksFileRealNameHidden" class="fileRealNameHidden" type="hidden" />
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="small-3 large-2 columns">
+									<span class="prefix">Offentlig</span>
+								</div>
+								<div class="small-9 large-10 columns">
+									<div class="checkboxHolder">
+										<div class="fileSwitch activator switch large">
+											<input id="fileSwitch" type="checkbox">
+											<label for="fileSwitch"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="checkboxHolder">
+									<div class="large-4 columns">
+										<button id="linksAddLink" class="button medium">Tilføj fil</button>
+									</div>
+									<div class="large-8 columns">
+										<div class="progress large">
+											<span class="meter" style="width: 50%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="cd-category-modal">
-			<div class="cd-category-modal-container-post">
-				<a href="" class="cd-close-form-post">Luk</a>
-				<div class="row">
-					<div class="large-12 columns spacings">
-						<div class="row collapse">
-							<div class="small-3 large-2 columns">
-								<span class="prefix">Titel</span>
-							</div>
-							<div class="small-9 large-10 columns">
-								<input id="kategori-title" type="text" placeholder="Indtast titel på kategori">
-							</div>
-							<button class="button small">Tilføj kategori</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- /ADD MODAL -->
+		<!-- NEW CATEGORY MODAL -->
+	    <div id="tilføjKategori" class="modal reveal-modal tiny" data-reveal>
+	      <h2>Tilføj kategori</h2>
+	      <div class="row collapse">
+	        <div class="large-12 columns">
+	          <input class="prefix-form" type="text" placeholder="Indtast ny kategori">
+	        </div>
+	      </div>
+	      <div class="button"><a href="">Tilføj</a></div><div class="button cancel"><a href="">Annuller</a></div>
+	      <a class="close-reveal-modal">&#215;</a>
+	    </div>
+	    <!-- /NEW CATEGORY MODAL-->
 		<!-- /MODAL -->
 		<div class="header">
 			<!-- HEADER -->
@@ -205,7 +193,7 @@
 		<div class="row">
 			<div class="linksSite">
 				<div class="large-12 columns">
-					<button class="catAdd"><img src="img/plusIcon.png" />Tilføj ny kategori</button>
+					<button class="catAdd" data-reveal-id="tilføjKategori"><img src="img/plusIcon.png" />Tilføj ny kategori</button>
 				</div>
 				<div class="large-12 columns">
 					<h3>Links oversigt</h3>
@@ -276,8 +264,13 @@
 						</li>
 					</ul>
 				</div>
-				<button class="fileLink button">Tilføj fil/link</button>
-				<hr>
+			</div>
+			<div class="large-12 columns">
+				<button class="fileLink button" data-reveal-id="addModal">Tilføj fil/link</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="linksSite">
 				<div class="large-12 columns">
 					<p class="linksHeader">Diabasens oversigt</p>
 				</div>
@@ -376,10 +369,12 @@
 		<script src="js/upload.js"></script>
 		<script>
 		$('#linkSwitch').click(function(){
-		$(".linkSwitch").toggleClass('active');
+			$("#linkSwitch").toggleClass('activeTab');
+			$("#fileSwitch").toggleClass('activeTab');
 		});
 		$('#fileSwitch').click(function(){
-		$(".fileSwitch").toggleClass('active');
+			$("#fileSwitch").toggleClass('activeTab');
+			$("#linkSwitch").toggleClass('activeTab');
 		});
 		</script>
 	</body>
