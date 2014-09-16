@@ -6,7 +6,7 @@
     <title>DØO</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Istok+Web">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -110,9 +110,11 @@
     <!-- CONTENT -->
     <div class="row">
       <div class="large-8 columns">
-        <a href="#" class="new-post-3 Alle npActive">Alle</a>
-        <a href="#" class="new-post-3 DOE">DØO</a>
-        <a href="#" class="new-post-3 FAPS">FAPS</a>
+        <div class="tabHolderNyhed">
+          <a href="#" class="new-post-3 Alle npActive">Alle</a>
+          <a href="#" class="new-post-3 DOE">DØO</a>
+          <a href="#" class="new-post-3 FAPS">FAPS</a>
+        </div>
       </div>
       <div class="large-4 columns">
         <button class="new-post-news" data-reveal-id="nyNewsModal"><i class="fa fa-pencil"></i>Tilføj nyhed</button>
@@ -123,13 +125,15 @@
 
         <div class="postHolder">
           <div class="date">
-            <div class="dateNumber">31</div>
-            <div class="dateName">Aug</div>
+            <div class="dateNumber">28</div>
+            <div class="dateName">Apr</div>
           </div>
-          <a><i class="editSection fa fa-times delete"></i></a>
-          <a><i class="editSection fa fa-pencil edit"></i></a>
+          <div id="editSectionID">
+            <a><i class="editSection fa fa-times delete"></i></a>
+            <a><i class="editSection fa fa-pencil edit"></i></a>
+          </div>
           <div class="nyhedsTitel">
-            <h4>Nyhed med tekst og billede</h4>
+            <h4>Nyhed med tekst og billedeNyhed med tekst </h4>
             <p class="nyhedsInfo">
             Skrevet af
             <span class="nyhedsPoster">Jens Andresen</span>
@@ -138,7 +142,7 @@
           </div>
           <div class="nyhedsContent">
             <img src="http://data1.whicdn.com/images/14430167/original.jpg" class="nyhedsFoto" />
-            <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
+            <p><b>Lorem Ipsum er ganske enkelt fyldtekst</b> fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
           </div>
           <hr>
         </div>
@@ -166,7 +170,7 @@
             <div class="dateName">Aug</div>
           </div>
           <div class="nyhedsTitel">
-            <h4>Nyhed med lange links</h4>
+            <h4>Nyhed med lange links og alt muligt random tekst som aldrig i livet skl bruges til en fucking skid</h4>
             <p class="nyhedsInfo">
             Skrevet af
             <span class="nyhedsPoster">Jens Andresen</span>
@@ -219,7 +223,8 @@
     <footer>
       <div class="row">
         <div class="large-12 columns">
-          <p>Danske Øjenlægers Organisation © 2014</p>
+          <p class="mobileFoot">DØO © 2014</p>
+          <p class="desktopFoot">Danske Øjenlægers Organisation © 2014</p>
           <p class="right">by <b>INTO</b>WEB</p>
         </div>
       </div>

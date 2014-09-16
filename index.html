@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Istok+Web">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- MANGLER FÆRDIG META DATA -->
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -78,7 +78,7 @@
         </div>
         <div class="loginsection">
           <li class="loginButton button" data-reveal-id="loginModal"><i class="fa fa-lock" style="padding-right: 5px;"> </i> Login</li>
-          <ul><li><a class="ansog" href="#">Ansøg</a></li></ul>
+          <ul><li><a class="ansog" data-reveal-id="ansogModal" href="#">Ansøg</a></li></ul>
         </div>
       </div>
     </div>
@@ -98,7 +98,8 @@
           <li><a href="#">Kontakt</a></li>
           <li><a href="#">Ledige Stillinger</a></li>
           <li><a href="#">Artikler/Links</a></li>
-          <li class="ansogMenu"><a href="#">Ansøg om medlemsskab</a></li>
+          <li class="ansogMenu" data-reveal-id="ansogModal"><a href="#">Ansøg om medlemsskab</a></li>
+          <li class="ansogMenu" data-reveal-id="loginModal"><a href="#">Login</a></li>
         </ul>
       </section>
     </nav>
@@ -200,7 +201,8 @@
     <footer>
       <div class="row">
         <div class="large-12 columns">
-          <p>Danske Øjenlægers Organisation © 2014</p>
+          <p class="mobileFoot">DØO © 2014</p>
+          <p class="desktopFoot">Danske Øjenlægers Organisation © 2014</p>
           <p class="right">by <b>INTO</b>WEB</p>
         </div>
       </div>

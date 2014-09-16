@@ -6,80 +6,10 @@
     <title>DØO</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Istok+Web">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <!-- MODAL -->
-    <!-- NEW POST -->
-    <div class="cd-new-post-modal">
-      <div class="cd-new-post-modal-container-post">
-        <a href="" class="cd-close-form-post">Luk</a>
-        <div class="row">
-          <div class="large-12 columns">
-            <h4>Opret indlæg
-            </h4>
-            <div class="postForm">
-              <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
-              <select id="forumCategory" class="kategori">
-                <option value="0" >Vælg en kategori</option>
-                <option value="2">Bestyrelse</option>
-                <option value="1">Arkiv</option>
-              </select>
-              <div id="wysihtml5-toolbar" style="display: none;">
-                <div class="a-data-holder">
-                  <a data-wysihtml5-command="bold"><i class="fa fa-bold"></i></a>
-                  <a data-wysihtml5-command="italic"><i class="fa fa-italic"></i></a>
-                  <a data-wysihtml5-command="underline"><i class="fa fa-underline"></i></a>
-                  <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1"><l class="fa fa-header">1</i></a>
-                  <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2"><l class="fa fa-header">2</i></a>
-                  <a data-wysihtml5-command="insertImage"><i class="fa fa-image"></i></a>
-                  <a data-wysihtml5-command="insertVideo"><i class="fa fa-youtube-play"></i></a>
-                  <a data-wysihtml5-command="createLink"><i class="fa fa-link"></i></a>
-                </div>
-                <div data-wysihtml5-dialog="insertImage" style="display: none;">
-                  <label>
-                    <input class="image-upload" data-wysihtml5-dialog-field="src" placeholder="Indtast billede-URL">
-                  </label>
-                  <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a>&nbsp;<a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button></a>
-                </div>
-                <div data-wysihtml5-dialog="createLink" style="display: none;">
-                  <label>
-                    <input class="link-add" data-wysihtml5-dialog-field="href" value="" placeholder="Indtast URL" class="text">
-                  </label>
-                  <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a> <a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button</a>
-                </div>
-              </div>
-              <textarea id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
-              <button class="postSend button">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /NEW POST -->
-    <!-- NEW CATEGORY -->
-    <div class="cd-category-modal">
-      <div class="cd-category-modal-container-post">
-        <a href="" class="cd-close-form-post">Luk</a>
-        <div class="row">
-          <div class="large-12 columns spacings">
-            <div class="row collapse">
-              <div class="small-3 large-2 columns">
-                <span class="prefix">Titel</span>
-              </div>
-              <div class="small-9 large-10 columns">
-                <input id="kategori-title" type="text" placeholder="Indtast titel på kategori">
-              </div>
-              <button class="button small">Tilføj kategori</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /NEW CATEGORY -->
-  <!-- /MODAL -->
   <div class="header">
     <!-- Header -->
     <div class="content">
@@ -173,8 +103,8 @@
         </div>
         <div class="forumNyheder-post">
           <ul>
-            <li>
-              <a href="#">Nyhedstitel som kommer aller først</a>
+            <li class="overskrift">
+              <a href="#">Nyhedstitel som kommer aller førstNyhedstitel som kommer aller førstNyhedstitel som kommer aller først</a>
             </li>
             <li>Kl. 08:45, 15.04.1990</li>
           </ul>
@@ -207,7 +137,7 @@
         <div class="forumsidebar-post">
           <ul>
             <li>
-              <a href="#">Indlæg Overskrift</a>
+              <a href="#">Indlæg OverskriftIndlæg OverskriftIndlæg OverskriftIndlæg OverskriftIndlæg Overskrift</a>
               <p class="sub-text">af Brugernavn</p>
             </li>
             <li>
@@ -455,9 +385,10 @@
   <footer>
     <div class="row">
       <div class="large-12 columns">
-        <p>Danske Øjenlægers Organisation © 2014</p>
-        <p class="right">by <b>INTO</b>WEB</p>
-      </div>
+          <p class="mobileFoot">DØO © 2014</p>
+          <p class="desktopFoot">Danske Øjenlægers Organisation © 2014</p>
+          <p class="right">by <b>INTO</b>WEB</p>
+        </div>
     </div>
   </footer>
   <!-- /FOOTER -->
