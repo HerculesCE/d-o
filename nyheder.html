@@ -7,257 +7,251 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <!-- MODAL -->
-    <!-- NEW NEWS MODAL -->
-    <div id="nyNewsModal" class="modal reveal-modal medium" data-reveal>
-      <a class="close-reveal-modal">&#215;</a>
-      <h2>Skriv nyhed</h2>
-      <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
-      <select id="forumCategory" class="kategori">
-        <option value="0" >Vælg en kategori</option>
-        <option value="2">Bestyrelse</option>
-        <option value="1">Arkiv</option>
-      </select>
-      <div id="wysihtml5-toolbar" style="display: none;">
-        <div class="a-data-holder">
-          <a data-wysihtml5-command="bold"><i class="fa fa-bold"></i></a>
-          <a data-wysihtml5-command="italic"><i class="fa fa-italic"></i></a>
-          <a data-wysihtml5-command="underline"><i class="fa fa-underline"></i></a>
-          <a data-wysihtml5-command="insertImage"><i class="fa fa-image"></i></a>
-          <a data-wysihtml5-command="insertVideo"><i class="fa fa-youtube-play"></i></a>
-          <a data-wysihtml5-command="createLink"><i class="fa fa-link"></i></a>
+      <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+      <form>
+        <!-- MODAL -->
+        <!-- NEW NEWS MODAL -->
+        <div id="nyNewsModal" class="modal reveal-modal medium" data-reveal>
+          <a class="close-reveal-modal">&#215;</a>
+          <h2>Skriv nyhed</h2>
+          <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
+          <select id="forumCategory" class="kategori">
+            <option value="0" >Vælg en kategori</option>
+            <option value="2">Bestyrelse</option>
+            <option value="1">Arkiv</option>
+          </select>
         </div>
-        <div data-wysihtml5-dialog="insertImage" style="display: none;">
-          <label>
-            <input class="image-upload" data-wysihtml5-dialog-field="src" placeholder="Indtast billede-URL">
-          </label>
-          <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a>&nbsp;<a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button></a>
+        <!-- /NEW NEWS MODAL -->
+        <!-- /MODAL -->
+        <div class="header">
+          <!-- HEADER -->
+          <div class="content">
+            <div class="logo">
+              <img src="img/logo.png" alt="Danske Øjenlægers Organisation"/>
+            </div>
+            <div class="loginsection">
+              <li class="button"><i class="fa fa-long-arrow-left" style="padding-right: 5px;"> </i> Log ud</li>
+            </div>
+          </div>
         </div>
-        <div data-wysihtml5-dialog="createLink" style="display: none;">
-          <label>
-            <input class="link-add" data-wysihtml5-dialog-field="href" value="" placeholder="Indtast URL" class="text">
-          </label>
-          <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a> <a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button</a>
-        </div>
-      </div>
-      <textarea id="wysihtml5-textarea" placeholder="Skriv dit indlæg" autofocus></textarea>
-      <button class="postSend button">Indsend</button>
-    </div>
-    <!-- /NEW NEWS MODAL -->
-    <!-- /MODAL -->
-    <div class="header">
-      <!-- HEADER -->
-      <div class="content">
-        <div class="logo">
-          <img src="img/logo.png" alt="Danske Øjenlægers Organisation"/>
-        </div>
-        <div class="loginsection">
-          <li class="button"><i class="fa fa-long-arrow-left" style="padding-right: 5px;"> </i> Log ud</li>
-        </div>
-      </div>
-    </div>
-    <!-- /HEADER -->
-    <nav class="top-bar-intra" data-topbar style="margin-top: 50px">
-      <!-- TOPNAV -->
-      <ul class="title-area">
-        <li class="name">
-          <a href=""></a>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><i class="fa fa-align-justify"></i> Menu</a></li>
-      </ul>
-      <section class="top-bar-section">
-        <div class="main">
-          <ul class="right">
-            <div class="profile-menu">
-              <ul>
-                <li class="notification">
-                  <i class="fa fa-envelope"></i>
-                  <i class="count">2</i>
-                </li>
-                <li class="has-dropdown">
-                  <a href="#">Velkommen, <b>Navn</b></a>
+        <!-- /HEADER -->
+        <nav class="top-bar-intra" data-topbar style="margin-top: 50px">
+          <!-- TOPNAV -->
+          <ul class="title-area">
+            <li class="name">
+              <a href=""></a>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><i class="fa fa-align-justify"></i> Menu</a></li>
+          </ul>
+          <section class="top-bar-section">
+            <div class="main">
+              <ul class="right">
+                <div class="profile-menu">
+                  <ul>
+                    <li class="notification">
+                      <i class="fa fa-envelope"></i>
+                      <i class="count">2</i>
+                    </li>
+                    <li class="has-dropdown">
+                      <a href="#">Velkommen, <b>Navn</b></a>
+                      <ul class="dropdown">
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Log ud</a></li>
+                      </ul>
+                    </li>
+                    <li><i class="profile-img fa fa-user"></i></li>
+                  </ul>
+                </div>
+              </ul>
+              <ul class="left">
+                <li class="ansogMenu has-dropdown">
+                  <a href="#">
+                    <i>Preben Christensen</i>
+                  </a>
                   <ul class="dropdown">
                     <li><a href="#">Profil</a></li>
                     <li><a href="#">Log ud</a></li>
                   </ul>
                 </li>
-                <li><i class="profile-img fa fa-user"></i></li>
+                <li><a href="intranet.html">Forside</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="#">Nyheder</a></li>
+                <li><a href="#">Artikler / Links</a></li>
               </ul>
             </div>
-          </ul>
-          <ul class="left">
-            <li class="ansogMenu has-dropdown">
-              <a href="#">
-                <i>Preben Christensen</i>
-              </a>
-              <ul class="dropdown">
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Log ud</a></li>
+          </section>
+        </nav>
+        <!-- /TOPNAV -->
+        <!-- CONTENT -->
+        <div class="row">
+          <div class="large-8 columns">
+            <div class="tabHolderNyhed">
+              <a href="#" class="new-post-3 Alle npActive">Alle</a>
+              <a href="#" class="new-post-3 DOE">DØO</a>
+              <a href="#" class="new-post-3 FAPS">FAPS</a>
+            </div>
+          </div>
+          <div class="large-4 columns">
+            <button class="new-post-news" data-reveal-id="nyNewsModal"><i class="fa fa-pencil"></i>Tilføj nyhed</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-8 columns">
+            <div class="postHolder">
+              <div class="date">
+                <div class="dateNumber">28</div>
+                <div class="dateName">Apr</div>
+              </div>
+              <div id="editSectionID">
+                <a><i class="editSection fa fa-times delete"></i></a>
+                <a><i class="editSection fa fa-pencil edit"></i></a>
+              </div>
+              <div class="nyhedsTitel">
+                <h4>Nyhed med tekst og billedeNyhed med tekst </h4>
+                <p class="nyhedsInfo">
+                Skrevet af
+                <span class="nyhedsPoster">Jens Andresen</span>
+                <span class="nyhedsDato">, 01.04.2014</span>
+                </p>
+              </div>
+              <div class="nyhedsContent">
+                <img src="http://data1.whicdn.com/images/14430167/original.jpg" class="nyhedsFoto" />
+                <p><b>Lorem Ipsum er ganske enkelt fyldtekst</b> fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
+              </div>
+              <hr>
+            </div>
+            <div class="postHolder">
+              <div class="date">
+                <div class="dateNumber">31</div>
+                <div class="dateName">Aug</div>
+              </div>
+              <div class="nyhedsTitel">
+                <h4>Nyhed uden billede</h4>
+                <p class="nyhedsInfo">
+                Skrevet af
+                <span class="nyhedsPoster">Jens Andresen</span>
+                <span class="nyhedsDato">, 01.04.2014</span>
+                </p>
+              </div>
+              <div class="nyhedsContent">
+                <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
+              </div>
+              <hr>
+            </div>
+            <div class="postHolder">
+              <div class="date">
+                <div class="dateNumber">31</div>
+                <div class="dateName">Aug</div>
+              </div>
+              <div class="nyhedsTitel">
+                <h4>Nyhed med lange links og alt muligt random tekst som aldrig i livet skl bruges til en fucking skid</h4>
+                <p class="nyhedsInfo">
+                Skrevet af
+                <span class="nyhedsPoster">Jens Andresen</span>
+                <span class="nyhedsDato">, 01.04.2014</span>
+                </p>
+              </div>
+              <div class="nyhedsContent">
+                <p><a href="#">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</a></p>
+                <img src="http://ilarge.listal.com/image/5121580/968full-emilie-nereng.jpg" class="nyhedsFoto" />
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <!-- /CONTENT -->
+        <div class="footer nonFront">
+          <!-- FOOTER -->
+          <div class="row">
+            <div class="large-4 columns">
+              <h4>Kontakt information</h4>
+              <ul>
+                <li>Fællessekretariatet: Esplanaden 8C, 3. sal.</li>
+                <li>1263 København K</li>
+                <li>Telefon: +45 35 44 84 03</li>
+                <li>Fax: 35448408</li>
+                <li>Mail: sho@dadl.dk</li>
               </ul>
-            </li>
-            <li><a href="intranet.html">Forside</a></li>
-            <li><a href="forum.html">Forum</a></li>
-            <li><a href="#">Nyheder</a></li>
-            <li><a href="#">Artikler / Links</a></li>
-          </ul>
+            </div>
+            <div class="large-4 columns">
+              <h4>Quicklinks</h4>
+              <ul>
+                <li><a href="">Den Almindelige Danske Lægeforening</a></li>
+                <li><a href="">Dansk Oftalmologisk selskab</a></li>
+                <li><a href="">Statens Øjenklinik</a></li>
+                <li><a href="">Dansk Blindesamfund</a></li>
+                <li><a href="">Værn om Synet</a></li>
+              </ul>
+            </div>
+            <div class="large-4 columns">
+              <ul class="low">
+                <li><a href="">Den Almindelige Danske Lægeforening</a></li>
+                <li><a href="">Dansk Oftalmologisk selskab</a></li>
+                <li><a href="">Statens Øjenklinik</a></li>
+                <li><a href="">Dansk Blindesamfund</a></li>
+                <li><a href="">Værn om Synet</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-    </nav>
-    <!-- /TOPNAV -->
-    <!-- CONTENT -->
-    <div class="row">
-      <div class="large-8 columns">
-        <div class="tabHolderNyhed">
-          <a href="#" class="new-post-3 Alle npActive">Alle</a>
-          <a href="#" class="new-post-3 DOE">DØO</a>
-          <a href="#" class="new-post-3 FAPS">FAPS</a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <button class="new-post-news" data-reveal-id="nyNewsModal"><i class="fa fa-pencil"></i>Tilføj nyhed</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-8 columns">
-
-        <div class="postHolder">
-          <div class="date">
-            <div class="dateNumber">28</div>
-            <div class="dateName">Apr</div>
+        <footer>
+          <div class="row">
+            <div class="large-12 columns">
+              <p class="mobileFoot">DØO © 2014</p>
+              <p class="desktopFoot">Danske Øjenlægers Organisation © 2014</p>
+              <p class="right">by <b>INTO</b>WEB</p>
+            </div>
           </div>
-          <div id="editSectionID">
-            <a><i class="editSection fa fa-times delete"></i></a>
-            <a><i class="editSection fa fa-pencil edit"></i></a>
-          </div>
-          <div class="nyhedsTitel">
-            <h4>Nyhed med tekst og billedeNyhed med tekst </h4>
-            <p class="nyhedsInfo">
-            Skrevet af
-            <span class="nyhedsPoster">Jens Andresen</span>
-            <span class="nyhedsDato">, 01.04.2014</span>
-            </p>
-          </div>
-          <div class="nyhedsContent">
-            <img src="http://data1.whicdn.com/images/14430167/original.jpg" class="nyhedsFoto" />
-            <p><b>Lorem Ipsum er ganske enkelt fyldtekst</b> fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
-          </div>
-          <hr>
-        </div>
-        <div class="postHolder">
-          <div class="date">
-            <div class="dateNumber">31</div>
-            <div class="dateName">Aug</div>
-          </div>
-          <div class="nyhedsTitel">
-            <h4>Nyhed uden billede</h4>
-            <p class="nyhedsInfo">
-            Skrevet af
-            <span class="nyhedsPoster">Jens Andresen</span>
-            <span class="nyhedsDato">, 01.04.2014</span>
-            </p>
-          </div>
-          <div class="nyhedsContent">
-            <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
-          </div>
-          <hr>
-        </div>
-        <div class="postHolder">
-          <div class="date">
-            <div class="dateNumber">31</div>
-            <div class="dateName">Aug</div>
-          </div>
-          <div class="nyhedsTitel">
-            <h4>Nyhed med lange links og alt muligt random tekst som aldrig i livet skl bruges til en fucking skid</h4>
-            <p class="nyhedsInfo">
-            Skrevet af
-            <span class="nyhedsPoster">Jens Andresen</span>
-            <span class="nyhedsDato">, 01.04.2014</span>
-            </p>
-          </div>
-          <div class="nyhedsContent">
-            <p><a href="#">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</a></p>
-            <img src="http://ilarge.listal.com/image/5121580/968full-emilie-nereng.jpg" class="nyhedsFoto" />
-          </div>
-          <hr>
-        </div>
-      </div>
-    </div>
-    <!-- /CONTENT -->
-    <div class="footer nonFront">
-      <!-- FOOTER -->
-      <div class="row">
-        <div class="large-4 columns">
-          <h4>Kontakt information</h4>
-          <ul>
-            <li>Fællessekretariatet: Esplanaden 8C, 3. sal.</li>
-            <li>1263 København K</li>
-            <li>Telefon: +45 35 44 84 03</li>
-            <li>Fax: 35448408</li>
-            <li>Mail: sho@dadl.dk</li>
-          </ul>
-        </div>
-        <div class="large-4 columns">
-          <h4>Quicklinks</h4>
-          <ul>
-            <li><a href="">Den Almindelige Danske Lægeforening</a></li>
-            <li><a href="">Dansk Oftalmologisk selskab</a></li>
-            <li><a href="">Statens Øjenklinik</a></li>
-            <li><a href="">Dansk Blindesamfund</a></li>
-            <li><a href="">Værn om Synet</a></li>
-          </ul>
-        </div>
-        <div class="large-4 columns">
-          <ul class="low">
-            <li><a href="">Den Almindelige Danske Lægeforening</a></li>
-            <li><a href="">Dansk Oftalmologisk selskab</a></li>
-            <li><a href="">Statens Øjenklinik</a></li>
-            <li><a href="">Dansk Blindesamfund</a></li>
-            <li><a href="">Værn om Synet</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="row">
-        <div class="large-12 columns">
-          <p class="mobileFoot">DØO © 2014</p>
-          <p class="desktopFoot">Danske Øjenlægers Organisation © 2014</p>
-          <p class="right">by <b>INTO</b>WEB</p>
-        </div>
-      </div>
-    </footer>
-    <!-- /FOOTER -->
-    <script src="js/wysihtml5/parser_rules/advanced.js"></script>
-    <script src="js/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-    var editor = new wysihtml5.Editor("wysihtml5-textarea", {
-    toolbar:      "wysihtml5-toolbar",
-    parserRules:  wysihtml5ParserRules
-    });
-    </script>
-    <script>
-      $('.Alle').click(function(){
-          $(".Alle").addClass('npActive');
-          $(".DOE").removeClass('npActive');
-          $(".FAPS").removeClass('npActive');
-      });
-      $('.DOE').click(function(){
-          $(".DOE").addClass('npActive');
-          $(".Alle").removeClass('npActive');
-          $(".FAPS").removeClass('npActive');
-      });
-      $('.FAPS').click(function(){
-          $(".FAPS").addClass('npActive');
-          $(".DOE").removeClass('npActive');
-          $(".Alle").removeClass('npActive');
-      });
-    </script>
-  </body>
-</html>
+        </footer>
+        <!-- /FOOTER -->
+        <script src="js/wysihtml5/parser_rules/advanced.js"></script>
+        <script src="js/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+/*    FUNKTION: Producerer modal-indhold onClick via jQuery. 
+      //    OBS: Appender en SHITLOAD mængde af content. Er det ok?
+      */      
+        $(document).ready(function(){
+          $('.new-post-news').on('click', function(){
+            var toolbarName = "tb_" + Math.random();
+            var editorName = "te_" + Math.random();
+            var textareaID = "ta_" + Math.random();
+            console.log("Instantializing Modal:\n" + "Toolbar: " + "\t" + toolbarName + "\nEditor: " + "\t" + editorName + "\nTextarea: " + "\t" + textareaID);$( "#nyNewsModal" ).append( '<div id="editorHolder"><div style="background-color: #393939;min-height: 40px;border-radius: 5px;margin-bottom: 15px;" id="' + toolbarName + '" style="display: none;"><div class="a-data-holder" style="padding: 15px;"><a data-wysihtml5-command="bold" style="color:white; margin-right: 10px"><i class="fa fa-bold"></i></a><a data-wysihtml5-command="italic" style="color:white; margin-right: 10px"><i class="fa fa-italic"></i></a><a data-wysihtml5-command="underline" style="color:white; margin-right: 50px"><i class="fa fa-underline"></i></a><a data-wysihtml5-command="insertImage" style="color:white; margin-right: 10px"><i class="fa fa-image"></i></a><a data-wysihtml5-command="insertVideo" style="color:white; margin-right: 10px"><i class="fa fa-youtube-play"></i></a><a data-wysihtml5-command="createLink" style="color:white"><i class="fa fa-link"></i></a></div><div data-wysihtml5-dialog="insertImage" style="display: none; padding: 10px 0 0 15px"><label><input class="image-upload" data-wysihtml5-dialog-field="src" placeholder="Indtast billede-URL" style="border:none; box-shadow:none; height: 40px; padding: 10px; width: 150px; margin-bottom: 20px"></label><a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a>&nbsp;<a data-wysihtml5-dialog-action="cancel"><button class="cancel button small closer">Annuller</button></a></div><div data-wysihtml5-dialog="createLink" style="display: none; padding: 10px 0 0 15px"><label><input class="link-add text" data-wysihtml5-dialog-field="href" placeholder="Indtast URL" style="border:none; box-shadow:none; height: 40px; padding: 10px; width: 150px; margin-bottom: 20px"></label><a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a> <a data-wysihtml5-dialog-action="cancel"><button class="cancel button small closer">Annuller</button></a></div></div>\n<textarea style="height:200px" id="' + textareaID + '" placeholder="Skriv dit svar"></textarea>\n<button class="postSend button">Indsend</button></div>' );
+            window[editorName] = new wysihtml5.Editor(textareaID, {
+            toolbar:      toolbarName,
+            parserRules:  wysihtml5ParserRules
+            });
+          });
+        });
+      </script>
+      <script>
+        $('#nyNewsModal').bind('closed', function() {
+          console.log("Modal Closed");
+          $('#editorHolder').remove();
+        });
+      </script>
+        <script>
+        $('.Alle').click(function(){
+        $(".Alle").addClass('npActive');
+        $(".DOE").removeClass('npActive');
+        $(".FAPS").removeClass('npActive');
+        });
+        $('.DOE').click(function(){
+        $(".DOE").addClass('npActive');
+        $(".Alle").removeClass('npActive');
+        $(".FAPS").removeClass('npActive');
+        });
+        $('.FAPS').click(function(){
+        $(".FAPS").addClass('npActive');
+        $(".DOE").removeClass('npActive');
+        $(".Alle").removeClass('npActive');
+        });
+        </script>
+      </form>
+    </body>
+  </html>

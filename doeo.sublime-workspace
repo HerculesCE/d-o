@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"forum",
+				"forumintranet"
+			],
+			[
 				"nyt",
 				"nytSvarModal"
 			],
@@ -112,42 +116,18 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "intranet.html",
 			"settings":
 			{
-				"buffer_size": 9732,
+				"buffer_size": 11980,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/app.scss",
+			"file": "/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/littleHeroes/littleHeroes/index.html",
 			"settings":
 			{
-				"buffer_size": 1609,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "nyheder.html",
-			"settings":
-			{
-				"buffer_size": 10681,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "links.html",
-			"settings":
-			{
-				"buffer_size": 15297,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "forum.html",
-			"settings":
-			{
-				"buffer_size": 15416,
+				"buffer_size": 3813,
 				"line_ending": "Unix"
 			}
 		},
@@ -155,7 +135,7 @@
 			"file": "forumPost.html",
 			"settings":
 			{
-				"buffer_size": 11713,
+				"buffer_size": 11848,
 				"line_ending": "Unix"
 			}
 		},
@@ -163,7 +143,15 @@
 			"file": "scss/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 116222,
+				"buffer_size": 89828,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/wysihtml5/dist/wysihtml5-0.3.0.js",
+			"settings":
+			{
+				"buffer_size": 331989,
 				"line_ending": "Unix"
 			}
 		},
@@ -203,9 +191,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 70.0,
+		"height": 342.0,
 		"selected_items":
 		[
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			],
 			[
 				"beauti",
 				"HTMLBeautify"
@@ -213,10 +205,6 @@
 			[
 				"beaut",
 				"HTMLBeautify"
-			],
-			[
-				"colors",
-				"Colorsublime: Install Theme"
 			],
 			[
 				"beautify",
@@ -401,7 +389,47 @@
 	],
 	"file_history":
 	[
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/forum.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/nyheder.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/intranet.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/links.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/forumPost.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/profile.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/kontakt.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/test/caniuse_files/xhtml.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/.forumPost.html.swp",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/test/caniuse.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/test/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/test/basic.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/jquery-placeholder/tests/index.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/jquery-placeholder/demo.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/.bowerrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/stillinger.html",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/img/cd-logo.svg",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/jquery-placeholder/.gitattributes",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/wysihtml5/parser_rules/advanced.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/fastclick/.bower.json",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/.modal.js.swp",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/.modal.js.swo",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/.modal.js.swn",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/Gruntfile.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/package.json",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower.json",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/.bin/js-yaml",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/node_modules/optimist/test/_.js",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/node_modules/mocha/node_modules/debug/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/node_modules/shelljs/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-contrib-watch/node_modules/gaze/node_modules/globule/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/.jshintignore",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/grunt-legacy-util/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/grunt-legacy-log/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/getobject/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/findup-sync/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/exit/.jshintrc",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/scss/app.scss",
+		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/jquery/src/wrap.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/README.md",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/foundation/scss/foundation/components/_top-bar-intra.scss",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/foundation/scss/foundation/components/_reveal_login.scss",
@@ -425,29 +453,17 @@
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-contrib-watch/node_modules/async/LICENSE",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/async/LICENSE",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/media/Modernizr 2 Logo.ai",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/.modal.js.swp",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/.modal.js.swo",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/.modal.js.swn",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/js/modal.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/stillinger.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/forum.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/profile.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/links.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/feature-detects/file-filesystem.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/feature-detects/iframe-sandbox.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/faye-websocket/examples/autobahn_client.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/jquery/src/manipulation/_evalUrl.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/feature-detects/dom-createElement-attrs.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/minimatch/test/brace-expand.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower.json",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/feature-detects/fullscreen-api.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/kontakt.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/intranet.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/node_modules/sinon/pkg/sinon-timers-1.9.1.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/package.json",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/foundation/scss/foundation/components/_keystrokes.scss",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/libsass/kwd_arg_macros.hpp",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/nyheder.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt-sass/node_modules/node-sass/libsass/contextualize.cpp",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/node_modules/grunt/node_modules/minimatch/node_modules/sigmund/bench.js",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/bower_components/modernizr/feature-detects/network-eventsource.js",
@@ -471,7 +487,6 @@
 		"/home/mayflower/Documents/Udvikling/d-o/bower_components/jquery/dist/jquery.js",
 		"/home/mayflower/Documents/Udvikling/d-o/js/modal.js",
 		"/home/mayflower/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/d-o/index.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/bower_components/foundation/scss/foundation/components/_top-bar-intra.scss",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/scss/_settings.scss",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/DOEOE/intranet.html",
@@ -501,34 +516,7 @@
 		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/index.html",
 		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_rynkes-jungle.git/unity/Assets/Scripts/Games/FruitNinja/FruitNinjaGame.cs",
 		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/js/jquery.event.move.js",
-		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/js/jquery.twentytwenty.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/css/jqm.slidemenu.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/css/themes/jqmfb.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/css/themes/jqmfb.min.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/slideMenu/test.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/WebPlayerTemplates/uiresources/MobileInput/mobiledemo.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_rynkes-jungle.git/unity/Assets/Plugins/Flurry/FlurryBinding.cs",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_rynkes-jungle.git/unity/Assets/Scripts/Games/Coloring/ColoringGame.cs",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/masterslider/violetcasino/nonmember.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/bpHack/boligalert.php",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/_yscan_app/_projects/1.1/ios/ios_yscan/Assets/Scripts/SplashAndLoading/LoadingManager.cs",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iomh/wp-config-sample.php",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/index.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/assets/css/newsfee.min.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/assets/css/style.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/indexU.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/indexU",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/_setup/original/1.0.0/blank.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/htmlSetup/htmlSetup/Assets/Scripts/CloudRecoScripts/CloudRecoEventHandler.cs",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/index.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/js/application.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/js/newsfeejquery.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/js/newsfeeModernizer.js",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/css/newsfeeAd.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/Newsfee/newDesign/css/newsfee.css",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/iamCoffee/Website/landingpage.html",
-		"/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_unity/htmlSetup/htmlSetup/Assets/CoherentUI/Samples/Scenes/Sample_MobileSurface/MobileSurface.cs",
-		"/Users/thomasrflyvholm/Desktop/lysmilepæle.html"
+		"/Users/thomasrflyvholm/Downloads/twentytwenty-master/js/jquery.twentytwenty.js"
 	],
 	"find":
 	{
@@ -548,6 +536,55 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"postHeader",
+			"postSubheader",
+			"@media",
+			"quicklinks",
+			"forumNyheder-post",
+			"@media",
+			"forumNyhed",
+			"@media",
+			"forumNyheder",
+			"ellip",
+			"forumNyheder",
+			"seneste nyheder",
+			"tabHolderNyhed",
+			"new-post-3",
+			"ell",
+			"ellips",
+			"overline",
+			"lineSpacer",
+			"nyhedsInfo",
+			"nyhedsOverskrift",
+			"nyhedsFoto",
+			"nyhedsTitel",
+			"postHolder",
+			"footer",
+			"nyhedsTitel",
+			"postHolder",
+			"dateNumber",
+			"ansogMenu",
+			"ansog",
+			"@media",
+			"forumintranet-post",
+			"forumintranet-header",
+			"open ",
+			"font-family: 'Open Sans', sans-serif;",
+			"font-family",
+			"Kowa",
+			"forumIntranet",
+			"font-weight:",
+			"'",
+			"forumIntranet",
+			"light",
+			"font-weight: light",
+			"font-weight",
+			"istok",
+			"font-family",
+			"bold",
+			"converts an HTML",
+			"bold",
+			"video",
 			"skriv svar",
 			"cd",
 			"modal-bg",
@@ -626,56 +663,7 @@
 			"file-picker",
 			"fileUploadHolder",
 			"checkboxHolder",
-			"moz",
-			"link",
-			"switch",
-			"$switch-height",
-			"notifi",
-			"switch",
-			"checkbox",
-			"file-title",
-			"offentlig",
-			"offently",
-			"checkbox",
-			"catAdd",
-			"addCat",
-			"checkbox",
-			"border-color:",
-			"links-url",
-			"offentlig",
-			"cd-file-link",
-			"new-post-3",
-			"postContent",
-			"postFOrm",
-			"postForm",
-			"postSubheader",
-			"postSubheade",
-			"cd",
-			"postForm",
-			"width",
-			"postTitle",
-			"elli",
-			"postSubHeader",
-			"postHeader",
-			"her er tit",
-			"header-links",
-			"kategoriAdd",
-			"moz",
-			"vis alle",
-			"forum",
-			"forumIntranet",
-			"button",
-			"expand",
-			"vis alle",
-			"header-links",
-			"se ulæste",
-			"$header-font-family",
-			"sans",
-			"body",
-			"istok",
-			"'istok web'",
-			"font-family",
-			"isotek web"
+			"moz"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -683,6 +671,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; ",
 			"reveal-login",
 			"\"Istok Web\"",
 			"istok web",
@@ -712,24 +701,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "intranet.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9732,
+						"buffer_size": 11980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								662,
-								662
+								709,
+								709
 							]
 						],
 						"settings":
@@ -737,61 +726,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"hasHeader": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
@@ -807,19 +796,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "scss/app.scss",
+					"file": "/Users/thomasrflyvholm/Documents/Udvikling/_workspace/_web/_prod/littleHeroes/littleHeroes/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1609,
+						"buffer_size": 3813,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								134,
-								134
+								415,
+								415
 							]
 						],
 						"settings":
@@ -827,41 +816,46 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -876,38 +870,32 @@
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_unmatched_content"
 							],
-							"hasHeader": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "nyheder.html",
+					"file": "forumPost.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10681,
+						"buffer_size": 11848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5885,
-								5887
+								4617,
+								4617
 							]
 						],
 						"settings":
@@ -915,101 +903,46 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"hasHeader": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2107.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "links.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5728,
-								5728
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1020,135 +953,11 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"hasHeader": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2504.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "forum.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15416,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15398,
-								15398
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_square_content"
 							],
 							"hasHeader": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
@@ -1156,97 +965,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6903.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "forumPost.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9366,
-								9366
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"hasHeader": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1635.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1259,20 +978,110 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "scss/_settings.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 116222,
+						"buffer_size": 89828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2144,
-								2144
+								32956,
+								32956
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"hasHeader": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16281.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/wysihtml5/dist/wysihtml5-0.3.0.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 331989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7424,
+								7424
 							]
 						],
 						"settings":
@@ -1285,71 +1094,71 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content"
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
 							"hasHeader": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 673.0,
+						"translation.y": 3478.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "bower_components/foundation/scss/foundation/components/_reveal.scss",
 					"semi_transient": false,
 					"settings":
@@ -1435,11 +1244,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "bower_components/foundation/scss/foundation/components/_reveal-login.scss",
 					"semi_transient": false,
 					"settings":
@@ -1525,7 +1334,7 @@
 						"translation.y": 66.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1535,7 +1344,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 9,
+					"buffer": 7,
 					"file": "js/modal.js",
 					"semi_transient": false,
 					"settings":
@@ -1622,17 +1431,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 10,
+					"buffer": 8,
 					"file": "bower_components/jquery/src/ajax/jsonp.js",
 					"semi_transient": false,
 					"settings":
@@ -1644,8 +1452,8 @@
 						"selection":
 						[
 							[
-								23,
-								23
+								123,
+								123
 							]
 						],
 						"settings":
@@ -1653,16 +1461,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1673,41 +1476,46 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
 							"hasHeader": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
@@ -1717,7 +1525,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1763,13 +1571,13 @@
 		"cols":
 		[
 			0.0,
-			0.50978830663,
+			0.484339190222,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.805249221881,
+			0.793017766822,
 			1.0
 		]
 	},
@@ -1790,12 +1598,44 @@
 		"selected_items":
 		[
 			[
+				"forumpost",
+				"forumPost.html"
+			],
+			[
+				"intra",
+				"intranet.html"
+			],
+			[
 				"links",
 				"links.html"
 			],
 			[
+				"link",
+				"links.html"
+			],
+			[
+				"nyheder",
+				"nyheder.html"
+			],
+			[
+				"index.",
+				"index.html"
+			],
+			[
+				"intran",
+				"intranet.html"
+			],
+			[
 				"forum",
+				"forum.html"
+			],
+			[
+				".html",
 				"forumPost.html"
+			],
+			[
+				"wysi",
+				"js/wysihtml5/parser_rules/advanced.js"
 			],
 			[
 				"reveal",
@@ -1822,10 +1662,6 @@
 				"nyheder.html"
 			],
 			[
-				"intra",
-				"intranet.html"
-			],
-			[
 				"profil",
 				"profile.html"
 			],
@@ -1838,10 +1674,6 @@
 				"bower_components/foundation/scss/foundation/components/_tabs.scss"
 			],
 			[
-				"intran",
-				"intranet.html"
-			],
-			[
 				"tabs",
 				"bower_components/foundation/scss/foundation/components/_tabs.scss"
 			],
@@ -1852,14 +1684,6 @@
 			[
 				"modal",
 				"js/modal.js"
-			],
-			[
-				"nyheder",
-				"nyheder.html"
-			],
-			[
-				"forumpost",
-				"forumPost.html"
 			]
 		],
 		"width": 0.0

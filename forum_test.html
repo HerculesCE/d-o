@@ -1,0 +1,463 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>DØO</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <!-- MODAL -->
+    <!-- NEW CATEGORY MODAL -->
+    <div id="tilføjKategori" class="modal reveal-modal tiny" data-reveal>
+    <form>
+      <h2>Tilføj kategori</h2>
+      <div class="row collapse">
+        <div class="large-12 columns">
+          <input class="prefix-form" type="text" placeholder="Indtast ny kategori">
+        </div>
+      </div>
+      <div class="button"><a href="">Tilføj</a></div><div class="button cancel"><a href="">Annuller</a></div>
+      <a class="close-reveal-modal">&#215;</a>
+      </form>
+    </div>
+    <!-- /NEW CATEGORY MODAL-->
+    <!-- NEW POST MODAL -->
+    <div id="nyPostModal" class="modal reveal-modal medium" data-reveal>
+    <form>
+      <a class="close-reveal-modal">&#215;</a>
+      <h2>Skriv nyt indlæg</h2>
+      <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
+      <select id="forumCategory" class="kategori">
+        <option value="0" >Vælg en kategori</option>
+        <option value="2">Bestyrelse</option>
+        <option value="1">Arkiv</option>
+      </select>
+      <div id="wysihtml5-toolbar" style="display: none;">
+        <div class="a-data-holder">
+          <a data-wysihtml5-command="bold"><i class="fa fa-bold"></i></a>
+          <a data-wysihtml5-command="italic"><i class="fa fa-italic"></i></a>
+          <a data-wysihtml5-command="underline"><i class="fa fa-underline"></i></a>
+          <a data-wysihtml5-command="insertImage"><i class="fa fa-image"></i></a>
+          <a data-wysihtml5-command="insertVideo"><i class="fa fa-youtube-play"></i></a>
+          <a data-wysihtml5-command="createLink"><i class="fa fa-link"></i></a>
+        </div>
+        <div data-wysihtml5-dialog="insertImage" style="display: none;">
+          <label>
+            <input class="image-upload" data-wysihtml5-dialog-field="src" placeholder="Indtast billede-URL">
+          </label>
+          <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a>&nbsp;<a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button></a>
+        </div>
+        <div data-wysihtml5-dialog="createLink" style="display: none;">
+          <label>
+            <input class="link-add" data-wysihtml5-dialog-field="href" value="" placeholder="Indtast URL" class="text">
+          </label>
+          <a data-wysihtml5-dialog-action="save"><button class="button small">Indsæt</button></a> <a data-wysihtml5-dialog-action="cancel"><button class="button small closer">Annuller</button</a>
+        </div>
+        </form>
+      </div>
+      <textarea id="wysihtml5-textarea" placeholder="Skriv dit indlæg" autofocus></textarea>
+      <button class="postSend button">Indsend</button>
+    </div>
+    <!-- /NEW POST MODAL -->
+    <!-- /MODAL -->
+    <div class="header">
+      <!-- Header -->
+      <div class="content">
+        <div class="logo">
+          <img src="img/logo.png" alt="Danske Øjenlægers Organisation"/>
+        </div>
+        <div class="loginsection">
+          <li class="button"><i class="fa fa-long-arrow-left" style="padding-right: 5px;"> </i> Log ud</li>
+        </div>
+      </div>
+    </div>
+    <!-- /HEADER -->
+    <nav class="top-bar-intra" data-topbar style="margin-top: 50px">
+      <!-- TOPNAV -->
+      <ul class="title-area">
+        <li class="name">
+          <a href=""></a>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><i class="fa fa-align-justify"></i> Menu</a></li>
+      </ul>
+      <section class="top-bar-section">
+        <div class="main">
+          <ul class="right">
+            <div class="profile-menu">
+              <ul>
+                <li class="notification">
+                  <i class="fa fa-envelope"></i>
+                  <i class="count">2</i>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#">Velkommen, <b>Navn</b></a>
+                  <ul class="dropdown">
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Log ud</a></li>
+                  </ul>
+                </li>
+                <li><i class="profile-img fa fa-user"></i></li>
+              </ul>
+            </div>
+          </ul>
+          <ul class="left">
+            <li class="ansogMenu has-dropdown">
+              <a href="#">
+                <i>Preben Christensen</i>
+              </a>
+              <ul class="dropdown">
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Log ud</a></li>
+              </ul>
+            </li>
+            <li><a href="intranet.html">Forside</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="#">Nyheder</a></li>
+            <li><a href="#">Artikler / Links</a></li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+    <!-- /TOPNAV -->
+    <div class="row">
+      <!-- CONTENT -->
+      <div class="large-8 columns">
+        <div class="header-links">
+        </div>
+        <div class="breadcrumb">
+          <i class="fa fa-home"></i>
+          <a href="">Forum</a>
+          /
+          <a href="">Flere</a>
+          /
+          <a href="">Posts</a>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <button class="new-post" data-reveal-id="nyPostModal"><i class="fa fa-pencil"></i> Nyt Indlæg</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-8 columns">
+        <div class="forumintranet">
+          <div class="forumintranet-header">
+            <ul>
+              <li>Almen Debat</li>
+              <li>Seneste svar</li>
+              <li>Svar</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Kowa og Windows7 samt en masse ligegyldigt pis og lort, som alligevel skal fjernes</a>
+                <p class="sub-text">af Kim Frost</p>
+              </li>
+              <li>
+                af Jesper Skov
+                <p class="sub-text">08-07-2014</p>
+              </li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                af Brugernavn
+                <p class="sub-text">Dato</p>
+              </li>
+              <li>15</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                af Brugernavn
+                <p class="sub-text">Dato</p>
+              </li>
+              <li>15</li>
+            </ul>
+          </div>
+          <div class="forumintranet-footer">
+            <a href="">
+              <p><span class="expand">Vis alle</span> <span class="counter">(337 indlæg)</span></p>
+            </a>
+          </div>
+        </div>
+        <div class="forumintranet">
+          <div class="forumintranet-header">
+            <ul>
+              <li>Almen Debat</li>
+              <li>Seneste svar</li>
+              <li>Svar</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                af Brugernavn
+                <p class="sub-text">Dato</p>
+              </li>
+              <li>15</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                af Brugernavn
+                <p class="sub-text">Dato</p>
+              </li>
+              <li>15</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                af Brugernavn
+                <p class="sub-text">Dato</p>
+              </li>
+              <li>15</li>
+            </ul>
+          </div>
+          <div class="forumintranet-post">
+            <ul>
+              <li><i class="fa fa-file-o"></i></li>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                af Brugernavn
+                <p class="sub-text">Dato</p>
+              </li>
+              <li>15</li>
+            </ul>
+          </div>
+          <div class="forumintranet-footer">
+            <a href="">
+              <p><span class="expand">Vis alle</span> <span class="counter">(337 indlæg)</span></p>
+            </a>
+          </div>
+          <button class="catAdd" data-reveal-id="tilføjKategori">
+          <!-- <li class="fa fa-plus-circle"></li>-->
+          <img src="img/plusIcon.png" />
+          Tilføj ny kategori
+          </button>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="forumsidebar senest-svar">
+          <div class="forumsidebar-header">
+            <ul>
+              <li>Seneste Indlæg</li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift som er fuuuuucking lang og sindsygt nedern</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                05-05-2015
+              </li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="forumsidebar seneste-svar">
+          <div class="forumsidebar-header">
+            <ul>
+              <li>Seneste Svar</li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="forumsidebar flest-svar">
+          <div class="forumsidebar-header">
+            <ul>
+              <li>Flest Svar</li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+          <div class="forumsidebar-post">
+            <ul>
+              <li>
+                <a href="#">Indlæg Overskrift</a>
+                <p class="sub-text">af Brugernavn</p>
+              </li>
+              <li>
+                Dato
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /CONTENT -->
+    <div class="footer nonFront">
+      <!-- FOOTER -->
+      <div class="row">
+        <div class="large-4 columns">
+          <h4>Kontakt information</h4>
+          <ul>
+            <li>Fællessekretariatet: Esplanaden 8C, 3. sal.</li>
+            <li>1263 København K</li>
+            <li>Telefon: +45 35 44 84 03</li>
+            <li>Fax: 35448408</li>
+            <li>Mail: sho@dadl.dk</li>
+          </ul>
+        </div>
+        <div class="large-4 columns">
+          <h4>Quicklinks</h4>
+          <ul>
+            <li><a href="">Den Almindelige Danske Lægeforening</a></li>
+            <li><a href="">Dansk Oftalmologisk selskab</a></li>
+            <li><a href="">Statens Øjenklinik</a></li>
+            <li><a href="">Dansk Blindesamfund</a></li>
+            <li><a href="">Værn om Synet</a></li>
+          </ul>
+        </div>
+        <div class="large-4 columns">
+          <ul class="low">
+            <li><a href="">Den Almindelige Danske Lægeforening</a></li>
+            <li><a href="">Dansk Oftalmologisk selskab</a></li>
+            <li><a href="">Statens Øjenklinik</a></li>
+            <li><a href="">Dansk Blindesamfund</a></li>
+            <li><a href="">Værn om Synet</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <p class="mobileFoot">DØO © 2014</p>
+          <p class="desktopFoot">Danske Øjenlægers Organisation © 2014</p>
+          <p class="right">by <b>INTO</b>WEB</p>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+    <script src="js/wysihtml5/parser_rules/advanced.js"></script>
+    <script src="js/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+    var editor = new wysihtml5.Editor("wysihtml5-textarea", {
+    toolbar:      "wysihtml5-toolbar",
+    parserRules:  wysihtml5ParserRules
+    });
+    </script>
+          </form>
+  </body>
+</html>
