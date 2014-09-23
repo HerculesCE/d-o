@@ -74,8 +74,7 @@
             <div class="profile-menu">
               <ul>
                 <li class="notification">
-                  <i class="fa fa-envelope"></i>
-                  <i class="count">2</i>
+                  <i class="fa fa-calendar"></i>
                 </li>
                 <li class="has-dropdown">
                   <a href="#">Velkommen, <b>Navn</b></a>
@@ -111,8 +110,19 @@
     <div class="row">
       <div class="large-8 columns">
         <div class="user-profile">
-          <img class="profilePic" src="http://placehold.it/300x300" />
-          <p class="profileName">Jack Nicholson</p>
+          <div class="profilePictureHolder">
+            <div class="profilePic">
+              <input id="file-picker" type="file">
+                <div id="linksFileUploadTwo">
+                  <div class="links-file-upload">
+                    <input class="custom-file-input-two" type="file">
+                  </div>
+                </div>
+            </div>
+            <p id="newPic">Nyt billede</p>
+            <img id="picture" src="http://i2.cdnds.net/13/10/618x555/showbiz-jack-nicholson.jpg" />
+            <p id="profileName">Jack Nicholson</p>
+          </div>
           <ul>
             <li>
               <p class="name">E-mail</p>

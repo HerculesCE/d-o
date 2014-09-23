@@ -53,6 +53,75 @@ $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
 $switch-height-lrg: 2.3rem;
 
+// PROFILE 
+    #profileName {
+        font-weight: bold;
+        font-size: 1.5em;
+        display: inline-block;
+        position:absolute;
+        color: #393939;
+        margin-top: 72px;
+        margin-left: -100px;
+    }
+    #newPic {
+        text-shadow: 1px 1px 5px #393939;
+        color: white;
+        margin-left: -223px;
+        margin-top: 75px;
+        font-size: 1.2em;
+        display: inline-block;
+        z-index: 100;
+        position: absolute;
+        pointer-events:none;
+    }
+    #linksFileUploadTwo {
+        //
+    }
+    #picture {
+        min-height: 120px;
+        max-height: 120px;
+        min-width: 120px;
+        max-width: 120px;
+        position: absolute;
+        display: inline-block;
+        margin-top: 30px;
+        border-radius: 120px;
+        margin-left: -240px;
+        pointer-events:none;
+        z-index: 1;
+        cursor: pointer;
+      }
+    .custom-file-input-two::-webkit-file-upload-button {
+      visibility: hidden;
+      z-index: -1;
+    }
+    .custom-file-input-two::before {
+      content: 'Vælg Billede';
+      line-height: 25px;
+      display:inline-block;
+      color: white;
+      width: 400px;
+      min-height: 100px;
+      display: inline-block;
+      background-color: white;
+      text-align: center;
+      line-height: 37px;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      cursor: pointer;
+      -o-transition: 0 0.5s;
+      -ms-transition: 0 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      z-index:-1;
+    }
+    .custom-file-input:hover::before {
+        background-color: #007295;
+    }
+    .custom-file-input:active::before {
+      background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+    }
+
 // REVISED MODALS (globally used)
 $reveal-overlay-bg: rgba(black, .65);
 $reveal-overlay-bg-old: black;
@@ -1796,6 +1865,7 @@ a:link {
         max-height: 100px;
         border-radius: 100px;
         display: inline-block;
+        margin-top: 50px;
     }
     .profileName {
         font-weight: bold;
@@ -1803,6 +1873,7 @@ a:link {
         display: inline-block;
         color: #393939;
         margin: 0 0 0 20px;
+        padding-top: 0px;
     }
     ul {
         margin: 50px 0 0 0;
@@ -1835,6 +1906,7 @@ a:link {
         }
         li:last-child {
             border-bottom: 1px solid #ebebeb;
+            margin-bottom: 50px;
         }
     }
 }
