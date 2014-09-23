@@ -106,23 +106,32 @@
       </section>
     </nav>
     <!-- /TOPNAV -->
-    <!-- CONTENT -->
+    <!-- CONTENT -->  
     <div class="row">
       <div class="large-8 columns">
-        <div class="user-profile">
-          <div class="profilePictureHolder">
-            <div class="profilePic">
-              <input id="file-picker" type="file">
-                <div id="linksFileUploadTwo">
-                  <div class="links-file-upload">
-                    <input class="custom-file-input-two" type="file">
+        <div class="card">
+          <div class="container">
+            <div class="front">
+              <img id="picture" src="http://i2.cdnds.net/13/10/618x555/showbiz-jack-nicholson.jpg" />
+              <p id="profileName">Jack Nicholson</p>
+            </div>
+            <div class="back">
+                <input id="file-picker" type="file">
+                <input class="custom-file-input-two" type="file">
+                <div class="button small" style="float:left;">Upload</div>
+                <div class="small-9 large-10 columns">
+                  <div class="fileUploadHolder">
+                    <input id="linksFileRealNameHidden" class="fileRealNameHidden" type="hidden" />
                   </div>
                 </div>
             </div>
-            <p id="newPic">Nyt billede</p>
-            <img id="picture" src="http://i2.cdnds.net/13/10/618x555/showbiz-jack-nicholson.jpg" />
-            <p id="profileName">Jack Nicholson</p>
           </div>
+        </div>
+      </div>
+      <div class="large-4 columns">
+      </div>
+      <div class="large-8 columns">
+        <div class="user-profile">
           <ul>
             <li>
               <p class="name">E-mail</p>
@@ -144,6 +153,8 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="large-4 columns">
       </div>
     </div>
     <!-- /CONTENT -->
