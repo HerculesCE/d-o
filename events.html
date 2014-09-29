@@ -11,17 +11,18 @@
     </head>
     <body>
       <form>
+
         <!-- MODAL -->
         <!-- NEW NEWS MODAL -->
         <div id="nyNewsModal" class="modal reveal-modal medium" data-reveal>
           <a class="close-reveal-modal">&#215;</a>
-          <h2>Skriv nyhed</h2>
-          <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
-          <select id="forumCategory" class="kategori">
-            <option value="0" >Vælg en kategori</option>
-            <option value="2">Bestyrelse</option>
-            <option value="1">Arkiv</option>
-          </select>
+          <h2>Tilføj event</h2>
+            <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
+            <select id="forumCategory" class="kategori">
+              <option value="0" >Vælg en kategori</option>
+              <option value="2">Bestyrelse</option>
+              <option value="1">Arkiv</option>
+            </select>
           <div class="editorHolder">
               <textarea class="textarea-post"></textarea>
           </div>
@@ -90,20 +91,8 @@
         <!-- CONTENT -->
         <div class="row">
           <div class="large-8 columns">
-            <div class="tabHolderNyhed">
-              <a href="#" class="new-post-3 Alle npActive">Alle</a>
-              <a href="#" class="new-post-3 DOE">DØO</a>
-              <a href="#" class="new-post-3 FAPS">FAPS</a>
-            </div>
-          </div>
-          <div class="large-4 columns">
-            <button class="new-post-news" data-reveal-id="nyNewsModal"><i class="fa fa-pencil"></i>Tilføj nyhed</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-8 columns">
             <div class="postHolder">
-              <div class="date">
+              <div class="dateEvent">
                 <div class="dateNumber">28</div>
                 <div class="dateName">Apr</div>
               </div>
@@ -113,11 +102,6 @@
               </div>
               <div class="nyhedsTitel">
                 <h4>Nyhed med tekst og billedeNyhed med tekst </h4>
-                <p class="nyhedsInfo">
-                Skrevet af
-                <span class="nyhedsPoster">Jens Andresen</span>
-                <span class="nyhedsDato">, 01.04.2014</span>
-                </p>
               </div>
               <div class="nyhedsContent">
                 <img src="http://data1.whicdn.com/images/14430167/original.jpg" class="nyhedsFoto" />
@@ -126,17 +110,12 @@
               <hr>
             </div>
             <div class="postHolder">
-              <div class="date">
+              <div class="dateEvent">
                 <div class="dateNumber">31</div>
                 <div class="dateName">Aug</div>
               </div>
               <div class="nyhedsTitel">
                 <h4>Nyhed uden billede</h4>
-                <p class="nyhedsInfo">
-                Skrevet af
-                <span class="nyhedsPoster">Jens Andresen</span>
-                <span class="nyhedsDato">, 01.04.2014</span>
-                </p>
               </div>
               <div class="nyhedsContent">
                 <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</p>
@@ -144,17 +123,12 @@
               <hr>
             </div>
             <div class="postHolder">
-              <div class="date">
+              <div class="dateEvent">
                 <div class="dateNumber">31</div>
                 <div class="dateName">Aug</div>
               </div>
               <div class="nyhedsTitel">
                 <h4>Nyhed med lange links og alt muligt random tekst som aldrig i livet skl bruges til en fucking skid</h4>
-                <p class="nyhedsInfo">
-                Skrevet af
-                <span class="nyhedsPoster">Jens Andresen</span>
-                <span class="nyhedsDato">, 01.04.2014</span>
-                </p>
               </div>
               <div class="nyhedsContent">
                 <p><a href="#">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.</a></p>
@@ -162,6 +136,9 @@
               </div>
               <hr>
             </div>
+          </div>
+          <div class="large-4 columns">
+            <button class="new-post-news" data-reveal-id="nyNewsModal"><i class="fa fa-pencil"></i>Tilføj event</button>
           </div>
         </div>
         <!-- /CONTENT -->
@@ -220,27 +197,13 @@
           });
         </script>
         <script>
-        $('.small').click(function(){
-          console.log('lol');
-        });
-        </script>
-        <script>
-        $('.Alle').click(function(){
-          $(".Alle").addClass('npActive');
-          $(".DOE").removeClass('npActive');
-          $(".FAPS").removeClass('npActive');
-        });
-        $('.DOE').click(function(){
-          $(".DOE").addClass('npActive');
-          $(".Alle").removeClass('npActive');
-          $(".FAPS").removeClass('npActive');
-        });
-        $('.FAPS').click(function(){
-          $(".FAPS").addClass('npActive');
-          $(".DOE").removeClass('npActive');
-          $(".Alle").removeClass('npActive');
-        });
-        </script>
+      $(function () {
+        window.prettyPrint && prettyPrint();
+        $('#dp3').fdatepicker();
+        $('#dp3').fdatepicker();
+        
+      });
+    </script>
       </form>
     </body>
   </html>
