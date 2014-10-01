@@ -2822,6 +2822,7 @@ jQuery(document).ready(function ($) {
       var youkuRegExp = /\/\/v\.youku\.com\/v_show\/id_(\w+)\.html/;
       var youkuMatch = sUrl.match(youkuRegExp);
 
+      // TODO: @BUGFIX dynamic sized iFrame
       var $video;
       if (ytMatch && ytMatch[2].length === 11) {
         var youtubeId = ytMatch[2];
@@ -6393,7 +6394,6 @@ jQuery(document).ready(function ($) {
 									DPGlobal.footTemplate+
 								'</table>'+
 							'</div>'+
-							'<a class="button datepicker-close small alert right" style="width:auto;"><i class="fa fa-remove fa-times fi-x"></i></a>'+
 						'</div>';
 
 	$.fn.fdatepicker.DPGlobal = DPGlobal;

@@ -11,18 +11,28 @@
     </head>
     <body>
       <form>
-
         <!-- MODAL -->
         <!-- NEW NEWS MODAL -->
         <div id="nyNewsModal" class="modal reveal-modal medium" data-reveal>
           <a class="close-reveal-modal">&#215;</a>
           <h2>Tilføj event</h2>
-            <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
-            <select id="forumCategory" class="kategori">
-              <option value="0" >Vælg en kategori</option>
-              <option value="2">Bestyrelse</option>
-              <option value="1">Arkiv</option>
-            </select>
+          <input id="forumTitle" class="title" type="text" name="postTitle" placeholder="Overskrift">
+          <div style="margin-bottom: 70px;">
+          <div class="row date" id="dp3" data-date="01-01-2014" data-date-format="dd-mm-yyyy">
+            <div class="row collapse">
+                <div class="small-2 columns">
+                  <div class="dates-prefix">
+                    <span class="prefix small-2 columns"><i class="fa fa-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="small-10 columns">
+                  <div class="dates-field">
+                    <input size="16" type="text" value="01-01-2014" readonly> 
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
           <div class="editorHolder">
               <textarea class="textarea-post"></textarea>
           </div>
@@ -82,7 +92,25 @@
                 <li><a href="intranet.html">Forside</a></li>
                 <li><a href="forum.html">Forum</a></li>
                 <li><a href="#">Nyheder</a></li>
-                <li><a href="#">Artikler / Links</a></li>
+                <li class="ansogMenu"><a href="">Artikler / Links</a></li>
+              <p class="mega-menu-title" data-dropdown="drop2" data-options="is_hover:true" aria-controls="drop2" aria-expanded="false">Artikler / Links</p>
+                <div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+                  <div class="row mega-menu">
+                    <p class="mega-menu-header">Artikler / Links</p>
+                    <div class="mega-menu-links">
+                      <div class="large-6 columns">
+                        <a href="">Vejledninger &amp Instrukser</a>
+                        <a href="">Måledpunkter</a>
+                        <a href="">Diabasen</a>
+                      </div>
+                      <div class="large-6 columns">
+                        <a href="">FAPS</a>
+                        <a href="">Diverse</a>
+                        <a href="">Oftalmologiske &amp Medicinske tidsskrifter</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </ul>
             </div>
           </section>
@@ -197,12 +225,10 @@
           });
         </script>
         <script>
-      $(function () {
-        window.prettyPrint && prettyPrint();
-        $('#dp3').fdatepicker();
-        $('#dp3').fdatepicker();
-        
-      });
+          $(function () {
+          window.prettyPrint && prettyPrint();
+          $('#dp3').fdatepicker();
+          });
     </script>
       </form>
     </body>

@@ -53,6 +53,70 @@ $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
 $switch-height-lrg: 2.3rem;
 
+// MegaMenu
+$f-dropdown-height: auto;
+$f-dropdown-max-height: none;
+$f-dropdown-margin-top: 15px;
+.f-dropdown {
+    color: #707070;
+    min-width: 560px;
+}
+.mega-menu-title {
+    color: white;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-top: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.mega-menu-title:hover {
+    // TODO: @optimization mouseover 
+}
+.mega-menu {
+    .mega-menu-header {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px #505050 solid;
+        margin-bottom: -5px;
+    }
+    .mega-menu-links {
+        a {
+            color: #707070;
+            margin-left: -12px;
+            display:block;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 240px;
+            overflow: hidden;
+        }
+        a:hover {
+            color: black;
+
+        }
+    }
+}
+
+// DATEPICKER 
+.collapse {
+    background-color: white;
+}
+.date {
+    background-color: none;
+    background: none;
+    max-height: 50px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+
+.dates-prefix {
+    margin-top: -55px;
+}
+.dates-field {
+    margin-top: -35px;
+}
+
 // CARDS
               
 .card {
@@ -1316,6 +1380,9 @@ footer {
     }
 }
 @media screen and (max-width: 640px) {
+    .mega-menu-title {
+        display: none;
+    }
     .forumNyheder {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     margin-top: -20px;
