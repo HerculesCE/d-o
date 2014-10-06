@@ -25,6 +25,24 @@
       <a class="close-reveal-modal">&#215;</a>
     </div>
 
+    <div id="skiftBilledeModal" class="modal reveal-modal small" data-reveal>
+      <div class="container">
+          <div class="imageBox">
+              <div class="thumbBox"></div>
+              <div class="spinner" style="display: none">Indlæser</div>
+          </div>
+          <div class="action">
+              <input type="file" id="file" style="float:left; width: 250px">
+              <input type="button" id="btnCrop" value="Gem" style="float: right">
+          </div>
+          <div class="cropped">
+
+          </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+      <a href="">Godkend</a>
+    </div>
+
     <div id="skiftPassModal" class="modal reveal-modal tiny" data-reveal data-abide>
       <h2>Skift kodeord</h2>
       <div class="row collapse">
@@ -126,6 +144,21 @@
     <!-- /TOPNAV -->
     <!-- CONTENT -->  
     <div class="row">
+      <div class="large-2 columns">
+        <div class="profile-wrapper">
+          <div class="img-wrapper">
+            <a data-reveal-id="skiftBilledeModal" class="button expand change-img">Skift billede</a>
+            <a href="#"><img id="profile-pic" src="http://placehold.it/300x300"></a>
+          </div>  
+        </div>  
+      </div>
+      <div class="large-10 columns">
+        <div class="profile-header">
+          <p>Jack Nicholson</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="large-8 columns">
         <div class="user-profile">
           <ul>
@@ -206,5 +239,35 @@
         $(".notificationSwitch").toggleClass('active');
     });
     </script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        var options =
+        {
+            thumbBox: '.thumbBox',
+            spinner: '.spinner',
+            imgSrc: 'avatar.png'
+        }
+        var cropper;
+        $('#file').on('change', function(){
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                options.imgSrc = e.target.result;
+                cropper = $('.imageBox').cropbox(options);
+            }
+            reader.readAsDataURL(this.files[0]);
+            this.files = [];
+        })
+        $('#btnCrop').on('click', function(){
+            var img = cropper.getAvatar()
+            $('.cropped').append('<img src="'+img+'">');
+        })
+        $('#btnZoomIn').on('click', function(){
+            cropper.zoomIn();
+        })
+        $('#btnZoomOut').on('click', function(){
+            cropper.zoomOut();
+        })
+    });
+  </script>
   </body>
 </html>
