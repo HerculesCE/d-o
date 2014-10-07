@@ -25,22 +25,33 @@
       <a class="close-reveal-modal">&#215;</a>
     </div>
 
-    <div id="skiftBilledeModal" class="modal reveal-modal small" data-reveal>
-      <div class="container">
-          <div class="imageBox">
-              <div class="thumbBox"></div>
-              <div class="spinner" style="display: none">Indlæser</div>
-          </div>
-          <div class="action">
-              <input type="file" id="file" style="float:left; width: 250px">
-              <input type="button" id="btnCrop" value="Gem" style="float: right">
-          </div>
-          <div class="cropped">
-
-          </div>
-      </div>
+    <div id="skiftBilledeModal" class="modal reveal-modal tiny" data-reveal>
       <a class="close-reveal-modal">&#215;</a>
-      <a href="">Godkend</a>
+      <div class="row">
+        <div class="large-12 columns">
+          <h4>Vælg billede</h4>
+            <div class="imageBox">
+                  <div class="thumbBox"></div>
+                  <div class="spinner" style="display: none">Indlæser</div>
+            </div>
+            <div class="action">
+                <input type="file" id="file" style="float:left; width: 250px">
+                <input type="button" id="btnCrop" value="Gem" style="float: right">
+                <div id="crop-picker" class="expand change-img">Vælg fil...</div>
+                <a id="cropper">Bekræft</a>
+            </div>
+            <div class="cropped">
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <!--
+          <div class="button medium"><a href="">Godkend</a></div>
+          <div class="button cancel medium"><a href="">Annuller</a></div>
+          -->
+        </div>
+      </div>
     </div>
 
     <div id="skiftPassModal" class="modal reveal-modal tiny" data-reveal data-abide>
@@ -259,7 +270,7 @@
         })
         $('#btnCrop').on('click', function(){
             var img = cropper.getAvatar()
-            $('.cropped').append('<img src="'+img+'">');
+            $('.cropped').append('<img id="final-profile-image" src="'+img+'">');
         })
         $('#btnZoomIn').on('click', function(){
             cropper.zoomIn();
@@ -267,7 +278,7 @@
         $('#btnZoomOut').on('click', function(){
             cropper.zoomOut();
         })
-    });
-  </script>
+      });
+    </script>
   </body>
 </html>

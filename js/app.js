@@ -6521,3 +6521,10 @@ var cropbox = function(options, el){
 jQuery.fn.cropbox = function(options){
     return new cropbox(options, this);
 };
+
+        $("#crop-picker").click(function(){
+          $("#file").click();
+        });
+        $("#cropper").click(function(){
+          $("#btnCrop").click();
+        });

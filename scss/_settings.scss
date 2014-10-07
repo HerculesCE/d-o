@@ -109,42 +109,70 @@ $switch-height-lrg: 2.3rem;
 h3 { font-size: 22px; }
 h5 { font-weight: bold; }
 
-p {
-  color: #888;
-  font-size: 13px;
-  margin-bottom: 0;
-}
 
 .imageBox
 {
     position: relative;
-    height: 300px;
-    width: 300px;
-    border:1px solid #aaa;
-    background: #fff;
+    height: 315px;
+    width: 100%;
+    min-width: 310px;
+    border:0px solid #aaa;
+    background: #349fd6;
     overflow: hidden;
     background-repeat: no-repeat;
     cursor:move;
-    margin: 0 auto;
-    margin-top: 40px;
+    //margin: 0 auto;
     //display: inline-block;
 }
 
-.action
-        {
-            width: 300px;
-            height: 30px;
-            margin: 0 auto;
-        }
+.action {
+    margin-top: 15px;
+    height: 30px;
+    a{
+        float:right;
+        line-height: 40px;
+    }
+}
+.tilbage-cropper {
+    float:right;
+}
         .cropped {
             right: 0px;
+            display: none;
         }
         .cropped>img
         {
-            //margin-right: 10px;
-            //display:inline-block;
+            margin-top: 50px;
+            margin-left: 20%;
+            border-radius: 300px;
         }
 
+.croppedImage {
+    align: middle;
+}
+.action {
+    .change-img {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-color: #333;
+    padding: 16px 20px;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 1em;
+    &:hover { background-color: #349fd6; }
+    }
+    #file {
+        display:none;
+    }
+    #btnCrop {
+        display:none;
+    }
+}
 .imageBox .thumbBox
 {
     position: absolute;
@@ -158,6 +186,7 @@ p {
     border: 1px solid rgb(102, 102, 102);
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
     background: none repeat scroll 0% 0% transparent;
+    border-radius: 200px;
 }
 
 .imageBox .spinner
@@ -170,6 +199,16 @@ p {
     text-align: center;
     line-height: 400px;
     background: rgba(0,0,0,0.7);
+}
+#step_1 {
+    min-height: 350px;
+}
+#step_2 {
+    min-height: 380px;
+    a{
+        float:right;
+        line-height: 40px;
+    }
 }
 
 // MegaMenu
