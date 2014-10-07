@@ -88,6 +88,10 @@ $f-dropdown-content-padding: rem-calc(20) !default;
     font-size: $f-dropdown-font-size;
     z-index: 99;
   }
+  &:hover {
+    margin-top: 12px;
+    margin-left: -12px;
+  }
 
   @if $triangle == bottom {
     margin-top: $f-dropdown-margin-top;

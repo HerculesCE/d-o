@@ -129,10 +129,10 @@
             <li><a href="intranet.html">Forside</a></li>
             <li><a href="forum.html">Forum</a></li>
             <li><a href="#">Nyheder</a></li>
-            <li class="ansogMenu"><a href="">Artikler / Links</a></li>
+            <li class="ansogMenu"><a>Artikler / Links</a></li>
               <p class="mega-menu-title" data-dropdown="drop2" data-options="is_hover:true" aria-controls="drop2" aria-expanded="false">Artikler / Links</p>
-                <div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-                  <div class="row mega-menu">
+                <div id="drop2" data-dropdown-content class="f-dropdown content mouseover" aria-hidden="true" tabindex="-1">
+                  <div id="mega-menu" class="row mega-menu">
                     <p class="mega-menu-header">Artikler / Links</p>
                     <div class="mega-menu-links">
                       <div class="large-6 columns">
@@ -279,6 +279,14 @@
             cropper.zoomOut();
         })
       });
+    </script>
+    <script type="text/javascript">
+      $("#crop-picker").click(function(){
+          $("#file").click();
+        });
+        $("#cropper").click(function(){
+          $("#btnCrop").click();
+        });
     </script>
   </body>
 </html>

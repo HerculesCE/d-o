@@ -214,12 +214,13 @@ h5 { font-weight: bold; }
 // MegaMenu
 $f-dropdown-height: auto;
 $f-dropdown-max-height: none;
-$f-dropdown-margin-top: 15px;
+$f-dropdown-margin-top: 0px;
 .f-dropdown {
     color: #707070;
     min-width: 560px;
 }
 .mega-menu-title {
+    z-index: 1;
     color: white;
     display: inline-block;
     font-size: 0.8em;
@@ -228,9 +229,12 @@ $f-dropdown-margin-top: 15px;
     cursor: pointer;
 }
 .mega-menu-title:hover {
-    // TODO: @optimization mouseover 
+    background-color: #252525;
+    padding: 12px 12px;
+    margin: 1px 0px 0px -2px;
 }
 .mega-menu {
+    position: relative;
     .mega-menu-header {
         font-size: 1.2em;
         font-weight: bold;
@@ -1339,6 +1343,10 @@ footer {
     }
 }
 @media screen and (max-width: 750px) {
+    .expand {
+        display: none;
+        visibility: hidden;
+    }
     .quicklinks ul li:nth-child(1){
         margin-bottom: 50px;
         float:none;
@@ -1794,7 +1802,9 @@ a:link {
     border-radius: 55px;
     margin-top: 3px;
 }
-
+.eventsheader {
+    margin-bottom: 50px;
+}
 .postComments {
     ul {
         li {
@@ -1818,7 +1828,7 @@ a:link {
             }
             .timestamp {
                 color: #349fd6;
-                margin: -25px 0 0 48px;
+                margin: -25px 0 0 58px;
                 font-size: 0.8em;
             }
             .replyComment {
