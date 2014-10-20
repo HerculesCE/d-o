@@ -53,6 +53,13 @@ $glowing-effect-fade-time: 0.45s;
 $glowing-effect-color: #349fd6;
 $switch-height-lrg: 2.3rem;
 
+// LANDING
+#landing {
+  p {
+    text-align: center;
+  }
+}
+
 // PROFILE PAGE
 .profile-wrapper {
   padding: 20px;
@@ -1636,7 +1643,7 @@ footer {
     .postHeader {
         #postTitle {
             float: left;
-            font-weight: bold;
+            font-weight: normal;
             line-height: 60px;
             width: 270px;
             white-space: nowrap;
@@ -1940,12 +1947,13 @@ a:link {
 
 #postTitle {
     float: left;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 60px;
     width: 400px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 10px;
 }
 
 #postBy {
@@ -1961,6 +1969,9 @@ a:link {
     margin-top: -4px;
     height: 40px;
     background-color: #ebebeb;
+    .subheader-holder {
+        margin-left: -20px;
+    }
     p {
         line-height: 40px;
         display: inline-block;
