@@ -868,24 +868,27 @@ $reveal-overlay-bg-old: black;
 .dateEvent {
     height: 60px;
     width: 60px;
-    background-color: #dd4545;
+    background-color: #e9e9e9;
     padding-top: 15px;
     float: left;
-}
-.dateNumber {
-    color: #fff;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 2em;
+    border-top: 18px solid #dd4545;
+    border-bottom: 0px solid #393939;
     text-align: center;
-    font-weight: normal;
-}
-.dateName {
-    margin-right: 2px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    text-align: right;
-    color: #fff;
-    font-size: 11px;
-    margin-bottom: 2px;
+    .dateNumber {
+      color: #393939;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      font-weight: 700;
+      font-size: 2em;
+      margin-top: -27px;
+    }
+    .dateName {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      color: #393939;
+      font-weight: 900;
+      margin-top: -33px;
+      font-size: .8em;
+      color: white;
+    }
 }
 .nyhedsFoto {
     max-width: 80%;
