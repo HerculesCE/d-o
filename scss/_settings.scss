@@ -886,12 +886,36 @@ $reveal-overlay-bg-old: black;
     .dateName {
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
       color: #393939;
-      font-weight: 900;
+      font-weight: 300;
       margin-top: -33px;
       font-size: .8em;
       color: white;
     }
 }
+.dateNews {
+    height: 60px;
+    width: 60px;
+    background-color: #349fd6;
+    padding-top: 15px;
+    float: left;
+    text-align: center;
+    .dateNumber {
+      color: white;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      font-weight: 300;
+      font-size: 2em;
+      margin-top: -30px;
+    }
+    .dateName {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      color: #393939;
+      font-weight: 300;
+      margin-top: -12px;
+      font-size: .8em;
+      color: white;
+    }
+}
+
 .nyhedsFoto {
     max-width: 80%;
     margin-bottom: 15px;
